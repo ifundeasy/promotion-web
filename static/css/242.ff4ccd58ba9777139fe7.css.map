@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/242.ff4ccd58ba9777139fe7.css","mappings":"AAAA","sources":["webpack://react-web/./src/pages/signup/index.module.less"],"sourcesContent":[".container {\n  width: 30%;\n  margin: 80px auto;\n}\n\n@primary-color: #1DA57A;"],"names":[],"sourceRoot":""}

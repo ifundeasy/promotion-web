@@ -1,0 +1,2 @@
+/*! For license information please see 657.3704e97d25fb8f603a26.js.LICENSE.txt */
+"use strict";(self.webpackChunkreact_web=self.webpackChunkreact_web||[]).push([[657],{4657:(e,t,n)=>{n.r(t),n.d(t,{default:()=>l});var r=n(7294);const c=function(){return r.createElement(r.Fragment,null,"促销扣款 demo")};const l=function(){return r.createElement(r.Fragment,null,r.createElement(c,null))}}}]);

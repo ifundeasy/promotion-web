@@ -1,0 +1,2 @@
+/*! For license information please see 735.dae8a832495c40398b9b.js.LICENSE.txt */
+"use strict";(self.webpackChunkreact_web=self.webpackChunkreact_web||[]).push([[735],{9735:(e,t,n)=>{n.r(t),n.d(t,{default:()=>a});var r=n(7294);const a=function(){return r.createElement(r.Fragment,null,r.createElement("div",null,"Index页面"))}}}]);
