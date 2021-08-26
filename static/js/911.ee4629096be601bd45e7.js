@@ -1,2 +1,0 @@
-/*! For license information please see 911.ee4629096be601bd45e7.js.LICENSE.txt */
-"use strict";(self.webpackChunkreact_web=self.webpackChunkreact_web||[]).push([[911],{9911:(e,t,n)=>{n.r(t),n.d(t,{default:()=>c});var u=n(7294);const c=function(){return u.createElement("div",null,"404 Not Found")}}}]);
