@@ -222,7 +222,7 @@
 /******/ 	
 /******/ 	/* webpack/runtime/publicPath */
 /******/ 	!function() {
-/******/ 		__webpack_require__.p = "/";
+/******/ 		__webpack_require__.p = "./";
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/css loading */
@@ -392,4 +392,4 @@
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=runtime.59c56ef022ce00d3ef6d.js.map
+//# sourceMappingURL=runtime.2cdc1c7326b6505fe037.js.map
