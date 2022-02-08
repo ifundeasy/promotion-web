@@ -1470,11 +1470,8 @@ var ProHeader = function ProHeader() {
     });
   }, [currentTheme, switcher, themes]);
 
-  var changeTheme = function changeTheme(checked) {
-    switcher({
-      theme: checked ? themes.light : themes.dark
-    });
-    localStorage.setItem('antd-theme', checked ? 'light' : 'dark');
+  var changeTheme = function changeTheme(checked) {// switcher({ theme: checked ? themes.light : themes.dark })
+    // localStorage.setItem('antd-theme', checked ? 'light' : 'dark')
   };
 
   return /*#__PURE__*/react.createElement(es_layout.Header, {
@@ -3522,4 +3519,4 @@ var Coupons = function Coupons(_ref) {
 /***/ })
 
 }]);
-//# sourceMappingURL=498.110a6b3e09f4fd354580.js.map
+//# sourceMappingURL=498.2c8562c538f2c93281ab.js.map
