@@ -27823,19 +27823,19 @@ var Loading = function Loading() {
 
 
 var Layout = /*#__PURE__*/react.lazy(function () {
-  return Promise.all(/* import() */[__webpack_require__.e(736), __webpack_require__.e(769), __webpack_require__.e(816), __webpack_require__.e(896), __webpack_require__.e(290), __webpack_require__.e(541), __webpack_require__.e(249)]).then(__webpack_require__.bind(__webpack_require__, 1249));
+  return Promise.all(/* import() */[__webpack_require__.e(769), __webpack_require__.e(816), __webpack_require__.e(829), __webpack_require__.e(290), __webpack_require__.e(970)]).then(__webpack_require__.bind(__webpack_require__, 7285));
 });
 var Home = /*#__PURE__*/react.lazy(function () {
   return __webpack_require__.e(/* import() */ 996).then(__webpack_require__.bind(__webpack_require__, 8996));
 });
 var Demo = /*#__PURE__*/react.lazy(function () {
-  return Promise.all(/* import() */[__webpack_require__.e(736), __webpack_require__.e(769), __webpack_require__.e(816), __webpack_require__.e(896), __webpack_require__.e(290), __webpack_require__.e(541)]).then(__webpack_require__.bind(__webpack_require__, 4072));
+  return Promise.all(/* import() */[__webpack_require__.e(736), __webpack_require__.e(769), __webpack_require__.e(816), __webpack_require__.e(829), __webpack_require__.e(290), __webpack_require__.e(321)]).then(__webpack_require__.bind(__webpack_require__, 4072));
 });
 var SignIn = /*#__PURE__*/react.lazy(function () {
-  return Promise.all(/* import() */[__webpack_require__.e(769), __webpack_require__.e(816), __webpack_require__.e(896), __webpack_require__.e(418), __webpack_require__.e(118)]).then(__webpack_require__.bind(__webpack_require__, 8118));
+  return Promise.all(/* import() */[__webpack_require__.e(769), __webpack_require__.e(816), __webpack_require__.e(829), __webpack_require__.e(75), __webpack_require__.e(118)]).then(__webpack_require__.bind(__webpack_require__, 8118));
 });
 var SignUp = /*#__PURE__*/react.lazy(function () {
-  return Promise.all(/* import() */[__webpack_require__.e(769), __webpack_require__.e(816), __webpack_require__.e(896), __webpack_require__.e(418), __webpack_require__.e(739)]).then(__webpack_require__.bind(__webpack_require__, 7739));
+  return Promise.all(/* import() */[__webpack_require__.e(769), __webpack_require__.e(816), __webpack_require__.e(829), __webpack_require__.e(75), __webpack_require__.e(739)]).then(__webpack_require__.bind(__webpack_require__, 7739));
 });
 var Coupons = /*#__PURE__*/react.lazy(function () {
   return Promise.all(/* import() */[__webpack_require__.e(769), __webpack_require__.e(122)]).then(__webpack_require__.bind(__webpack_require__, 9122));
@@ -29972,4 +29972,4 @@ function _unsupportedIterableToArray(o, minLen) {
 /******/ var __webpack_exports__ = __webpack_require__.O();
 /******/ }
 ]);
-//# sourceMappingURL=app.984587991a3d54b6ff14.js.map
+//# sourceMappingURL=app.56f0042de7579027e454.js.map

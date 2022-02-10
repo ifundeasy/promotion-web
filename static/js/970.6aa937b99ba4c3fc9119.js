@@ -1,4 +1,344 @@
-(self["webpackChunkpromotion_web"] = self["webpackChunkpromotion_web"] || []).push([[249,996,344],{
+(self["webpackChunkpromotion_web"] = self["webpackChunkpromotion_web"] || []).push([[970,996],{
+
+/***/ 6165:
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _babel_runtime_helpers_esm_objectSpread2__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(1413);
+/* harmony import */ var _babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(4942);
+/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(4925);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7294);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4184);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _Context__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(3017);
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(1755);
+
+
+
+var _excluded = ["className", "component", "viewBox", "spin", "rotate", "tabIndex", "onClick", "children"];
+
+
+
+
+var Icon = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.forwardRef(function (props, ref) {
+  var className = props.className,
+      Component = props.component,
+      viewBox = props.viewBox,
+      spin = props.spin,
+      rotate = props.rotate,
+      tabIndex = props.tabIndex,
+      onClick = props.onClick,
+      children = props.children,
+      restProps = (0,_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z)(props, _excluded);
+
+  (0,_utils__WEBPACK_IMPORTED_MODULE_3__/* .warning */ .Kp)(Boolean(Component || children), 'Should have `component` prop or `children`.');
+  (0,_utils__WEBPACK_IMPORTED_MODULE_3__/* .useInsertStyles */ .C3)();
+
+  var _React$useContext = react__WEBPACK_IMPORTED_MODULE_0__.useContext(_Context__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Z),
+      _React$useContext$pre = _React$useContext.prefixCls,
+      prefixCls = _React$useContext$pre === void 0 ? 'anticon' : _React$useContext$pre;
+
+  var classString = classnames__WEBPACK_IMPORTED_MODULE_1___default()(prefixCls, className);
+  var svgClassString = classnames__WEBPACK_IMPORTED_MODULE_1___default()((0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Z)({}, "".concat(prefixCls, "-spin"), !!spin));
+  var svgStyle = rotate ? {
+    msTransform: "rotate(".concat(rotate, "deg)"),
+    transform: "rotate(".concat(rotate, "deg)")
+  } : undefined;
+
+  var innerSvgProps = (0,_babel_runtime_helpers_esm_objectSpread2__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Z)((0,_babel_runtime_helpers_esm_objectSpread2__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Z)({}, _utils__WEBPACK_IMPORTED_MODULE_3__/* .svgBaseProps */ .vD), {}, {
+    className: svgClassString,
+    style: svgStyle,
+    viewBox: viewBox
+  });
+
+  if (!viewBox) {
+    delete innerSvgProps.viewBox;
+  } // component > children
+
+
+  var renderInnerNode = function renderInnerNode() {
+    if (Component) {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Component, (0,_babel_runtime_helpers_esm_objectSpread2__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Z)({}, innerSvgProps), children);
+    }
+
+    if (children) {
+      (0,_utils__WEBPACK_IMPORTED_MODULE_3__/* .warning */ .Kp)(Boolean(viewBox) || react__WEBPACK_IMPORTED_MODULE_0__.Children.count(children) === 1 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.isValidElement(children) && react__WEBPACK_IMPORTED_MODULE_0__.Children.only(children).type === 'use', 'Make sure that you provide correct `viewBox`' + ' prop (default `0 0 1024 1024`) to the icon.');
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", (0,_babel_runtime_helpers_esm_objectSpread2__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Z)((0,_babel_runtime_helpers_esm_objectSpread2__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Z)({}, innerSvgProps), {}, {
+        viewBox: viewBox
+      }), children);
+    }
+
+    return null;
+  };
+
+  var iconTabIndex = tabIndex;
+
+  if (iconTabIndex === undefined && onClick) {
+    iconTabIndex = -1;
+  }
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", (0,_babel_runtime_helpers_esm_objectSpread2__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Z)((0,_babel_runtime_helpers_esm_objectSpread2__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Z)({
+    role: "img"
+  }, restProps), {}, {
+    ref: ref,
+    tabIndex: iconTabIndex,
+    onClick: onClick,
+    className: classString
+  }), renderInnerNode());
+});
+Icon.displayName = 'AntdIcon';
+/* harmony default export */ __webpack_exports__["Z"] = (Icon);
+
+/***/ }),
+
+/***/ 7254:
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "Z": function() { return /* binding */ icons_DownOutlined; }
+});
+
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/objectSpread2.js
+var objectSpread2 = __webpack_require__(1413);
+// EXTERNAL MODULE: ./node_modules/react/index.js
+var react = __webpack_require__(7294);
+;// CONCATENATED MODULE: ./node_modules/@ant-design/icons-svg/es/asn/DownOutlined.js
+// This icon file is generated automatically.
+var DownOutlined = { "icon": { "tag": "svg", "attrs": { "viewBox": "64 64 896 896", "focusable": "false" }, "children": [{ "tag": "path", "attrs": { "d": "M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z" } }] }, "name": "down", "theme": "outlined" };
+/* harmony default export */ var asn_DownOutlined = (DownOutlined);
+
+// EXTERNAL MODULE: ./node_modules/@ant-design/icons/es/components/AntdIcon.js + 2 modules
+var AntdIcon = __webpack_require__(7029);
+;// CONCATENATED MODULE: ./node_modules/@ant-design/icons/es/icons/DownOutlined.js
+
+// GENERATE BY ./scripts/generate.ts
+// DON NOT EDIT IT MANUALLY
+
+
+
+
+var DownOutlined_DownOutlined = function DownOutlined(props, ref) {
+  return /*#__PURE__*/react.createElement(AntdIcon/* default */.Z, (0,objectSpread2/* default */.Z)((0,objectSpread2/* default */.Z)({}, props), {}, {
+    ref: ref,
+    icon: asn_DownOutlined
+  }));
+};
+
+DownOutlined_DownOutlined.displayName = 'DownOutlined';
+/* harmony default export */ var icons_DownOutlined = (/*#__PURE__*/react.forwardRef(DownOutlined_DownOutlined));
+
+/***/ }),
+
+/***/ 7724:
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "Z": function() { return /* binding */ icons_LeftOutlined; }
+});
+
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/objectSpread2.js
+var objectSpread2 = __webpack_require__(1413);
+// EXTERNAL MODULE: ./node_modules/react/index.js
+var react = __webpack_require__(7294);
+;// CONCATENATED MODULE: ./node_modules/@ant-design/icons-svg/es/asn/LeftOutlined.js
+// This icon file is generated automatically.
+var LeftOutlined = { "icon": { "tag": "svg", "attrs": { "viewBox": "64 64 896 896", "focusable": "false" }, "children": [{ "tag": "path", "attrs": { "d": "M724 218.3V141c0-6.7-7.7-10.4-12.9-6.3L260.3 486.8a31.86 31.86 0 000 50.3l450.8 352.1c5.3 4.1 12.9.4 12.9-6.3v-77.3c0-4.9-2.3-9.6-6.1-12.6l-360-281 360-281.1c3.8-3 6.1-7.7 6.1-12.6z" } }] }, "name": "left", "theme": "outlined" };
+/* harmony default export */ var asn_LeftOutlined = (LeftOutlined);
+
+// EXTERNAL MODULE: ./node_modules/@ant-design/icons/es/components/AntdIcon.js + 2 modules
+var AntdIcon = __webpack_require__(7029);
+;// CONCATENATED MODULE: ./node_modules/@ant-design/icons/es/icons/LeftOutlined.js
+
+// GENERATE BY ./scripts/generate.ts
+// DON NOT EDIT IT MANUALLY
+
+
+
+
+var LeftOutlined_LeftOutlined = function LeftOutlined(props, ref) {
+  return /*#__PURE__*/react.createElement(AntdIcon/* default */.Z, (0,objectSpread2/* default */.Z)((0,objectSpread2/* default */.Z)({}, props), {}, {
+    ref: ref,
+    icon: asn_LeftOutlined
+  }));
+};
+
+LeftOutlined_LeftOutlined.displayName = 'LeftOutlined';
+/* harmony default export */ var icons_LeftOutlined = (/*#__PURE__*/react.forwardRef(LeftOutlined_LeftOutlined));
+
+/***/ }),
+
+/***/ 8812:
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "Z": function() { return /* binding */ icons_RightOutlined; }
+});
+
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/objectSpread2.js
+var objectSpread2 = __webpack_require__(1413);
+// EXTERNAL MODULE: ./node_modules/react/index.js
+var react = __webpack_require__(7294);
+;// CONCATENATED MODULE: ./node_modules/@ant-design/icons-svg/es/asn/RightOutlined.js
+// This icon file is generated automatically.
+var RightOutlined = { "icon": { "tag": "svg", "attrs": { "viewBox": "64 64 896 896", "focusable": "false" }, "children": [{ "tag": "path", "attrs": { "d": "M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z" } }] }, "name": "right", "theme": "outlined" };
+/* harmony default export */ var asn_RightOutlined = (RightOutlined);
+
+// EXTERNAL MODULE: ./node_modules/@ant-design/icons/es/components/AntdIcon.js + 2 modules
+var AntdIcon = __webpack_require__(7029);
+;// CONCATENATED MODULE: ./node_modules/@ant-design/icons/es/icons/RightOutlined.js
+
+// GENERATE BY ./scripts/generate.ts
+// DON NOT EDIT IT MANUALLY
+
+
+
+
+var RightOutlined_RightOutlined = function RightOutlined(props, ref) {
+  return /*#__PURE__*/react.createElement(AntdIcon/* default */.Z, (0,objectSpread2/* default */.Z)((0,objectSpread2/* default */.Z)({}, props), {}, {
+    ref: ref,
+    icon: asn_RightOutlined
+  }));
+};
+
+RightOutlined_RightOutlined.displayName = 'RightOutlined';
+/* harmony default export */ var icons_RightOutlined = (/*#__PURE__*/react.forwardRef(RightOutlined_RightOutlined));
+
+/***/ }),
+
+/***/ 5467:
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Z": function() { return /* binding */ getDataOrAriaProps; }
+/* harmony export */ });
+function getDataOrAriaProps(props) {
+  return Object.keys(props).reduce(function (prev, key) {
+    if ((key.substr(0, 5) === 'data-' || key.substr(0, 5) === 'aria-' || key === 'role') && key.substr(0, 7) !== 'data-__') {
+      prev[key] = props[key];
+    }
+
+    return prev;
+  }, {});
+}
+
+/***/ }),
+
+/***/ 6367:
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "F": function() { return /* binding */ isWindow; },
+/* harmony export */   "Z": function() { return /* binding */ getScroll; }
+/* harmony export */ });
+function isWindow(obj) {
+  return obj !== null && obj !== undefined && obj === obj.window;
+}
+function getScroll(target, top) {
+  var _a;
+
+  if (typeof window === 'undefined') {
+    return 0;
+  }
+
+  var method = top ? 'scrollTop' : 'scrollLeft';
+  var result = 0;
+
+  if (isWindow(target)) {
+    result = target[top ? 'pageYOffset' : 'pageXOffset'];
+  } else if (target instanceof Document) {
+    result = target.documentElement[method];
+  } else if (target) {
+    result = target[method];
+  }
+
+  if (target && !isWindow(target) && typeof result !== 'number') {
+    result = (_a = (target.ownerDocument || target).documentElement) === null || _a === void 0 ? void 0 : _a[method];
+  }
+
+  return result;
+}
+
+/***/ }),
+
+/***/ 6148:
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "Z": function() { return /* binding */ scrollTo; }
+});
+
+// EXTERNAL MODULE: ./node_modules/rc-util/es/raf.js
+var raf = __webpack_require__(5164);
+// EXTERNAL MODULE: ./node_modules/antd/es/_util/getScroll.js
+var getScroll = __webpack_require__(6367);
+;// CONCATENATED MODULE: ./node_modules/antd/es/_util/easings.js
+// eslint-disable-next-line import/prefer-default-export
+function easeInOutCubic(t, b, c, d) {
+  var cc = c - b;
+  t /= d / 2;
+
+  if (t < 1) {
+    return cc / 2 * t * t * t + b;
+  } // eslint-disable-next-line no-return-assign
+
+
+  return cc / 2 * ((t -= 2) * t * t + 2) + b;
+}
+;// CONCATENATED MODULE: ./node_modules/antd/es/_util/scrollTo.js
+
+
+
+function scrollTo(y) {
+  var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+  var _options$getContainer = options.getContainer,
+      getContainer = _options$getContainer === void 0 ? function () {
+    return window;
+  } : _options$getContainer,
+      callback = options.callback,
+      _options$duration = options.duration,
+      duration = _options$duration === void 0 ? 450 : _options$duration;
+  var container = getContainer();
+  var scrollTop = (0,getScroll/* default */.Z)(container, true);
+  var startTime = Date.now();
+
+  var frameFunc = function frameFunc() {
+    var timestamp = Date.now();
+    var time = timestamp - startTime;
+    var nextScrollTop = easeInOutCubic(time > duration ? duration : time, scrollTop, y, duration);
+
+    if ((0,getScroll/* isWindow */.F)(container)) {
+      container.scrollTo(window.pageXOffset, nextScrollTop);
+    } else if (container instanceof HTMLDocument || container.constructor.name === 'HTMLDocument') {
+      container.documentElement.scrollTop = nextScrollTop;
+    } else {
+      container.scrollTop = nextScrollTop;
+    }
+
+    if (time < duration) {
+      (0,raf/* default */.Z)(frameFunc);
+    } else if (typeof callback === 'function') {
+      callback();
+    }
+  };
+
+  (0,raf/* default */.Z)(frameFunc);
+}
+
+/***/ }),
 
 /***/ 6772:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
@@ -313,6 +653,1475 @@ var style_default = __webpack_require__(5608);
 ;// CONCATENATED MODULE: ./node_modules/antd/es/alert/style/index.js
 
 
+
+/***/ }),
+
+/***/ 1555:
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "Z": function() { return /* binding */ dropdown; }
+});
+
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/extends.js
+var esm_extends = __webpack_require__(7462);
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/defineProperty.js
+var defineProperty = __webpack_require__(4942);
+// EXTERNAL MODULE: ./node_modules/react/index.js
+var react = __webpack_require__(7294);
+// EXTERNAL MODULE: ./node_modules/rc-dropdown/es/index.js + 2 modules
+var es = __webpack_require__(271);
+// EXTERNAL MODULE: ./node_modules/classnames/index.js
+var classnames = __webpack_require__(4184);
+var classnames_default = /*#__PURE__*/__webpack_require__.n(classnames);
+// EXTERNAL MODULE: ./node_modules/@ant-design/icons/es/icons/RightOutlined.js + 1 modules
+var RightOutlined = __webpack_require__(8812);
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/slicedToArray.js + 1 modules
+var slicedToArray = __webpack_require__(9439);
+// EXTERNAL MODULE: ./node_modules/@ant-design/icons/es/icons/EllipsisOutlined.js + 1 modules
+var EllipsisOutlined = __webpack_require__(4545);
+// EXTERNAL MODULE: ./node_modules/antd/es/button/index.js + 4 modules
+var es_button = __webpack_require__(404);
+// EXTERNAL MODULE: ./node_modules/antd/es/config-provider/context.js + 1 modules
+var context = __webpack_require__(5632);
+;// CONCATENATED MODULE: ./node_modules/antd/es/dropdown/dropdown-button.js
+
+
+
+var __rest = undefined && undefined.__rest || function (s, e) {
+  var t = {};
+
+  for (var p in s) {
+    if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0) t[p] = s[p];
+  }
+
+  if (s != null && typeof Object.getOwnPropertySymbols === "function") for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+    if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i])) t[p[i]] = s[p[i]];
+  }
+  return t;
+};
+
+
+
+
+
+
+
+var ButtonGroup = es_button/* default.Group */.Z.Group;
+
+var DropdownButton = function DropdownButton(props) {
+  var _React$useContext = react.useContext(context/* ConfigContext */.E_),
+      getContextPopupContainer = _React$useContext.getPopupContainer,
+      getPrefixCls = _React$useContext.getPrefixCls,
+      direction = _React$useContext.direction;
+
+  var customizePrefixCls = props.prefixCls,
+      _props$type = props.type,
+      type = _props$type === void 0 ? 'default' : _props$type,
+      disabled = props.disabled,
+      loading = props.loading,
+      onClick = props.onClick,
+      htmlType = props.htmlType,
+      children = props.children,
+      className = props.className,
+      overlay = props.overlay,
+      trigger = props.trigger,
+      align = props.align,
+      visible = props.visible,
+      onVisibleChange = props.onVisibleChange,
+      placement = props.placement,
+      getPopupContainer = props.getPopupContainer,
+      href = props.href,
+      _props$icon = props.icon,
+      icon = _props$icon === void 0 ? /*#__PURE__*/react.createElement(EllipsisOutlined/* default */.Z, null) : _props$icon,
+      title = props.title,
+      _props$buttonsRender = props.buttonsRender,
+      buttonsRender = _props$buttonsRender === void 0 ? function (buttons) {
+    return buttons;
+  } : _props$buttonsRender,
+      mouseEnterDelay = props.mouseEnterDelay,
+      mouseLeaveDelay = props.mouseLeaveDelay,
+      overlayClassName = props.overlayClassName,
+      overlayStyle = props.overlayStyle,
+      destroyPopupOnHide = props.destroyPopupOnHide,
+      restProps = __rest(props, ["prefixCls", "type", "disabled", "loading", "onClick", "htmlType", "children", "className", "overlay", "trigger", "align", "visible", "onVisibleChange", "placement", "getPopupContainer", "href", "icon", "title", "buttonsRender", "mouseEnterDelay", "mouseLeaveDelay", "overlayClassName", "overlayStyle", "destroyPopupOnHide"]);
+
+  var prefixCls = getPrefixCls('dropdown-button', customizePrefixCls);
+  var dropdownProps = {
+    align: align,
+    overlay: overlay,
+    disabled: disabled,
+    trigger: disabled ? [] : trigger,
+    onVisibleChange: onVisibleChange,
+    getPopupContainer: getPopupContainer || getContextPopupContainer,
+    mouseEnterDelay: mouseEnterDelay,
+    mouseLeaveDelay: mouseLeaveDelay,
+    overlayClassName: overlayClassName,
+    overlayStyle: overlayStyle,
+    destroyPopupOnHide: destroyPopupOnHide
+  };
+
+  if ('visible' in props) {
+    dropdownProps.visible = visible;
+  }
+
+  if ('placement' in props) {
+    dropdownProps.placement = placement;
+  } else {
+    dropdownProps.placement = direction === 'rtl' ? 'bottomLeft' : 'bottomRight';
+  }
+
+  var leftButton = /*#__PURE__*/react.createElement(es_button/* default */.Z, {
+    type: type,
+    disabled: disabled,
+    loading: loading,
+    onClick: onClick,
+    htmlType: htmlType,
+    href: href,
+    title: title
+  }, children);
+  var rightButton = /*#__PURE__*/react.createElement(es_button/* default */.Z, {
+    type: type,
+    icon: icon
+  });
+
+  var _buttonsRender = buttonsRender([leftButton, rightButton]),
+      _buttonsRender2 = (0,slicedToArray/* default */.Z)(_buttonsRender, 2),
+      leftButtonToRender = _buttonsRender2[0],
+      rightButtonToRender = _buttonsRender2[1];
+
+  return /*#__PURE__*/react.createElement(ButtonGroup, (0,esm_extends/* default */.Z)({}, restProps, {
+    className: classnames_default()(prefixCls, className)
+  }), leftButtonToRender, /*#__PURE__*/react.createElement(dropdown, dropdownProps, rightButtonToRender));
+};
+
+DropdownButton.__ANT_BUTTON = true;
+/* harmony default export */ var dropdown_button = (DropdownButton);
+// EXTERNAL MODULE: ./node_modules/antd/es/_util/devWarning.js
+var devWarning = __webpack_require__(1687);
+// EXTERNAL MODULE: ./node_modules/antd/es/_util/type.js
+var type = __webpack_require__(3355);
+// EXTERNAL MODULE: ./node_modules/antd/es/_util/reactNode.js
+var reactNode = __webpack_require__(6159);
+;// CONCATENATED MODULE: ./node_modules/antd/es/dropdown/dropdown.js
+
+
+
+
+
+
+
+
+
+
+
+var Placements = (0,type/* tuple */.b)('topLeft', 'topCenter', 'topRight', 'bottomLeft', 'bottomCenter', 'bottomRight');
+
+var Dropdown = function Dropdown(props) {
+  var _React$useContext = react.useContext(context/* ConfigContext */.E_),
+      getContextPopupContainer = _React$useContext.getPopupContainer,
+      getPrefixCls = _React$useContext.getPrefixCls,
+      direction = _React$useContext.direction;
+
+  var getTransitionName = function getTransitionName() {
+    var rootPrefixCls = getPrefixCls();
+    var _props$placement = props.placement,
+        placement = _props$placement === void 0 ? '' : _props$placement,
+        transitionName = props.transitionName;
+
+    if (transitionName !== undefined) {
+      return transitionName;
+    }
+
+    if (placement.indexOf('top') >= 0) {
+      return "".concat(rootPrefixCls, "-slide-down");
+    }
+
+    return "".concat(rootPrefixCls, "-slide-up");
+  };
+
+  var renderOverlay = function renderOverlay(prefixCls) {
+    // rc-dropdown already can process the function of overlay, but we have check logic here.
+    // So we need render the element to check and pass back to rc-dropdown.
+    var overlay = props.overlay;
+    var overlayNode;
+
+    if (typeof overlay === 'function') {
+      overlayNode = overlay();
+    } else {
+      overlayNode = overlay;
+    }
+
+    overlayNode = react.Children.only(typeof overlayNode === 'string' ? /*#__PURE__*/react.createElement("span", null, overlayNode) : overlayNode);
+    var overlayProps = overlayNode.props; // Warning if use other mode
+
+    (0,devWarning/* default */.Z)(!overlayProps.mode || overlayProps.mode === 'vertical', 'Dropdown', "mode=\"".concat(overlayProps.mode, "\" is not supported for Dropdown's Menu.")); // menu cannot be selectable in dropdown defaultly
+
+    var _overlayProps$selecta = overlayProps.selectable,
+        selectable = _overlayProps$selecta === void 0 ? false : _overlayProps$selecta,
+        expandIcon = overlayProps.expandIcon;
+    var overlayNodeExpandIcon = typeof expandIcon !== 'undefined' && /*#__PURE__*/react.isValidElement(expandIcon) ? expandIcon : /*#__PURE__*/react.createElement("span", {
+      className: "".concat(prefixCls, "-menu-submenu-arrow")
+    }, /*#__PURE__*/react.createElement(RightOutlined/* default */.Z, {
+      className: "".concat(prefixCls, "-menu-submenu-arrow-icon")
+    }));
+    var fixedModeOverlay = typeof overlayNode.type === 'string' ? overlayNode : (0,reactNode/* cloneElement */.Tm)(overlayNode, {
+      mode: 'vertical',
+      selectable: selectable,
+      expandIcon: overlayNodeExpandIcon
+    });
+    return fixedModeOverlay;
+  };
+
+  var getPlacement = function getPlacement() {
+    var placement = props.placement;
+
+    if (placement !== undefined) {
+      return placement;
+    }
+
+    return direction === 'rtl' ? 'bottomRight' : 'bottomLeft';
+  };
+
+  var arrow = props.arrow,
+      customizePrefixCls = props.prefixCls,
+      children = props.children,
+      trigger = props.trigger,
+      disabled = props.disabled,
+      getPopupContainer = props.getPopupContainer,
+      overlayClassName = props.overlayClassName;
+  var prefixCls = getPrefixCls('dropdown', customizePrefixCls);
+  var child = react.Children.only(children);
+  var dropdownTrigger = (0,reactNode/* cloneElement */.Tm)(child, {
+    className: classnames_default()("".concat(prefixCls, "-trigger"), (0,defineProperty/* default */.Z)({}, "".concat(prefixCls, "-rtl"), direction === 'rtl'), child.props.className),
+    disabled: disabled
+  });
+  var overlayClassNameCustomized = classnames_default()(overlayClassName, (0,defineProperty/* default */.Z)({}, "".concat(prefixCls, "-rtl"), direction === 'rtl'));
+  var triggerActions = disabled ? [] : trigger;
+  var alignPoint;
+
+  if (triggerActions && triggerActions.indexOf('contextMenu') !== -1) {
+    alignPoint = true;
+  }
+
+  return /*#__PURE__*/react.createElement(es/* default */.Z, (0,esm_extends/* default */.Z)({
+    arrow: arrow,
+    alignPoint: alignPoint
+  }, props, {
+    overlayClassName: overlayClassNameCustomized,
+    prefixCls: prefixCls,
+    getPopupContainer: getPopupContainer || getContextPopupContainer,
+    transitionName: getTransitionName(),
+    trigger: triggerActions,
+    overlay: function overlay() {
+      return renderOverlay(prefixCls);
+    },
+    placement: getPlacement()
+  }), dropdownTrigger);
+};
+
+Dropdown.Button = dropdown_button;
+Dropdown.defaultProps = {
+  mouseEnterDelay: 0.15,
+  mouseLeaveDelay: 0.1
+};
+/* harmony default export */ var dropdown = (Dropdown);
+
+/***/ }),
+
+/***/ 3013:
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _dropdown__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1555);
+
+/* harmony default export */ __webpack_exports__["Z"] = (_dropdown__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .Z);
+
+/***/ }),
+
+/***/ 3605:
+/***/ (function(__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) {
+
+"use strict";
+
+// EXTERNAL MODULE: ./node_modules/antd/es/style/default.less
+var style_default = __webpack_require__(5608);
+;// CONCATENATED MODULE: ./node_modules/antd/es/dropdown/style/index.less
+// extracted by mini-css-extract-plugin
+
+// EXTERNAL MODULE: ./node_modules/antd/es/button/style/index.js + 1 modules
+var style = __webpack_require__(8385);
+;// CONCATENATED MODULE: ./node_modules/antd/es/dropdown/style/index.js
+
+ // style dependencies
+
+
+
+/***/ }),
+
+/***/ 4025:
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "D": function() { return /* binding */ SiderContext; },
+  "Z": function() { return /* binding */ layout_Sider; }
+});
+
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/defineProperty.js
+var defineProperty = __webpack_require__(4942);
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/extends.js
+var esm_extends = __webpack_require__(7462);
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/slicedToArray.js + 1 modules
+var slicedToArray = __webpack_require__(9439);
+// EXTERNAL MODULE: ./node_modules/react/index.js
+var react = __webpack_require__(7294);
+// EXTERNAL MODULE: ./node_modules/classnames/index.js
+var classnames = __webpack_require__(4184);
+var classnames_default = /*#__PURE__*/__webpack_require__.n(classnames);
+// EXTERNAL MODULE: ./node_modules/rc-util/es/omit.js
+var omit = __webpack_require__(8423);
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/objectSpread2.js
+var objectSpread2 = __webpack_require__(1413);
+;// CONCATENATED MODULE: ./node_modules/@ant-design/icons-svg/es/asn/BarsOutlined.js
+// This icon file is generated automatically.
+var BarsOutlined = { "icon": { "tag": "svg", "attrs": { "viewBox": "0 0 1024 1024", "focusable": "false" }, "children": [{ "tag": "path", "attrs": { "d": "M912 192H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 284H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 284H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM104 228a56 56 0 10112 0 56 56 0 10-112 0zm0 284a56 56 0 10112 0 56 56 0 10-112 0zm0 284a56 56 0 10112 0 56 56 0 10-112 0z" } }] }, "name": "bars", "theme": "outlined" };
+/* harmony default export */ var asn_BarsOutlined = (BarsOutlined);
+
+// EXTERNAL MODULE: ./node_modules/@ant-design/icons/es/components/AntdIcon.js + 2 modules
+var AntdIcon = __webpack_require__(7029);
+;// CONCATENATED MODULE: ./node_modules/@ant-design/icons/es/icons/BarsOutlined.js
+
+// GENERATE BY ./scripts/generate.ts
+// DON NOT EDIT IT MANUALLY
+
+
+
+
+var BarsOutlined_BarsOutlined = function BarsOutlined(props, ref) {
+  return /*#__PURE__*/react.createElement(AntdIcon/* default */.Z, (0,objectSpread2/* default */.Z)((0,objectSpread2/* default */.Z)({}, props), {}, {
+    ref: ref,
+    icon: asn_BarsOutlined
+  }));
+};
+
+BarsOutlined_BarsOutlined.displayName = 'BarsOutlined';
+/* harmony default export */ var icons_BarsOutlined = (/*#__PURE__*/react.forwardRef(BarsOutlined_BarsOutlined));
+// EXTERNAL MODULE: ./node_modules/@ant-design/icons/es/icons/RightOutlined.js + 1 modules
+var RightOutlined = __webpack_require__(8812);
+// EXTERNAL MODULE: ./node_modules/@ant-design/icons/es/icons/LeftOutlined.js + 1 modules
+var LeftOutlined = __webpack_require__(7724);
+// EXTERNAL MODULE: ./node_modules/antd/es/layout/layout.js
+var layout = __webpack_require__(2897);
+// EXTERNAL MODULE: ./node_modules/antd/es/config-provider/context.js + 1 modules
+var context = __webpack_require__(5632);
+;// CONCATENATED MODULE: ./node_modules/antd/es/_util/isNumeric.js
+var isNumeric = function isNumeric(value) {
+  return !isNaN(parseFloat(value)) && isFinite(value);
+};
+
+/* harmony default export */ var _util_isNumeric = (isNumeric);
+;// CONCATENATED MODULE: ./node_modules/antd/es/layout/Sider.js
+
+
+
+
+var __rest = undefined && undefined.__rest || function (s, e) {
+  var t = {};
+
+  for (var p in s) {
+    if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0) t[p] = s[p];
+  }
+
+  if (s != null && typeof Object.getOwnPropertySymbols === "function") for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+    if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i])) t[p[i]] = s[p[i]];
+  }
+  return t;
+};
+
+
+
+
+
+
+
+
+
+
+
+var dimensionMaxMap = {
+  xs: '479.98px',
+  sm: '575.98px',
+  md: '767.98px',
+  lg: '991.98px',
+  xl: '1199.98px',
+  xxl: '1599.98px'
+};
+var SiderContext = /*#__PURE__*/react.createContext({});
+
+var generateId = function () {
+  var i = 0;
+  return function () {
+    var prefix = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
+    i += 1;
+    return "".concat(prefix).concat(i);
+  };
+}();
+
+var Sider = /*#__PURE__*/react.forwardRef(function (_a, ref) {
+  var customizePrefixCls = _a.prefixCls,
+      className = _a.className,
+      trigger = _a.trigger,
+      children = _a.children,
+      _a$defaultCollapsed = _a.defaultCollapsed,
+      defaultCollapsed = _a$defaultCollapsed === void 0 ? false : _a$defaultCollapsed,
+      _a$theme = _a.theme,
+      theme = _a$theme === void 0 ? 'dark' : _a$theme,
+      _a$style = _a.style,
+      style = _a$style === void 0 ? {} : _a$style,
+      _a$collapsible = _a.collapsible,
+      collapsible = _a$collapsible === void 0 ? false : _a$collapsible,
+      _a$reverseArrow = _a.reverseArrow,
+      reverseArrow = _a$reverseArrow === void 0 ? false : _a$reverseArrow,
+      _a$width = _a.width,
+      width = _a$width === void 0 ? 200 : _a$width,
+      _a$collapsedWidth = _a.collapsedWidth,
+      collapsedWidth = _a$collapsedWidth === void 0 ? 80 : _a$collapsedWidth,
+      zeroWidthTriggerStyle = _a.zeroWidthTriggerStyle,
+      breakpoint = _a.breakpoint,
+      onCollapse = _a.onCollapse,
+      onBreakpoint = _a.onBreakpoint,
+      props = __rest(_a, ["prefixCls", "className", "trigger", "children", "defaultCollapsed", "theme", "style", "collapsible", "reverseArrow", "width", "collapsedWidth", "zeroWidthTriggerStyle", "breakpoint", "onCollapse", "onBreakpoint"]);
+
+  var _useContext = (0,react.useContext)(layout/* LayoutContext */.Gs),
+      siderHook = _useContext.siderHook;
+
+  var _useState = (0,react.useState)('collapsed' in props ? props.collapsed : defaultCollapsed),
+      _useState2 = (0,slicedToArray/* default */.Z)(_useState, 2),
+      collapsed = _useState2[0],
+      setCollapsed = _useState2[1];
+
+  var _useState3 = (0,react.useState)(false),
+      _useState4 = (0,slicedToArray/* default */.Z)(_useState3, 2),
+      below = _useState4[0],
+      setBelow = _useState4[1];
+
+  (0,react.useEffect)(function () {
+    if ('collapsed' in props) {
+      setCollapsed(props.collapsed);
+    }
+  }, [props.collapsed]);
+
+  var handleSetCollapsed = function handleSetCollapsed(value, type) {
+    if (!('collapsed' in props)) {
+      setCollapsed(value);
+    }
+
+    onCollapse === null || onCollapse === void 0 ? void 0 : onCollapse(value, type);
+  }; // ========================= Responsive =========================
+
+
+  var responsiveHandlerRef = (0,react.useRef)();
+
+  responsiveHandlerRef.current = function (mql) {
+    setBelow(mql.matches);
+    onBreakpoint === null || onBreakpoint === void 0 ? void 0 : onBreakpoint(mql.matches);
+
+    if (collapsed !== mql.matches) {
+      handleSetCollapsed(mql.matches, 'responsive');
+    }
+  };
+
+  (0,react.useEffect)(function () {
+    function responsiveHandler(mql) {
+      return responsiveHandlerRef.current(mql);
+    }
+
+    var mql;
+
+    if (typeof window !== 'undefined') {
+      var _window = window,
+          matchMedia = _window.matchMedia;
+
+      if (matchMedia && breakpoint && breakpoint in dimensionMaxMap) {
+        mql = matchMedia("(max-width: ".concat(dimensionMaxMap[breakpoint], ")"));
+
+        try {
+          mql.addEventListener('change', responsiveHandler);
+        } catch (error) {
+          mql.addListener(responsiveHandler);
+        }
+
+        responsiveHandler(mql);
+      }
+    }
+
+    return function () {
+      try {
+        mql === null || mql === void 0 ? void 0 : mql.removeEventListener('change', responsiveHandler);
+      } catch (error) {
+        mql === null || mql === void 0 ? void 0 : mql.removeListener(responsiveHandler);
+      }
+    };
+  }, []);
+  (0,react.useEffect)(function () {
+    var uniqueId = generateId('ant-sider-');
+    siderHook.addSider(uniqueId);
+    return function () {
+      return siderHook.removeSider(uniqueId);
+    };
+  }, []);
+
+  var toggle = function toggle() {
+    handleSetCollapsed(!collapsed, 'clickTrigger');
+  };
+
+  var _useContext2 = (0,react.useContext)(context/* ConfigContext */.E_),
+      getPrefixCls = _useContext2.getPrefixCls;
+
+  var renderSider = function renderSider() {
+    var _classNames;
+
+    var prefixCls = getPrefixCls('layout-sider', customizePrefixCls);
+    var divProps = (0,omit/* default */.Z)(props, ['collapsed']);
+    var rawWidth = collapsed ? collapsedWidth : width; // use "px" as fallback unit for width
+
+    var siderWidth = _util_isNumeric(rawWidth) ? "".concat(rawWidth, "px") : String(rawWidth); // special trigger when collapsedWidth == 0
+
+    var zeroWidthTrigger = parseFloat(String(collapsedWidth || 0)) === 0 ? /*#__PURE__*/react.createElement("span", {
+      onClick: toggle,
+      className: classnames_default()("".concat(prefixCls, "-zero-width-trigger"), "".concat(prefixCls, "-zero-width-trigger-").concat(reverseArrow ? 'right' : 'left')),
+      style: zeroWidthTriggerStyle
+    }, trigger || /*#__PURE__*/react.createElement(icons_BarsOutlined, null)) : null;
+    var iconObj = {
+      expanded: reverseArrow ? /*#__PURE__*/react.createElement(RightOutlined/* default */.Z, null) : /*#__PURE__*/react.createElement(LeftOutlined/* default */.Z, null),
+      collapsed: reverseArrow ? /*#__PURE__*/react.createElement(LeftOutlined/* default */.Z, null) : /*#__PURE__*/react.createElement(RightOutlined/* default */.Z, null)
+    };
+    var status = collapsed ? 'collapsed' : 'expanded';
+    var defaultTrigger = iconObj[status];
+    var triggerDom = trigger !== null ? zeroWidthTrigger || /*#__PURE__*/react.createElement("div", {
+      className: "".concat(prefixCls, "-trigger"),
+      onClick: toggle,
+      style: {
+        width: siderWidth
+      }
+    }, trigger || defaultTrigger) : null;
+
+    var divStyle = (0,esm_extends/* default */.Z)((0,esm_extends/* default */.Z)({}, style), {
+      flex: "0 0 ".concat(siderWidth),
+      maxWidth: siderWidth,
+      minWidth: siderWidth,
+      width: siderWidth
+    });
+
+    var siderCls = classnames_default()(prefixCls, "".concat(prefixCls, "-").concat(theme), (_classNames = {}, (0,defineProperty/* default */.Z)(_classNames, "".concat(prefixCls, "-collapsed"), !!collapsed), (0,defineProperty/* default */.Z)(_classNames, "".concat(prefixCls, "-has-trigger"), collapsible && trigger !== null && !zeroWidthTrigger), (0,defineProperty/* default */.Z)(_classNames, "".concat(prefixCls, "-below"), !!below), (0,defineProperty/* default */.Z)(_classNames, "".concat(prefixCls, "-zero-width"), parseFloat(siderWidth) === 0), _classNames), className);
+    return /*#__PURE__*/react.createElement("aside", (0,esm_extends/* default */.Z)({
+      className: siderCls
+    }, divProps, {
+      style: divStyle,
+      ref: ref
+    }), /*#__PURE__*/react.createElement("div", {
+      className: "".concat(prefixCls, "-children")
+    }, children), collapsible || below && zeroWidthTrigger ? triggerDom : null);
+  };
+
+  var contextValue = react.useMemo(function () {
+    return {
+      siderCollapsed: collapsed
+    };
+  }, [collapsed]);
+  return /*#__PURE__*/react.createElement(SiderContext.Provider, {
+    value: contextValue
+  }, renderSider());
+});
+Sider.displayName = 'Sider';
+/* harmony default export */ var layout_Sider = (Sider);
+
+/***/ }),
+
+/***/ 2897:
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Gs": function() { return /* binding */ LayoutContext; },
+/* harmony export */   "h4": function() { return /* binding */ Header; },
+/* harmony export */   "$_": function() { return /* binding */ Footer; },
+/* harmony export */   "VY": function() { return /* binding */ Content; }
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(3433);
+/* harmony import */ var _babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(4942);
+/* harmony import */ var _babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(9439);
+/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(7462);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7294);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4184);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _config_provider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5632);
+
+
+
+
+
+var __rest = undefined && undefined.__rest || function (s, e) {
+  var t = {};
+
+  for (var p in s) {
+    if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0) t[p] = s[p];
+  }
+
+  if (s != null && typeof Object.getOwnPropertySymbols === "function") for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+    if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i])) t[p[i]] = s[p[i]];
+  }
+  return t;
+};
+
+
+
+
+var LayoutContext = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createContext({
+  siderHook: {
+    addSider: function addSider() {
+      return null;
+    },
+    removeSider: function removeSider() {
+      return null;
+    }
+  }
+});
+
+function generator(_ref) {
+  var suffixCls = _ref.suffixCls,
+      tagName = _ref.tagName,
+      displayName = _ref.displayName;
+  return function (BasicComponent) {
+    var Adapter = function Adapter(props) {
+      var _React$useContext = react__WEBPACK_IMPORTED_MODULE_0__.useContext(_config_provider__WEBPACK_IMPORTED_MODULE_2__/* .ConfigContext */ .E_),
+          getPrefixCls = _React$useContext.getPrefixCls;
+
+      var customizePrefixCls = props.prefixCls;
+      var prefixCls = getPrefixCls(suffixCls, customizePrefixCls);
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(BasicComponent, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Z)({
+        prefixCls: prefixCls,
+        tagName: tagName
+      }, props));
+    };
+
+    Adapter.displayName = displayName;
+    return Adapter;
+  };
+}
+
+var Basic = function Basic(props) {
+  var prefixCls = props.prefixCls,
+      className = props.className,
+      children = props.children,
+      tagName = props.tagName,
+      others = __rest(props, ["prefixCls", "className", "children", "tagName"]);
+
+  var classString = classnames__WEBPACK_IMPORTED_MODULE_1___default()(prefixCls, className);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(tagName, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Z)({
+    className: classString
+  }, others), children);
+};
+
+var BasicLayout = function BasicLayout(props) {
+  var _classNames;
+
+  var _React$useContext2 = react__WEBPACK_IMPORTED_MODULE_0__.useContext(_config_provider__WEBPACK_IMPORTED_MODULE_2__/* .ConfigContext */ .E_),
+      direction = _React$useContext2.direction;
+
+  var _React$useState = react__WEBPACK_IMPORTED_MODULE_0__.useState([]),
+      _React$useState2 = (0,_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Z)(_React$useState, 2),
+      siders = _React$useState2[0],
+      setSiders = _React$useState2[1];
+
+  var prefixCls = props.prefixCls,
+      className = props.className,
+      children = props.children,
+      hasSider = props.hasSider,
+      Tag = props.tagName,
+      others = __rest(props, ["prefixCls", "className", "children", "hasSider", "tagName"]);
+
+  var classString = classnames__WEBPACK_IMPORTED_MODULE_1___default()(prefixCls, (_classNames = {}, (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Z)(_classNames, "".concat(prefixCls, "-has-sider"), typeof hasSider === 'boolean' ? hasSider : siders.length > 0), (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Z)(_classNames, "".concat(prefixCls, "-rtl"), direction === 'rtl'), _classNames), className);
+  var contextValue = react__WEBPACK_IMPORTED_MODULE_0__.useMemo(function () {
+    return {
+      siderHook: {
+        addSider: function addSider(id) {
+          setSiders(function (prev) {
+            return [].concat((0,_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Z)(prev), [id]);
+          });
+        },
+        removeSider: function removeSider(id) {
+          setSiders(function (prev) {
+            return prev.filter(function (currentId) {
+              return currentId !== id;
+            });
+          });
+        }
+      }
+    };
+  }, []);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(LayoutContext.Provider, {
+    value: contextValue
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Tag, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Z)({
+    className: classString
+  }, others), children));
+};
+
+var Layout = generator({
+  suffixCls: 'layout',
+  tagName: 'section',
+  displayName: 'Layout'
+})(BasicLayout);
+var Header = generator({
+  suffixCls: 'layout-header',
+  tagName: 'header',
+  displayName: 'Header'
+})(Basic);
+var Footer = generator({
+  suffixCls: 'layout-footer',
+  tagName: 'footer',
+  displayName: 'Footer'
+})(Basic);
+var Content = generator({
+  suffixCls: 'layout-content',
+  tagName: 'main',
+  displayName: 'Content'
+})(Basic);
+
+/* harmony default export */ __webpack_exports__["ZP"] = (Layout);
+
+/***/ }),
+
+/***/ 8838:
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "Z": function() { return /* binding */ menu; }
+});
+
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/extends.js
+var esm_extends = __webpack_require__(7462);
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/classCallCheck.js
+var classCallCheck = __webpack_require__(5671);
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/createClass.js
+var createClass = __webpack_require__(3144);
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/inherits.js + 1 modules
+var inherits = __webpack_require__(9340);
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/createSuper.js + 3 modules
+var createSuper = __webpack_require__(8557);
+// EXTERNAL MODULE: ./node_modules/react/index.js
+var react = __webpack_require__(7294);
+// EXTERNAL MODULE: ./node_modules/rc-menu/es/index.js + 25 modules
+var es = __webpack_require__(1688);
+// EXTERNAL MODULE: ./node_modules/classnames/index.js
+var classnames = __webpack_require__(4184);
+var classnames_default = /*#__PURE__*/__webpack_require__.n(classnames);
+// EXTERNAL MODULE: ./node_modules/rc-util/es/omit.js
+var omit = __webpack_require__(8423);
+// EXTERNAL MODULE: ./node_modules/@ant-design/icons/es/icons/EllipsisOutlined.js + 1 modules
+var EllipsisOutlined = __webpack_require__(4545);
+// EXTERNAL MODULE: ./node_modules/memoize-one/dist/memoize-one.esm.js
+var memoize_one_esm = __webpack_require__(845);
+;// CONCATENATED MODULE: ./node_modules/antd/es/menu/MenuContext.js
+
+var MenuContext = /*#__PURE__*/(0,react.createContext)({
+  prefixCls: '',
+  firstLevel: true,
+  inlineCollapsed: false
+});
+/* harmony default export */ var menu_MenuContext = (MenuContext);
+// EXTERNAL MODULE: ./node_modules/antd/es/_util/reactNode.js
+var reactNode = __webpack_require__(6159);
+;// CONCATENATED MODULE: ./node_modules/antd/es/menu/SubMenu.js
+
+
+
+
+
+
+
+
+function SubMenu(props) {
+  var _a;
+
+  var popupClassName = props.popupClassName,
+      icon = props.icon,
+      title = props.title;
+  var context = react.useContext(menu_MenuContext);
+  var prefixCls = context.prefixCls,
+      inlineCollapsed = context.inlineCollapsed,
+      antdMenuTheme = context.antdMenuTheme;
+  var parentPath = (0,es/* useFullPath */.Xl)();
+  var titleNode;
+
+  if (!icon) {
+    titleNode = inlineCollapsed && !parentPath.length && title && typeof title === 'string' ? /*#__PURE__*/react.createElement("div", {
+      className: "".concat(prefixCls, "-inline-collapsed-noicon")
+    }, title.charAt(0)) : /*#__PURE__*/react.createElement("span", {
+      className: "".concat(prefixCls, "-title-content")
+    }, title);
+  } else {
+    // inline-collapsed.md demo 依赖 span 来隐藏文字,有 icon 属性，则内部包裹一个 span
+    // ref: https://github.com/ant-design/ant-design/pull/23456
+    var titleIsSpan = (0,reactNode/* isValidElement */.l$)(title) && title.type === 'span';
+    titleNode = /*#__PURE__*/react.createElement(react.Fragment, null, (0,reactNode/* cloneElement */.Tm)(icon, {
+      className: classnames_default()((0,reactNode/* isValidElement */.l$)(icon) ? (_a = icon.props) === null || _a === void 0 ? void 0 : _a.className : '', "".concat(prefixCls, "-item-icon"))
+    }), titleIsSpan ? title : /*#__PURE__*/react.createElement("span", {
+      className: "".concat(prefixCls, "-title-content")
+    }, title));
+  }
+
+  var contextValue = react.useMemo(function () {
+    return (0,esm_extends/* default */.Z)((0,esm_extends/* default */.Z)({}, context), {
+      firstLevel: false
+    });
+  }, [context]);
+  return /*#__PURE__*/react.createElement(menu_MenuContext.Provider, {
+    value: contextValue
+  }, /*#__PURE__*/react.createElement(es/* SubMenu */.Wd, (0,esm_extends/* default */.Z)({}, (0,omit/* default */.Z)(props, ['icon']), {
+    title: titleNode,
+    popupClassName: classnames_default()(prefixCls, "".concat(prefixCls, "-").concat(antdMenuTheme), popupClassName)
+  })));
+}
+
+/* harmony default export */ var menu_SubMenu = (SubMenu);
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/defineProperty.js
+var defineProperty = __webpack_require__(4942);
+// EXTERNAL MODULE: ./node_modules/rc-util/es/Children/toArray.js
+var toArray = __webpack_require__(344);
+// EXTERNAL MODULE: ./node_modules/antd/es/tooltip/index.js + 5 modules
+var tooltip = __webpack_require__(9713);
+// EXTERNAL MODULE: ./node_modules/antd/es/layout/Sider.js + 3 modules
+var Sider = __webpack_require__(4025);
+;// CONCATENATED MODULE: ./node_modules/antd/es/menu/MenuItem.js
+
+
+
+
+
+
+
+var __rest = undefined && undefined.__rest || function (s, e) {
+  var t = {};
+
+  for (var p in s) {
+    if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0) t[p] = s[p];
+  }
+
+  if (s != null && typeof Object.getOwnPropertySymbols === "function") for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+    if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i])) t[p[i]] = s[p[i]];
+  }
+  return t;
+};
+
+
+
+
+
+
+
+
+
+
+var MenuItem = /*#__PURE__*/function (_React$Component) {
+  (0,inherits/* default */.Z)(MenuItem, _React$Component);
+
+  var _super = (0,createSuper/* default */.Z)(MenuItem);
+
+  function MenuItem() {
+    var _this;
+
+    (0,classCallCheck/* default */.Z)(this, MenuItem);
+
+    _this = _super.apply(this, arguments);
+
+    _this.renderItem = function (_ref) {
+      var _classNames;
+
+      var siderCollapsed = _ref.siderCollapsed;
+
+      var _a;
+
+      var _this$context = _this.context,
+          prefixCls = _this$context.prefixCls,
+          firstLevel = _this$context.firstLevel,
+          inlineCollapsed = _this$context.inlineCollapsed,
+          direction = _this$context.direction,
+          disableMenuItemTitleTooltip = _this$context.disableMenuItemTitleTooltip;
+      var _this$props = _this.props,
+          className = _this$props.className,
+          children = _this$props.children;
+
+      var _b = _this.props,
+          title = _b.title,
+          icon = _b.icon,
+          danger = _b.danger,
+          rest = __rest(_b, ["title", "icon", "danger"]);
+
+      var tooltipTitle = title;
+
+      if (typeof title === 'undefined') {
+        tooltipTitle = firstLevel ? children : '';
+      } else if (title === false) {
+        tooltipTitle = '';
+      }
+
+      var tooltipProps = {
+        title: tooltipTitle
+      };
+
+      if (!siderCollapsed && !inlineCollapsed) {
+        tooltipProps.title = null; // Reset `visible` to fix control mode tooltip display not correct
+        // ref: https://github.com/ant-design/ant-design/issues/16742
+
+        tooltipProps.visible = false;
+      }
+
+      var childrenLength = (0,toArray/* default */.Z)(children).length;
+      var returnNode = /*#__PURE__*/react.createElement(es/* Item */.ck, (0,esm_extends/* default */.Z)({}, rest, {
+        className: classnames_default()((_classNames = {}, (0,defineProperty/* default */.Z)(_classNames, "".concat(prefixCls, "-item-danger"), danger), (0,defineProperty/* default */.Z)(_classNames, "".concat(prefixCls, "-item-only-child"), (icon ? childrenLength + 1 : childrenLength) === 1), _classNames), className),
+        title: typeof title === 'string' ? title : undefined
+      }), (0,reactNode/* cloneElement */.Tm)(icon, {
+        className: classnames_default()((0,reactNode/* isValidElement */.l$)(icon) ? (_a = icon.props) === null || _a === void 0 ? void 0 : _a.className : '', "".concat(prefixCls, "-item-icon"))
+      }), _this.renderItemChildren(inlineCollapsed));
+
+      if (!disableMenuItemTitleTooltip) {
+        returnNode = /*#__PURE__*/react.createElement(tooltip/* default */.Z, (0,esm_extends/* default */.Z)({}, tooltipProps, {
+          placement: direction === 'rtl' ? 'left' : 'right',
+          overlayClassName: "".concat(prefixCls, "-inline-collapsed-tooltip")
+        }), returnNode);
+      }
+
+      return returnNode;
+    };
+
+    return _this;
+  }
+
+  (0,createClass/* default */.Z)(MenuItem, [{
+    key: "renderItemChildren",
+    value: function renderItemChildren(inlineCollapsed) {
+      var _this$context2 = this.context,
+          prefixCls = _this$context2.prefixCls,
+          firstLevel = _this$context2.firstLevel;
+      var _this$props2 = this.props,
+          icon = _this$props2.icon,
+          children = _this$props2.children;
+      var wrapNode = /*#__PURE__*/react.createElement("span", {
+        className: "".concat(prefixCls, "-title-content")
+      }, children); // inline-collapsed.md demo 依赖 span 来隐藏文字,有 icon 属性，则内部包裹一个 span
+      // ref: https://github.com/ant-design/ant-design/pull/23456
+
+      if (!icon || (0,reactNode/* isValidElement */.l$)(children) && children.type === 'span') {
+        if (children && inlineCollapsed && firstLevel && typeof children === 'string') {
+          return /*#__PURE__*/react.createElement("div", {
+            className: "".concat(prefixCls, "-inline-collapsed-noicon")
+          }, children.charAt(0));
+        }
+      }
+
+      return wrapNode;
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/react.createElement(Sider/* SiderContext.Consumer */.D.Consumer, null, this.renderItem);
+    }
+  }]);
+
+  return MenuItem;
+}(react.Component);
+
+
+MenuItem.contextType = menu_MenuContext;
+// EXTERNAL MODULE: ./node_modules/antd/es/config-provider/context.js + 1 modules
+var context = __webpack_require__(5632);
+// EXTERNAL MODULE: ./node_modules/antd/es/_util/devWarning.js
+var devWarning = __webpack_require__(1687);
+// EXTERNAL MODULE: ./node_modules/antd/es/_util/motion.js
+var motion = __webpack_require__(3603);
+;// CONCATENATED MODULE: ./node_modules/antd/es/menu/MenuDivider.js
+
+
+
+var MenuDivider_rest = undefined && undefined.__rest || function (s, e) {
+  var t = {};
+
+  for (var p in s) {
+    if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0) t[p] = s[p];
+  }
+
+  if (s != null && typeof Object.getOwnPropertySymbols === "function") for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+    if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i])) t[p[i]] = s[p[i]];
+  }
+  return t;
+};
+
+
+
+
+
+
+var MenuDivider = function MenuDivider(_a) {
+  var customizePrefixCls = _a.prefixCls,
+      className = _a.className,
+      dashed = _a.dashed,
+      restProps = MenuDivider_rest(_a, ["prefixCls", "className", "dashed"]);
+
+  var _React$useContext = react.useContext(context/* ConfigContext */.E_),
+      getPrefixCls = _React$useContext.getPrefixCls;
+
+  var prefixCls = getPrefixCls('menu', customizePrefixCls);
+  var classString = classnames_default()((0,defineProperty/* default */.Z)({}, "".concat(prefixCls, "-item-divider-dashed"), !!dashed), className);
+  return /*#__PURE__*/react.createElement(es/* Divider */.iz, (0,esm_extends/* default */.Z)({
+    className: classString
+  }, restProps));
+};
+
+/* harmony default export */ var menu_MenuDivider = (MenuDivider);
+;// CONCATENATED MODULE: ./node_modules/antd/es/menu/index.js
+
+
+
+
+
+
+var menu_rest = undefined && undefined.__rest || function (s, e) {
+  var t = {};
+
+  for (var p in s) {
+    if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0) t[p] = s[p];
+  }
+
+  if (s != null && typeof Object.getOwnPropertySymbols === "function") for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+    if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i])) t[p[i]] = s[p[i]];
+  }
+  return t;
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var InternalMenu = /*#__PURE__*/function (_React$Component) {
+  (0,inherits/* default */.Z)(InternalMenu, _React$Component);
+
+  var _super = (0,createSuper/* default */.Z)(InternalMenu);
+
+  function InternalMenu(props) {
+    var _this;
+
+    (0,classCallCheck/* default */.Z)(this, InternalMenu);
+
+    _this = _super.call(this, props);
+
+    _this.renderMenu = function (_ref) {
+      var getPopupContainer = _ref.getPopupContainer,
+          getPrefixCls = _ref.getPrefixCls,
+          direction = _ref.direction;
+      var rootPrefixCls = getPrefixCls();
+
+      var _a = _this.props,
+          customizePrefixCls = _a.prefixCls,
+          className = _a.className,
+          theme = _a.theme,
+          expandIcon = _a.expandIcon,
+          _internalDisableMenuItemTitleTooltip = _a._internalDisableMenuItemTitleTooltip,
+          restProps = menu_rest(_a, ["prefixCls", "className", "theme", "expandIcon", "_internalDisableMenuItemTitleTooltip"]);
+
+      var passedProps = (0,omit/* default */.Z)(restProps, ['siderCollapsed', 'collapsedWidth']);
+
+      var inlineCollapsed = _this.getInlineCollapsed();
+
+      var defaultMotions = {
+        horizontal: {
+          motionName: "".concat(rootPrefixCls, "-slide-up")
+        },
+        inline: motion/* default */.Z,
+        other: {
+          motionName: "".concat(rootPrefixCls, "-zoom-big")
+        }
+      };
+      var prefixCls = getPrefixCls('menu', customizePrefixCls);
+      var menuClassName = classnames_default()("".concat(prefixCls, "-").concat(theme), className); // TODO: refactor menu with function component
+
+      var contextValue = (0,memoize_one_esm/* default */.Z)(function (cls, collapsed, the, dir, disableMenuItemTitleTooltip) {
+        return {
+          prefixCls: cls,
+          inlineCollapsed: collapsed || false,
+          antdMenuTheme: the,
+          direction: dir,
+          firstLevel: true,
+          disableMenuItemTitleTooltip: disableMenuItemTitleTooltip
+        };
+      })(prefixCls, inlineCollapsed, theme, direction, _internalDisableMenuItemTitleTooltip);
+      return /*#__PURE__*/react.createElement(menu_MenuContext.Provider, {
+        value: contextValue
+      }, /*#__PURE__*/react.createElement(es/* default */.ZP, (0,esm_extends/* default */.Z)({
+        getPopupContainer: getPopupContainer,
+        overflowedIndicator: /*#__PURE__*/react.createElement(EllipsisOutlined/* default */.Z, null),
+        overflowedIndicatorPopupClassName: "".concat(prefixCls, "-").concat(theme)
+      }, passedProps, {
+        inlineCollapsed: inlineCollapsed,
+        className: menuClassName,
+        prefixCls: prefixCls,
+        direction: direction,
+        defaultMotions: defaultMotions,
+        expandIcon: (0,reactNode/* cloneElement */.Tm)(expandIcon, {
+          className: "".concat(prefixCls, "-submenu-expand-icon")
+        })
+      })));
+    };
+
+    (0,devWarning/* default */.Z)(!('inlineCollapsed' in props && props.mode !== 'inline'), 'Menu', '`inlineCollapsed` should only be used when `mode` is inline.');
+    (0,devWarning/* default */.Z)(!(props.siderCollapsed !== undefined && 'inlineCollapsed' in props), 'Menu', '`inlineCollapsed` not control Menu under Sider. Should set `collapsed` on Sider instead.');
+    return _this;
+  }
+
+  (0,createClass/* default */.Z)(InternalMenu, [{
+    key: "getInlineCollapsed",
+    value: function getInlineCollapsed() {
+      var _this$props = this.props,
+          inlineCollapsed = _this$props.inlineCollapsed,
+          siderCollapsed = _this$props.siderCollapsed;
+
+      if (siderCollapsed !== undefined) {
+        return siderCollapsed;
+      }
+
+      return inlineCollapsed;
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/react.createElement(context/* ConfigConsumer */.C, null, this.renderMenu);
+    }
+  }]);
+
+  return InternalMenu;
+}(react.Component);
+
+InternalMenu.defaultProps = {
+  theme: 'light' // or dark
+
+}; // We should keep this as ref-able
+
+var Menu = /*#__PURE__*/function (_React$Component2) {
+  (0,inherits/* default */.Z)(Menu, _React$Component2);
+
+  var _super2 = (0,createSuper/* default */.Z)(Menu);
+
+  function Menu() {
+    (0,classCallCheck/* default */.Z)(this, Menu);
+
+    return _super2.apply(this, arguments);
+  }
+
+  (0,createClass/* default */.Z)(Menu, [{
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      return /*#__PURE__*/react.createElement(Sider/* SiderContext.Consumer */.D.Consumer, null, function (context) {
+        return /*#__PURE__*/react.createElement(InternalMenu, (0,esm_extends/* default */.Z)({}, _this2.props, context));
+      });
+    }
+  }]);
+
+  return Menu;
+}(react.Component);
+
+Menu.Divider = menu_MenuDivider;
+Menu.Item = MenuItem;
+Menu.SubMenu = menu_SubMenu;
+Menu.ItemGroup = es/* ItemGroup */.BW;
+/* harmony default export */ var menu = (Menu);
+
+/***/ }),
+
+/***/ 9650:
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "u": function() { return /* binding */ SpaceContext; },
+  "Z": function() { return /* binding */ space; }
+});
+
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/extends.js
+var esm_extends = __webpack_require__(7462);
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/defineProperty.js
+var defineProperty = __webpack_require__(4942);
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/slicedToArray.js + 1 modules
+var slicedToArray = __webpack_require__(9439);
+// EXTERNAL MODULE: ./node_modules/react/index.js
+var react = __webpack_require__(7294);
+// EXTERNAL MODULE: ./node_modules/classnames/index.js
+var classnames = __webpack_require__(4184);
+var classnames_default = /*#__PURE__*/__webpack_require__.n(classnames);
+// EXTERNAL MODULE: ./node_modules/rc-util/es/Children/toArray.js
+var toArray = __webpack_require__(344);
+// EXTERNAL MODULE: ./node_modules/antd/es/config-provider/context.js + 1 modules
+var context = __webpack_require__(5632);
+;// CONCATENATED MODULE: ./node_modules/antd/es/space/Item.js
+
+
+
+
+function Item(_ref) {
+  var className = _ref.className,
+      direction = _ref.direction,
+      index = _ref.index,
+      marginDirection = _ref.marginDirection,
+      children = _ref.children,
+      split = _ref.split,
+      wrap = _ref.wrap;
+
+  var _React$useContext = react.useContext(SpaceContext),
+      horizontalSize = _React$useContext.horizontalSize,
+      verticalSize = _React$useContext.verticalSize,
+      latestIndex = _React$useContext.latestIndex,
+      supportFlexGap = _React$useContext.supportFlexGap;
+
+  var style = {};
+
+  if (!supportFlexGap) {
+    if (direction === 'vertical') {
+      if (index < latestIndex) {
+        style = {
+          marginBottom: horizontalSize / (split ? 2 : 1)
+        };
+      }
+    } else {
+      style = (0,esm_extends/* default */.Z)((0,esm_extends/* default */.Z)({}, index < latestIndex && (0,defineProperty/* default */.Z)({}, marginDirection, horizontalSize / (split ? 2 : 1))), wrap && {
+        paddingBottom: verticalSize
+      });
+    }
+  }
+
+  if (children === null || children === undefined) {
+    return null;
+  }
+
+  return /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement("div", {
+    className: className,
+    style: style
+  }, children), index < latestIndex && split && /*#__PURE__*/react.createElement("span", {
+    className: "".concat(className, "-split"),
+    style: style
+  }, split));
+}
+// EXTERNAL MODULE: ./node_modules/antd/es/_util/hooks/useFlexGapSupport.js + 1 modules
+var useFlexGapSupport = __webpack_require__(3732);
+;// CONCATENATED MODULE: ./node_modules/antd/es/space/index.js
+
+
+
+
+var __rest = undefined && undefined.__rest || function (s, e) {
+  var t = {};
+
+  for (var p in s) {
+    if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0) t[p] = s[p];
+  }
+
+  if (s != null && typeof Object.getOwnPropertySymbols === "function") for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+    if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i])) t[p[i]] = s[p[i]];
+  }
+  return t;
+};
+
+
+
+
+
+
+
+var SpaceContext = /*#__PURE__*/react.createContext({
+  latestIndex: 0,
+  horizontalSize: 0,
+  verticalSize: 0,
+  supportFlexGap: false
+});
+var spaceSize = {
+  small: 8,
+  middle: 16,
+  large: 24
+};
+
+function getNumberSize(size) {
+  return typeof size === 'string' ? spaceSize[size] : size || 0;
+}
+
+var Space = function Space(props) {
+  var _classNames;
+
+  var _React$useContext = react.useContext(context/* ConfigContext */.E_),
+      getPrefixCls = _React$useContext.getPrefixCls,
+      space = _React$useContext.space,
+      directionConfig = _React$useContext.direction;
+
+  var _props$size = props.size,
+      size = _props$size === void 0 ? (space === null || space === void 0 ? void 0 : space.size) || 'small' : _props$size,
+      align = props.align,
+      className = props.className,
+      children = props.children,
+      _props$direction = props.direction,
+      direction = _props$direction === void 0 ? 'horizontal' : _props$direction,
+      customizePrefixCls = props.prefixCls,
+      split = props.split,
+      style = props.style,
+      _props$wrap = props.wrap,
+      wrap = _props$wrap === void 0 ? false : _props$wrap,
+      otherProps = __rest(props, ["size", "align", "className", "children", "direction", "prefixCls", "split", "style", "wrap"]);
+
+  var supportFlexGap = (0,useFlexGapSupport/* default */.Z)();
+
+  var _React$useMemo = react.useMemo(function () {
+    return (Array.isArray(size) ? size : [size, size]).map(function (item) {
+      return getNumberSize(item);
+    });
+  }, [size]),
+      _React$useMemo2 = (0,slicedToArray/* default */.Z)(_React$useMemo, 2),
+      horizontalSize = _React$useMemo2[0],
+      verticalSize = _React$useMemo2[1];
+
+  var childNodes = (0,toArray/* default */.Z)(children, {
+    keepEmpty: true
+  });
+  var mergedAlign = align === undefined && direction === 'horizontal' ? 'center' : align;
+  var prefixCls = getPrefixCls('space', customizePrefixCls);
+  var cn = classnames_default()(prefixCls, "".concat(prefixCls, "-").concat(direction), (_classNames = {}, (0,defineProperty/* default */.Z)(_classNames, "".concat(prefixCls, "-rtl"), directionConfig === 'rtl'), (0,defineProperty/* default */.Z)(_classNames, "".concat(prefixCls, "-align-").concat(mergedAlign), mergedAlign), _classNames), className);
+  var itemClassName = "".concat(prefixCls, "-item");
+  var marginDirection = directionConfig === 'rtl' ? 'marginLeft' : 'marginRight'; // Calculate latest one
+
+  var latestIndex = 0;
+  var nodes = childNodes.map(function (child, i) {
+    if (child !== null && child !== undefined) {
+      latestIndex = i;
+    }
+    /* eslint-disable react/no-array-index-key */
+
+
+    return /*#__PURE__*/react.createElement(Item, {
+      className: itemClassName,
+      key: "".concat(itemClassName, "-").concat(i),
+      direction: direction,
+      index: i,
+      marginDirection: marginDirection,
+      split: split,
+      wrap: wrap
+    }, child);
+    /* eslint-enable */
+  });
+  var spaceContext = react.useMemo(function () {
+    return {
+      horizontalSize: horizontalSize,
+      verticalSize: verticalSize,
+      latestIndex: latestIndex,
+      supportFlexGap: supportFlexGap
+    };
+  }, [horizontalSize, verticalSize, latestIndex, supportFlexGap]); // =========================== Render ===========================
+
+  if (childNodes.length === 0) {
+    return null;
+  }
+
+  var gapStyle = {};
+
+  if (wrap) {
+    gapStyle.flexWrap = 'wrap'; // Patch for gap not support
+
+    if (!supportFlexGap) {
+      gapStyle.marginBottom = -verticalSize;
+    }
+  }
+
+  if (supportFlexGap) {
+    gapStyle.columnGap = horizontalSize;
+    gapStyle.rowGap = verticalSize;
+  }
+
+  return /*#__PURE__*/react.createElement("div", (0,esm_extends/* default */.Z)({
+    className: cn,
+    style: (0,esm_extends/* default */.Z)((0,esm_extends/* default */.Z)({}, gapStyle), style)
+  }, otherProps), /*#__PURE__*/react.createElement(SpaceContext.Provider, {
+    value: spaceContext
+  }, nodes));
+};
+
+/* harmony default export */ var space = (Space);
+
+/***/ }),
+
+/***/ 1114:
+/***/ (function(__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) {
+
+"use strict";
+
+// EXTERNAL MODULE: ./node_modules/antd/es/style/default.less
+var style_default = __webpack_require__(5608);
+;// CONCATENATED MODULE: ./node_modules/antd/es/space/style/index.less
+// extracted by mini-css-extract-plugin
+
+;// CONCATENATED MODULE: ./node_modules/antd/es/space/style/index.js
+
+
+
+/***/ }),
+
+/***/ 5299:
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7294);
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+
+
+var SvgLight = function SvgLight(props) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", _extends({
+    stroke: "currentColor",
+    fill: "currentColor",
+    strokeWidth: 0,
+    viewBox: "0 0 24 24",
+    height: "1em",
+    width: "1em",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, props), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("g", {
+    stroke: "none"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    fill: "none",
+    d: "M0 0h24v24H0z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    d: "M12 18a6 6 0 1 1 0-12 6 6 0 0 1 0 12zm0-2a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM11 1h2v3h-2V1zm0 19h2v3h-2v-3zM3.515 4.929l1.414-1.414L7.05 5.636 5.636 7.05 3.515 4.93zM16.95 18.364l1.414-1.414 2.121 2.121-1.414 1.414-2.121-2.121zm2.121-14.85 1.414 1.415-2.121 2.121-1.414-1.414 2.121-2.121zM5.636 16.95l1.414 1.414-2.121 2.121-1.414-1.414 2.121-2.121zM23 11v2h-3v-2h3zM4 11v2H1v-2h3z"
+  })));
+};
+
+/* harmony default export */ __webpack_exports__["Z"] = (SvgLight);
 
 /***/ }),
 
@@ -891,524 +2700,6 @@ __webpack_unused_export__ = _Sticky2.default;
 
 /***/ }),
 
-/***/ 9424:
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-// ESM COMPAT FLAG
-__webpack_require__.r(__webpack_exports__);
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  "default": function() { return /* binding */ add; }
-});
-
-// EXTERNAL MODULE: ./node_modules/antd/es/style/default.less
-var style_default = __webpack_require__(5608);
-;// CONCATENATED MODULE: ./node_modules/antd/es/steps/style/index.less
-// extracted by mini-css-extract-plugin
-
-// EXTERNAL MODULE: ./node_modules/antd/es/progress/style/index.js + 1 modules
-var style = __webpack_require__(2078);
-;// CONCATENATED MODULE: ./node_modules/antd/es/steps/style/index.js
-
- // style dependencies
-// deps-lint-skip: grid
-
-
-// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/extends.js
-var esm_extends = __webpack_require__(7462);
-// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/defineProperty.js
-var defineProperty = __webpack_require__(4942);
-// EXTERNAL MODULE: ./node_modules/react/index.js
-var react = __webpack_require__(7294);
-// EXTERNAL MODULE: ./node_modules/rc-util/es/omit.js
-var omit = __webpack_require__(8423);
-// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/objectSpread2.js
-var objectSpread2 = __webpack_require__(1413);
-// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js + 1 modules
-var objectWithoutProperties = __webpack_require__(4925);
-// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/classCallCheck.js
-var classCallCheck = __webpack_require__(5671);
-// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/createClass.js
-var createClass = __webpack_require__(3144);
-// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/inherits.js + 1 modules
-var inherits = __webpack_require__(9340);
-// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/createSuper.js + 3 modules
-var createSuper = __webpack_require__(8557);
-// EXTERNAL MODULE: ./node_modules/rc-util/es/Children/toArray.js
-var toArray = __webpack_require__(344);
-// EXTERNAL MODULE: ./node_modules/classnames/index.js
-var classnames = __webpack_require__(4184);
-var classnames_default = /*#__PURE__*/__webpack_require__.n(classnames);
-;// CONCATENATED MODULE: ./node_modules/rc-steps/es/Step.js
-
-
-
-
-
-
-
-var _excluded = ["className", "prefixCls", "style", "active", "status", "iconPrefix", "icon", "wrapperStyle", "stepNumber", "disabled", "description", "title", "subTitle", "progressDot", "stepIcon", "tailContent", "icons", "stepIndex", "onStepClick", "onClick"];
-
-/* eslint react/prop-types: 0 */
-
-
-
-function isString(str) {
-  return typeof str === 'string';
-}
-
-var Step = /*#__PURE__*/function (_React$Component) {
-  (0,inherits/* default */.Z)(Step, _React$Component);
-
-  var _super = (0,createSuper/* default */.Z)(Step);
-
-  function Step() {
-    var _this;
-
-    (0,classCallCheck/* default */.Z)(this, Step);
-
-    _this = _super.apply(this, arguments);
-
-    _this.onClick = function () {
-      var _this$props = _this.props,
-          onClick = _this$props.onClick,
-          onStepClick = _this$props.onStepClick,
-          stepIndex = _this$props.stepIndex;
-
-      if (onClick) {
-        onClick.apply(void 0, arguments);
-      }
-
-      onStepClick(stepIndex);
-    };
-
-    return _this;
-  }
-
-  (0,createClass/* default */.Z)(Step, [{
-    key: "renderIconNode",
-    value: function renderIconNode() {
-      var _classNames;
-
-      var _this$props2 = this.props,
-          prefixCls = _this$props2.prefixCls,
-          progressDot = _this$props2.progressDot,
-          stepIcon = _this$props2.stepIcon,
-          stepNumber = _this$props2.stepNumber,
-          status = _this$props2.status,
-          title = _this$props2.title,
-          description = _this$props2.description,
-          icon = _this$props2.icon,
-          iconPrefix = _this$props2.iconPrefix,
-          icons = _this$props2.icons;
-      var iconNode;
-      var iconClassName = classnames_default()("".concat(prefixCls, "-icon"), "".concat(iconPrefix, "icon"), (_classNames = {}, (0,defineProperty/* default */.Z)(_classNames, "".concat(iconPrefix, "icon-").concat(icon), icon && isString(icon)), (0,defineProperty/* default */.Z)(_classNames, "".concat(iconPrefix, "icon-check"), !icon && status === 'finish' && (icons && !icons.finish || !icons)), (0,defineProperty/* default */.Z)(_classNames, "".concat(iconPrefix, "icon-cross"), !icon && status === 'error' && (icons && !icons.error || !icons)), _classNames));
-      var iconDot = /*#__PURE__*/react.createElement("span", {
-        className: "".concat(prefixCls, "-icon-dot")
-      }); // `progressDot` enjoy the highest priority
-
-      if (progressDot) {
-        if (typeof progressDot === 'function') {
-          iconNode = /*#__PURE__*/react.createElement("span", {
-            className: "".concat(prefixCls, "-icon")
-          }, progressDot(iconDot, {
-            index: stepNumber - 1,
-            status: status,
-            title: title,
-            description: description
-          }));
-        } else {
-          iconNode = /*#__PURE__*/react.createElement("span", {
-            className: "".concat(prefixCls, "-icon")
-          }, iconDot);
-        }
-      } else if (icon && !isString(icon)) {
-        iconNode = /*#__PURE__*/react.createElement("span", {
-          className: "".concat(prefixCls, "-icon")
-        }, icon);
-      } else if (icons && icons.finish && status === 'finish') {
-        iconNode = /*#__PURE__*/react.createElement("span", {
-          className: "".concat(prefixCls, "-icon")
-        }, icons.finish);
-      } else if (icons && icons.error && status === 'error') {
-        iconNode = /*#__PURE__*/react.createElement("span", {
-          className: "".concat(prefixCls, "-icon")
-        }, icons.error);
-      } else if (icon || status === 'finish' || status === 'error') {
-        iconNode = /*#__PURE__*/react.createElement("span", {
-          className: iconClassName
-        });
-      } else {
-        iconNode = /*#__PURE__*/react.createElement("span", {
-          className: "".concat(prefixCls, "-icon")
-        }, stepNumber);
-      }
-
-      if (stepIcon) {
-        iconNode = stepIcon({
-          index: stepNumber - 1,
-          status: status,
-          title: title,
-          description: description,
-          node: iconNode
-        });
-      }
-
-      return iconNode;
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var _classNames2;
-
-      var _this$props3 = this.props,
-          className = _this$props3.className,
-          prefixCls = _this$props3.prefixCls,
-          style = _this$props3.style,
-          active = _this$props3.active,
-          _this$props3$status = _this$props3.status,
-          status = _this$props3$status === void 0 ? 'wait' : _this$props3$status,
-          iconPrefix = _this$props3.iconPrefix,
-          icon = _this$props3.icon,
-          wrapperStyle = _this$props3.wrapperStyle,
-          stepNumber = _this$props3.stepNumber,
-          disabled = _this$props3.disabled,
-          description = _this$props3.description,
-          title = _this$props3.title,
-          subTitle = _this$props3.subTitle,
-          progressDot = _this$props3.progressDot,
-          stepIcon = _this$props3.stepIcon,
-          tailContent = _this$props3.tailContent,
-          icons = _this$props3.icons,
-          stepIndex = _this$props3.stepIndex,
-          onStepClick = _this$props3.onStepClick,
-          onClick = _this$props3.onClick,
-          restProps = (0,objectWithoutProperties/* default */.Z)(_this$props3, _excluded);
-
-      var classString = classnames_default()("".concat(prefixCls, "-item"), "".concat(prefixCls, "-item-").concat(status), className, (_classNames2 = {}, (0,defineProperty/* default */.Z)(_classNames2, "".concat(prefixCls, "-item-custom"), icon), (0,defineProperty/* default */.Z)(_classNames2, "".concat(prefixCls, "-item-active"), active), (0,defineProperty/* default */.Z)(_classNames2, "".concat(prefixCls, "-item-disabled"), disabled === true), _classNames2));
-
-      var stepItemStyle = (0,objectSpread2/* default */.Z)({}, style);
-
-      var accessibilityProps = {};
-
-      if (onStepClick && !disabled) {
-        accessibilityProps.role = 'button';
-        accessibilityProps.tabIndex = 0;
-        accessibilityProps.onClick = this.onClick;
-      }
-
-      return /*#__PURE__*/react.createElement("div", Object.assign({}, restProps, {
-        className: classString,
-        style: stepItemStyle
-      }), /*#__PURE__*/react.createElement("div", Object.assign({
-        onClick: onClick
-      }, accessibilityProps, {
-        className: "".concat(prefixCls, "-item-container")
-      }), /*#__PURE__*/react.createElement("div", {
-        className: "".concat(prefixCls, "-item-tail")
-      }, tailContent), /*#__PURE__*/react.createElement("div", {
-        className: "".concat(prefixCls, "-item-icon")
-      }, this.renderIconNode()), /*#__PURE__*/react.createElement("div", {
-        className: "".concat(prefixCls, "-item-content")
-      }, /*#__PURE__*/react.createElement("div", {
-        className: "".concat(prefixCls, "-item-title")
-      }, title, subTitle && /*#__PURE__*/react.createElement("div", {
-        title: typeof subTitle === 'string' ? subTitle : undefined,
-        className: "".concat(prefixCls, "-item-subtitle")
-      }, subTitle)), description && /*#__PURE__*/react.createElement("div", {
-        className: "".concat(prefixCls, "-item-description")
-      }, description))));
-    }
-  }]);
-
-  return Step;
-}(react.Component);
-
-
-;// CONCATENATED MODULE: ./node_modules/rc-steps/es/Steps.js
-
-
-
-
-
-
-
-var Steps_excluded = ["prefixCls", "style", "className", "children", "direction", "type", "labelPlacement", "iconPrefix", "status", "size", "current", "progressDot", "stepIcon", "initial", "icons", "onChange"];
-
-/* eslint react/no-did-mount-set-state: 0, react/prop-types: 0 */
-
-
-
-
-
-var Steps = /*#__PURE__*/function (_React$Component) {
-  (0,inherits/* default */.Z)(Steps, _React$Component);
-
-  var _super = (0,createSuper/* default */.Z)(Steps);
-
-  function Steps() {
-    var _this;
-
-    (0,classCallCheck/* default */.Z)(this, Steps);
-
-    _this = _super.apply(this, arguments);
-
-    _this.onStepClick = function (next) {
-      var _this$props = _this.props,
-          onChange = _this$props.onChange,
-          current = _this$props.current;
-
-      if (onChange && current !== next) {
-        onChange(next);
-      }
-    };
-
-    return _this;
-  }
-
-  (0,createClass/* default */.Z)(Steps, [{
-    key: "render",
-    value: function render() {
-      var _classNames,
-          _this2 = this;
-
-      var _this$props2 = this.props,
-          prefixCls = _this$props2.prefixCls,
-          _this$props2$style = _this$props2.style,
-          style = _this$props2$style === void 0 ? {} : _this$props2$style,
-          className = _this$props2.className,
-          children = _this$props2.children,
-          direction = _this$props2.direction,
-          type = _this$props2.type,
-          labelPlacement = _this$props2.labelPlacement,
-          iconPrefix = _this$props2.iconPrefix,
-          status = _this$props2.status,
-          size = _this$props2.size,
-          current = _this$props2.current,
-          progressDot = _this$props2.progressDot,
-          stepIcon = _this$props2.stepIcon,
-          initial = _this$props2.initial,
-          icons = _this$props2.icons,
-          onChange = _this$props2.onChange,
-          restProps = (0,objectWithoutProperties/* default */.Z)(_this$props2, Steps_excluded);
-
-      var isNav = type === 'navigation';
-      var adjustedLabelPlacement = progressDot ? 'vertical' : labelPlacement;
-      var classString = classnames_default()(prefixCls, "".concat(prefixCls, "-").concat(direction), className, (_classNames = {}, (0,defineProperty/* default */.Z)(_classNames, "".concat(prefixCls, "-").concat(size), size), (0,defineProperty/* default */.Z)(_classNames, "".concat(prefixCls, "-label-").concat(adjustedLabelPlacement), direction === 'horizontal'), (0,defineProperty/* default */.Z)(_classNames, "".concat(prefixCls, "-dot"), !!progressDot), (0,defineProperty/* default */.Z)(_classNames, "".concat(prefixCls, "-navigation"), isNav), _classNames));
-      return /*#__PURE__*/react.createElement("div", Object.assign({
-        className: classString,
-        style: style
-      }, restProps), (0,toArray/* default */.Z)(children).map(function (child, index) {
-        var stepNumber = initial + index;
-
-        var childProps = (0,objectSpread2/* default */.Z)({
-          stepNumber: "".concat(stepNumber + 1),
-          stepIndex: stepNumber,
-          key: stepNumber,
-          prefixCls: prefixCls,
-          iconPrefix: iconPrefix,
-          wrapperStyle: style,
-          progressDot: progressDot,
-          stepIcon: stepIcon,
-          icons: icons,
-          onStepClick: onChange && _this2.onStepClick
-        }, child.props); // fix tail color
-
-
-        if (status === 'error' && index === current - 1) {
-          childProps.className = "".concat(prefixCls, "-next-error");
-        }
-
-        if (!child.props.status) {
-          if (stepNumber === current) {
-            childProps.status = status;
-          } else if (stepNumber < current) {
-            childProps.status = 'finish';
-          } else {
-            childProps.status = 'wait';
-          }
-        }
-
-        childProps.active = stepNumber === current;
-        return /*#__PURE__*/(0,react.cloneElement)(child, childProps);
-      }));
-    }
-  }]);
-
-  return Steps;
-}(react.Component);
-
-
-Steps.Step = Step;
-Steps.defaultProps = {
-  type: 'default',
-  prefixCls: 'rc-steps',
-  iconPrefix: 'rc',
-  direction: 'horizontal',
-  labelPlacement: 'horizontal',
-  initial: 0,
-  current: 0,
-  status: 'process',
-  size: '',
-  progressDot: false
-};
-;// CONCATENATED MODULE: ./node_modules/rc-steps/es/index.js
-
-
-
-/* harmony default export */ var es = (Steps);
-// EXTERNAL MODULE: ./node_modules/@ant-design/icons/es/icons/CheckOutlined.js + 1 modules
-var CheckOutlined = __webpack_require__(9508);
-// EXTERNAL MODULE: ./node_modules/@ant-design/icons/es/icons/CloseOutlined.js + 1 modules
-var CloseOutlined = __webpack_require__(4549);
-// EXTERNAL MODULE: ./node_modules/antd/es/config-provider/context.js + 1 modules
-var context = __webpack_require__(5632);
-// EXTERNAL MODULE: ./node_modules/antd/es/progress/index.js + 10 modules
-var progress = __webpack_require__(4458);
-// EXTERNAL MODULE: ./node_modules/antd/es/grid/hooks/useBreakpoint.js
-var useBreakpoint = __webpack_require__(5378);
-;// CONCATENATED MODULE: ./node_modules/antd/es/steps/index.js
-
-
-
-
-
-
-
-
-
-
-
-
-var steps_Steps = function Steps(props) {
-  var _classNames;
-
-  var percent = props.percent,
-      size = props.size,
-      className = props.className,
-      direction = props.direction,
-      responsive = props.responsive;
-
-  var _useBreakpoint = (0,useBreakpoint/* default */.Z)(),
-      xs = _useBreakpoint.xs;
-
-  var _React$useContext = react.useContext(context/* ConfigContext */.E_),
-      getPrefixCls = _React$useContext.getPrefixCls,
-      rtlDirection = _React$useContext.direction;
-
-  var getDirection = react.useCallback(function () {
-    return responsive && xs ? 'vertical' : direction;
-  }, [xs, direction]);
-  var prefixCls = getPrefixCls('steps', props.prefixCls);
-  var iconPrefix = getPrefixCls('', props.iconPrefix);
-  var stepsClassName = classnames_default()((_classNames = {}, (0,defineProperty/* default */.Z)(_classNames, "".concat(prefixCls, "-rtl"), rtlDirection === 'rtl'), (0,defineProperty/* default */.Z)(_classNames, "".concat(prefixCls, "-with-progress"), percent !== undefined), _classNames), className);
-  var icons = {
-    finish: /*#__PURE__*/react.createElement(CheckOutlined/* default */.Z, {
-      className: "".concat(prefixCls, "-finish-icon")
-    }),
-    error: /*#__PURE__*/react.createElement(CloseOutlined/* default */.Z, {
-      className: "".concat(prefixCls, "-error-icon")
-    })
-  };
-
-  var stepIconRender = function stepIconRender(_ref) {
-    var node = _ref.node,
-        status = _ref.status;
-
-    if (status === 'process' && percent !== undefined) {
-      // currently it's hard-coded, since we can't easily read the actually width of icon
-      var progressWidth = size === 'small' ? 32 : 40;
-      var iconWithProgress = /*#__PURE__*/react.createElement("div", {
-        className: "".concat(prefixCls, "-progress-icon")
-      }, /*#__PURE__*/react.createElement(progress/* default */.Z, {
-        type: "circle",
-        percent: percent,
-        width: progressWidth,
-        strokeWidth: 4,
-        format: function format() {
-          return null;
-        }
-      }), node);
-      return iconWithProgress;
-    }
-
-    return node;
-  };
-
-  return /*#__PURE__*/react.createElement(es, (0,esm_extends/* default */.Z)({
-    icons: icons
-  }, (0,omit/* default */.Z)(props, ['percent', 'responsive']), {
-    direction: getDirection(),
-    stepIcon: stepIconRender,
-    prefixCls: prefixCls,
-    iconPrefix: iconPrefix,
-    className: stepsClassName
-  }));
-};
-
-steps_Steps.Step = es.Step;
-steps_Steps.defaultProps = {
-  current: 0,
-  responsive: true
-};
-/* harmony default export */ var steps = (steps_Steps);
-;// CONCATENATED MODULE: ./src/pages/coupons/add/index.js
-
-
-
-var add_Step = steps.Step;
-
-var AddCoupons = function AddCoupons() {
-  return /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement(steps, {
-    current: 1
-  }, /*#__PURE__*/react.createElement(add_Step, {
-    title: "Finished",
-    description: "This is a description."
-  }), /*#__PURE__*/react.createElement(add_Step, {
-    title: "In Progress",
-    subTitle: "Left 00:00:08",
-    description: "This is a description."
-  }), /*#__PURE__*/react.createElement(add_Step, {
-    title: "Waiting",
-    description: "This is a description."
-  })), /*#__PURE__*/react.createElement("div", {
-    style: {
-      height: 10000
-    }
-  }, "Scroll to top"));
-};
-
-/* harmony default export */ var add = (AddCoupons);
-
-/***/ }),
-
-/***/ 4967:
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var antd_es_alert_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9485);
-/* harmony import */ var antd_es_alert__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(6772);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(7294);
-
-
-
-
-var HomeCoupons = function HomeCoupons() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react__WEBPACK_IMPORTED_MODULE_1__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(antd_es_alert__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z, {
-    message: "Informational Notes",
-    description: "Additional description and information about copywriting.",
-    type: "info",
-    showIcon: true
-  }));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (HomeCoupons);
-
-/***/ }),
-
 /***/ 8996:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
@@ -1425,7 +2716,7 @@ var Home = function Home() {
 
 /***/ }),
 
-/***/ 1249:
+/***/ 7285:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3350,6 +4641,7 @@ var Exception403 = function Exception403() {
 ;// CONCATENATED MODULE: ./src/utils/publicFn/index.js
 
 
+
 var flattenRoutes = function flattenRoutes(arr) {
   return arr.reduce(function (prev, item) {
     if (Array.isArray(item.children)) {
@@ -3372,16 +4664,16 @@ var getKeyName = function getKeyName() {
   if (!curRoute[0]) return {
     title: '暂无权限',
     tabKey: '/403',
-    component: exception403
+    element: /*#__PURE__*/react.createElement(exception403, null)
   };
   var _curRoute$ = curRoute[0],
       name = _curRoute$.name,
       key = _curRoute$.key,
-      component = _curRoute$.component;
+      element = _curRoute$.element;
   return {
     title: name,
     tabKey: key,
-    component: component
+    element: element
   };
 };
 ;// CONCATENATED MODULE: ./node_modules/antd/es/breadcrumb/style/index.less
@@ -3750,12 +5042,30 @@ var tabs = __webpack_require__(7428);
 var alert_style = __webpack_require__(9485);
 // EXTERNAL MODULE: ./node_modules/antd/es/alert/index.js + 1 modules
 var es_alert = __webpack_require__(6772);
-// EXTERNAL MODULE: ./node_modules/antd/es/button/style/index.js + 1 modules
-var button_style = __webpack_require__(8385);
-// EXTERNAL MODULE: ./node_modules/antd/es/button/index.js + 4 modules
-var es_button = __webpack_require__(404);
 // EXTERNAL MODULE: ./node_modules/react-sticky/lib/index.js
 var lib = __webpack_require__(8439);
+;// CONCATENATED MODULE: ./node_modules/@ant-design/icons-svg/es/asn/HeartTwoTone.js
+// This icon file is generated automatically.
+var HeartTwoTone = { "icon": function render(primaryColor, secondaryColor) { return { "tag": "svg", "attrs": { "viewBox": "64 64 896 896", "focusable": "false" }, "children": [{ "tag": "path", "attrs": { "d": "M923 283.6a260.04 260.04 0 00-56.9-82.8 264.4 264.4 0 00-84-55.5A265.34 265.34 0 00679.7 125c-49.3 0-97.4 13.5-139.2 39-10 6.1-19.5 12.8-28.5 20.1-9-7.3-18.5-14-28.5-20.1-41.8-25.5-89.9-39-139.2-39-35.5 0-69.9 6.8-102.4 20.3-31.4 13-59.7 31.7-84 55.5a258.44 258.44 0 00-56.9 82.8c-13.9 32.3-21 66.6-21 101.9 0 33.3 6.8 68 20.3 103.3 11.3 29.5 27.5 60.1 48.2 91 32.8 48.9 77.9 99.9 133.9 151.6 92.8 85.7 184.7 144.9 188.6 147.3l23.7 15.2c10.5 6.7 24 6.7 34.5 0l23.7-15.2c3.9-2.5 95.7-61.6 188.6-147.3 56-51.7 101.1-102.7 133.9-151.6 20.7-30.9 37-61.5 48.2-91 13.5-35.3 20.3-70 20.3-103.3.1-35.3-7-69.6-20.9-101.9zM512 814.8S156 586.7 156 385.5C156 283.6 240.3 201 344.3 201c73.1 0 136.5 40.8 167.7 100.4C543.2 241.8 606.6 201 679.7 201c104 0 188.3 82.6 188.3 184.5 0 201.2-356 429.3-356 429.3z", "fill": primaryColor } }, { "tag": "path", "attrs": { "d": "M679.7 201c-73.1 0-136.5 40.8-167.7 100.4C480.8 241.8 417.4 201 344.3 201c-104 0-188.3 82.6-188.3 184.5 0 201.2 356 429.3 356 429.3s356-228.1 356-429.3C868 283.6 783.7 201 679.7 201z", "fill": secondaryColor } }] }; }, "name": "heart", "theme": "twotone" };
+/* harmony default export */ var asn_HeartTwoTone = (HeartTwoTone);
+
+;// CONCATENATED MODULE: ./node_modules/@ant-design/icons/es/icons/HeartTwoTone.js
+
+// GENERATE BY ./scripts/generate.ts
+// DON NOT EDIT IT MANUALLY
+
+
+
+
+var HeartTwoTone_HeartTwoTone = function HeartTwoTone(props, ref) {
+  return /*#__PURE__*/react.createElement(AntdIcon/* default */.Z, (0,objectSpread2/* default */.Z)((0,objectSpread2/* default */.Z)({}, props), {}, {
+    ref: ref,
+    icon: asn_HeartTwoTone
+  }));
+};
+
+HeartTwoTone_HeartTwoTone.displayName = 'HeartTwoTone';
+/* harmony default export */ var icons_HeartTwoTone = (/*#__PURE__*/react.forwardRef(HeartTwoTone_HeartTwoTone));
 ;// CONCATENATED MODULE: ./node_modules/@ant-design/icons-svg/es/asn/SyncOutlined.js
 // This icon file is generated automatically.
 var SyncOutlined = { "icon": { "tag": "svg", "attrs": { "viewBox": "64 64 896 896", "focusable": "false" }, "children": [{ "tag": "path", "attrs": { "d": "M168 504.2c1-43.7 10-86.1 26.9-126 17.3-41 42.1-77.7 73.7-109.4S337 212.3 378 195c42.4-17.9 87.4-27 133.9-27s91.5 9.1 133.8 27A341.5 341.5 0 01755 268.8c9.9 9.9 19.2 20.4 27.8 31.4l-60.2 47a8 8 0 003 14.1l175.7 43c5 1.2 9.9-2.6 9.9-7.7l.8-180.9c0-6.7-7.7-10.5-12.9-6.3l-56.4 44.1C765.8 155.1 646.2 92 511.8 92 282.7 92 96.3 275.6 92 503.8a8 8 0 008 8.2h60c4.4 0 7.9-3.5 8-7.8zm756 7.8h-60c-4.4 0-7.9 3.5-8 7.8-1 43.7-10 86.1-26.9 126-17.3 41-42.1 77.8-73.7 109.4A342.45 342.45 0 01512.1 856a342.24 342.24 0 01-243.2-100.8c-9.9-9.9-19.2-20.4-27.8-31.4l60.2-47a8 8 0 00-3-14.1l-175.7-43c-5-1.2-9.9 2.6-9.9 7.7l-.7 181c0 6.7 7.7 10.5 12.9 6.3l56.4-44.1C258.2 868.9 377.8 932 512.2 932c229.2 0 415.5-183.7 419.8-411.8a8 8 0 00-8-8.2z" } }] }, "name": "sync", "theme": "outlined" };
@@ -3780,14 +5090,6 @@ SyncOutlined_SyncOutlined.displayName = 'SyncOutlined';
 /* harmony default export */ var icons_SyncOutlined = (/*#__PURE__*/react.forwardRef(SyncOutlined_SyncOutlined));
 // EXTERNAL MODULE: ./src/pages/home/index.js
 var home = __webpack_require__(8996);
-// EXTERNAL MODULE: ./src/pages/demo/index.js + 233 modules
-var demo = __webpack_require__(4072);
-// EXTERNAL MODULE: ./src/pages/coupons/add/index.js + 6 modules
-var add = __webpack_require__(9424);
-// EXTERNAL MODULE: ./src/pages/coupons/edit/index.js
-var edit = __webpack_require__(4967);
-// EXTERNAL MODULE: ./src/pages/product/index.js
-var product = __webpack_require__(1344);
 ;// CONCATENATED MODULE: ./src/pages/layout/proTabs/index.module.less
 // extracted by mini-css-extract-plugin
 /* harmony default export */ var proTabs_index_module = ({"container":"container","ant-tabs-editable-card":"ant-tabs-editable-card","ant-tabs-content":"ant-tabs-content","ant-tabs-tabpane":"ant-tabs-tabpane","ant-tabs-nav":"ant-tabs-nav","ant-tabs-nav-wrap":"ant-tabs-nav-wrap"});
@@ -3806,6 +5108,14 @@ var product = __webpack_require__(1344);
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
 
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+function proTabs_toConsumableArray(arr) { return proTabs_arrayWithoutHoles(arr) || proTabs_iterableToArray(arr) || proTabs_unsupportedIterableToArray(arr) || proTabs_nonIterableSpread(); }
+
+function proTabs_nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function proTabs_iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+
+function proTabs_arrayWithoutHoles(arr) { if (Array.isArray(arr)) return proTabs_arrayLikeToArray(arr); }
 
 function proTabs_slicedToArray(arr, i) { return proTabs_arrayWithHoles(arr) || proTabs_iterableToArrayLimit(arr, i) || proTabs_unsupportedIterableToArray(arr, i) || proTabs_nonIterableRest(); }
 
@@ -3827,54 +5137,25 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
+ // import React, { useState, useEffect, useCallback, useRef } from 'react'
 
 
 
 
-
-
-
-
-
-
+ // import Demo from '@pages/demo'
+// import CouponsAdd from '@pages/coupons/add'
+// import CouponsEdit from '@pages/coupons/edit'
+// import Product from '@pages/product'
+// import Exception403 from '@stateless/Exception/exception403'
+// import { getKeyName } from '@utils/publicFn'
 
 
 var initialPanes = [{
   title: '首页',
   key: '/',
-  content: home["default"],
+  content: /*#__PURE__*/react.createElement(home["default"], null),
   closable: false,
   path: '/'
-}, {
-  title: 'Demo',
-  key: '/demo',
-  content: demo["default"],
-  closable: true,
-  path: 'demo'
-}, {
-  title: '新建',
-  key: '/coupons/add',
-  content: add["default"],
-  closable: true,
-  path: 'add'
-}, {
-  title: '编辑',
-  key: '/coupons/edit',
-  content: edit["default"],
-  closable: true,
-  path: 'edit'
-}, {
-  title: '商品调价单',
-  key: '/product',
-  content: product["default"],
-  closable: true,
-  path: 'product'
-}, {
-  title: 'No Match',
-  key: '/403',
-  content: exception403,
-  closable: true,
-  path: '403'
 }];
 
 var renderTabBar = function renderTabBar(props, DefaultTabBar) {
@@ -3908,29 +5189,56 @@ var ProTabs = function ProTabs(props) {
   var _useState7 = (0,react.useState)({}),
       _useState8 = proTabs_slicedToArray(_useState7, 2),
       selectedPanel = _useState8[0],
-      setSelectedPanel = _useState8[1]; // const pathRef = useRef('')
+      setSelectedPanel = _useState8[1];
 
-
+  var pathRef = (0,react.useRef)('');
   var navigate = (0,react_router/* useNavigate */.s0)();
-  var defaultActiveKey = props.defaultActiveKey;
+  var defaultActiveKey = props.defaultActiveKey,
+      panesItem = props.panesItem,
+      tabActiveKey = props.tabActiveKey;
 
   var _useLocation = (0,react_router/* useLocation */.TH)(),
       pathname = _useLocation.pathname,
       search = _useLocation.search;
 
   var fullPath = pathname + search; // 从本地存储中恢复已打开的tab列表
-
-  var resetTabs = (0,react.useCallback)(function () {
-    var _getKeyName = getKeyName(pathname),
-        tabKey = _getKeyName.tabKey;
-
-    setPanes(initialPanes);
-    setActiveKey(tabKey);
-  }, [pathname]); // 初始化页面
+  // const resetTabs = useCallback(() => {
+  //   const { tabKey } = getKeyName(pathname)
+  //   setPanes(initialPanes)
+  //   setActiveKey(tabKey)
+  // }, [pathname])
+  // 初始化页面
+  // useEffect(() => {
+  //   resetTabs()
+  // }, [resetTabs])
 
   (0,react.useEffect)(function () {
-    resetTabs();
-  }, [resetTabs]);
+    var newPath = pathname + search; // 当前的路由和上一次的一样，return
+
+    if (!panesItem.path || panesItem.path === pathRef.current) return; // 保存这次的路由地址
+
+    pathRef.current = newPath;
+    var index = panes.findIndex(function (item) {
+      return item.key === panesItem.key;
+    }); // 无效的新tab，return
+
+    if (!panesItem.key || index > -1 && newPath === panes[index].path) {
+      setActiveKey(tabActiveKey);
+      return;
+    } // 新tab已存在，重新覆盖掉（解决带参数地址数据错乱问题）
+
+
+    if (index > -1) {
+      panes[index].path = newPath;
+      setPanes(panes);
+      setActiveKey(tabActiveKey);
+      return;
+    } // 添加新tab并保存起来
+
+
+    setPanes([].concat(proTabs_toConsumableArray(panes), [panesItem]));
+    setActiveKey(tabActiveKey); // storeTabs(panes)
+  }, [panes, panesItem, pathname, search, tabActiveKey]);
 
   var onChange = function onChange(activeKey) {
     setActiveKey(activeKey);
@@ -3999,7 +5307,7 @@ var ProTabs = function ProTabs(props) {
               homePanel = [{
                 title: '首页',
                 key: '/',
-                content: home["default"],
+                content: /*#__PURE__*/react.createElement(home["default"], null),
                 closable: false,
                 path: '/'
               }];
@@ -4050,7 +5358,7 @@ var ProTabs = function ProTabs(props) {
   return /*#__PURE__*/react.createElement(lib/* StickyContainer */.L9, {
     className: proTabs_index_module.container,
     id: "container"
-  }, "selectedPanel: ".concat(JSON.stringify(selectedPanel, null, 2)), /*#__PURE__*/react.createElement(tabs/* default */.Z, {
+  }, /*#__PURE__*/react.createElement(tabs/* default */.Z, {
     hideAdd: true,
     type: "editable-card",
     activeKey: activeKey,
@@ -4066,9 +5374,15 @@ var ProTabs = function ProTabs(props) {
     },
     className: proTabs_index_module.proTabs,
     tabBarExtraContent: {
-      left: /*#__PURE__*/react.createElement(es_button/* default */.Z, {
-        type: "link"
-      }, "Pro React")
+      left: /*#__PURE__*/react.createElement(space/* default */.Z, {
+        align: "center",
+        size: 30,
+        style: {
+          margin: '0 25px'
+        }
+      }, /*#__PURE__*/react.createElement(icons_HeartTwoTone, {
+        twoToneColor: "#eb2f96"
+      }))
     }
   }, panes.map(function (pane) {
     return /*#__PURE__*/react.createElement(tabs/* default.TabPane */.Z.TabPane, {
@@ -4093,9 +5407,7 @@ var ProTabs = function ProTabs(props) {
     }, isReload && pane.key === fullPath && pane.key !== '/403' ? /*#__PURE__*/react.createElement(es_alert/* default */.Z, {
       message: "\u5237\u65B0\u4E2D...",
       type: "info"
-    }) : /*#__PURE__*/react.createElement(pane.content, {
-      path: pane.path
-    }));
+    }) : /*#__PURE__*/react.createElement(react.Fragment, null, pane.content));
   })));
 };
 
@@ -4122,7 +5434,6 @@ function proContent_iterableToArrayLimit(arr, i) { var _i = arr == null ? null :
 function proContent_arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
-// import { Outlet } from 'react-router-dom'
 
 
 
@@ -4174,7 +5485,7 @@ var ProContent = function ProContent() {
     var _getKeyName = getKeyName(pathname),
         tabKey = _getKeyName.tabKey,
         title = _getKeyName.title,
-        Content = _getKeyName.component;
+        element = _getKeyName.element;
 
     if (pathname === pathRef.current || noNewTab.includes(pathname)) {
       setTabActiveKey(tabKey);
@@ -4184,7 +5495,7 @@ var ProContent = function ProContent() {
     pathRef.current = newPath;
     setPanesItem({
       title: title,
-      content: Content,
+      content: element,
       key: tabKey,
       closable: tabKey !== '/',
       path: newPath
@@ -4197,7 +5508,7 @@ var ProContent = function ProContent() {
     className: proContent_index_module.header
   }, /*#__PURE__*/react.createElement(proContent_breadcrumb, null)), /*#__PURE__*/react.createElement(Content, {
     className: proContent_index_module.content
-  }, "tabActiveKey: ".concat(tabActiveKey), /*#__PURE__*/react.createElement("br", null), "panesItem: ".concat(JSON.stringify(panesItem, null, 2)), /*#__PURE__*/react.createElement("br", null), /*#__PURE__*/react.createElement(proTabs, {
+  }, /*#__PURE__*/react.createElement(proTabs, {
     defaultActiveKey: "home",
     panesItem: panesItem,
     tabActiveKey: tabActiveKey
@@ -4460,50 +5771,7 @@ var ProLayout = function ProLayout() {
 
 /* harmony default export */ var pages_layout = (ProLayout);
 
-/***/ }),
-
-/***/ 1344:
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var antd_es_button_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(8385);
-/* harmony import */ var antd_es_button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(404);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(7294);
-
-
- // import RouteWithSubRoutes from '@stateless/RouteWithSubRoutes'
-// import { useNavigate, useMatch } from 'react-router-dom'
-// import CustomSwitch from '@stateless/CustomSwitch'
-
-var Coupons = function Coupons(_ref) {
-  var _ref$routes = _ref.routes,
-      routes = _ref$routes === void 0 ? [] : _ref$routes;
-  // const navigate = useNavigate()
-  // const { url } = useMatch()
-  // const redirectTo = (path) => {
-  //   navigate(path)
-  // }
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react__WEBPACK_IMPORTED_MODULE_1__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(antd_es_button__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z, {
-    type: "primary",
-    style: {
-      margin: 10
-    }
-  }, "Add Coupons"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(antd_es_button__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z, {
-    style: {
-      margin: 10
-    }
-  }, "Edit Coupons"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(antd_es_button__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z, {
-    type: "dashed",
-    style: {
-      margin: 10
-    }
-  }, "Detail Coupons"));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Coupons);
-
 /***/ })
 
 }]);
-//# sourceMappingURL=249.abfcc35b350a38aa87fa.js.map
+//# sourceMappingURL=970.6aa937b99ba4c3fc9119.js.map
