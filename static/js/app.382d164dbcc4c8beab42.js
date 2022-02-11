@@ -27763,7 +27763,7 @@ var themes = {
   dark: "../dark-theme.css",
   light: "../light-theme.css"
 };
-var defaultTheme = localStorage.getItem('antd-theme') ? localStorage.getItem('antd-theme') : 'light';
+var defaultTheme = localStorage.getItem('antd-theme') ? localStorage.getItem('antd-theme') : 'dark';
 react_dom.render( /*#__PURE__*/react.createElement(es/* Provider */.zt, {
   store: src_store
 }, /*#__PURE__*/react.createElement(config_provider/* default */.ZP, {
@@ -27775,7 +27775,7 @@ react_dom.render( /*#__PURE__*/react.createElement(es/* Provider */.zt, {
 }, /*#__PURE__*/react.createElement(react_css_theme_switcher_esm/* ThemeSwitcherProvider */.c, {
   insertionPoint: document.getElementById('inject-styles-here'),
   themeMap: themes,
-  defaultTheme: defaultTheme || 'light'
+  defaultTheme: defaultTheme || 'dark'
 }, /*#__PURE__*/react.createElement(react_router_dom/* HashRouter */.UT, null, /*#__PURE__*/react.createElement(src_App, null))))), document.getElementById('root')); // web vitals
 // reportWebVitals(console.log)
 
@@ -29972,4 +29972,4 @@ function _unsupportedIterableToArray(o, minLen) {
 /******/ var __webpack_exports__ = __webpack_require__.O();
 /******/ }
 ]);
-//# sourceMappingURL=app.56f0042de7579027e454.js.map
+//# sourceMappingURL=app.382d164dbcc4c8beab42.js.map

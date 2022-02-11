@@ -3337,7 +3337,7 @@ var ProHeader = function ProHeader() {
 
   (0,react.useEffect)(function () {
     switcher({
-      theme: themes[localStorage.getItem('antd-theme') ? localStorage.getItem('theme') : 'light']
+      theme: themes[localStorage.getItem('antd-theme') ? localStorage.getItem('theme') : 'dark']
     });
   }, [currentTheme, switcher, themes]);
 
@@ -3371,7 +3371,7 @@ var ProHeader = function ProHeader() {
     unCheckedChildren: /*#__PURE__*/react.createElement(Icon/* default */.Z, {
       component: dark
     }),
-    defaultChecked: currentTheme === 'light',
+    defaultChecked: currentTheme === 'dark',
     onClick: changeTheme
   }), /*#__PURE__*/react.createElement(icons_BellOutlined, {
     style: {
@@ -5774,4 +5774,4 @@ var ProLayout = function ProLayout() {
 /***/ })
 
 }]);
-//# sourceMappingURL=970.6aa937b99ba4c3fc9119.js.map
+//# sourceMappingURL=970.e9747c2d17071e83fc92.js.map
