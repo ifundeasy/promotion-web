@@ -28294,7 +28294,7 @@ var CouponsAdd = loadable_esm(function () {
   fallback: /*#__PURE__*/react.createElement(stateless_Loading, null)
 });
 var CouponsEdit = loadable_esm(function () {
-  return __webpack_require__.e(/* import() */ 967).then(__webpack_require__.bind(__webpack_require__, 4967));
+  return __webpack_require__.e(/* import() */ 805).then(__webpack_require__.bind(__webpack_require__, 8805));
 }, {
   fallback: /*#__PURE__*/react.createElement(stateless_Loading, null)
 });
@@ -30417,4 +30417,4 @@ function _unsupportedIterableToArray(o, minLen) {
 /******/ var __webpack_exports__ = __webpack_require__.O();
 /******/ }
 ]);
-//# sourceMappingURL=app.e260c584b102835f6a89.js.map
+//# sourceMappingURL=app.5bbea94574044e913186.js.map

@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkpromotion_web"] = self["webpackChunkpromotion_web"] || []).push([[967],{
+(self["webpackChunkpromotion_web"] = self["webpackChunkpromotion_web"] || []).push([[580],{
 
 /***/ 5467:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
@@ -333,20 +333,18 @@ var style_default = __webpack_require__(5608);
 
 /***/ }),
 
-/***/ 5038:
+/***/ 9580:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var antd_es_alert_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9485);
+/* harmony import */ var antd_es_alert__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(6772);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(7294);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(9711);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(6974);
 
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  "l": function() { return /* reexport */ useSearchParams; }
-});
 
-// UNUSED EXPORTS: useLocalStorage
 
-// EXTERNAL MODULE: ./node_modules/react/index.js
-var react = __webpack_require__(7294);
-;// CONCATENATED MODULE: ./src/components/hooks/useLocalStorage/index.js
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -361,69 +359,25 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
-function getStorageValue(key, defaultValue) {
-  if (typeof window !== 'undefined') {
-    var saved = localStorage.getItem(key);
-    return saved !== null ? JSON.parse(saved) : defaultValue;
-  }
-}
 
-var useLocalStorage = function useLocalStorage(key, defaultValue) {
-  var _useState = useState(function () {
-    return getStorageValue(key, defaultValue);
-  }),
-      _useState2 = _slicedToArray(_useState, 2),
-      value = _useState2[0],
-      setValue = _useState2[1];
+var DetailCoupons = function DetailCoupons() {
+  var _useSearchParams = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_2__/* .useSearchParams */ .lr)(),
+      _useSearchParams2 = _slicedToArray(_useSearchParams, 1),
+      searchParams = _useSearchParams2[0];
 
-  useEffect(function () {
-    localStorage.setItem(key, JSON.stringify(value));
-  }, [key, value]);
-  return [value, setValue];
-};
-// EXTERNAL MODULE: ./node_modules/react-router/index.js
-var react_router = __webpack_require__(6974);
-;// CONCATENATED MODULE: ./src/components/hooks/useSearchParams/index.js
-
-var useSearchParams = function useSearchParams() {
-  // Use the URLSearchParams API to extract the query parameters
-  // useLocation().search will have the query parameters eg: ?foo=bar&a=b
-  return new URLSearchParams((0,react_router/* useLocation */.TH)().search);
-};
-;// CONCATENATED MODULE: ./src/components/hooks/index.js
-
-
-
-
-/***/ }),
-
-/***/ 4967:
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var antd_es_alert_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9485);
-/* harmony import */ var antd_es_alert__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(6772);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(7294);
-/* harmony import */ var _hooks__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5038);
-
-
-
-
-
-var EditCoupons = function EditCoupons() {
-  var query = (0,_hooks__WEBPACK_IMPORTED_MODULE_2__/* .useSearchParams */ .l)();
-  var term = query.get('id');
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react__WEBPACK_IMPORTED_MODULE_1__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(antd_es_alert__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Z, {
+  var id = searchParams.get('id');
+  var params = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_3__/* .useParams */ .UO)();
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react__WEBPACK_IMPORTED_MODULE_1__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(antd_es_alert__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Z, {
     message: "\u9001\u5238\u6D3B\u52A8\u5355",
-    description: "--\u7F16\u8F91--",
+    description: "--\u8BE6\u60C5--",
     type: "info",
     showIcon: true
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("span", null, "Search Id: ", term));
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", null, "useParams: ", JSON.stringify(params, null, 2)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("span", null, "Search Id: ", id));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (EditCoupons);
+/* harmony default export */ __webpack_exports__["default"] = (DetailCoupons);
 
 /***/ })
 
 }]);
-//# sourceMappingURL=967.be3e13589a5a21183f59.js.map
+//# sourceMappingURL=580.b63e8caf67824bc441f0.js.map

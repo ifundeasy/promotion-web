@@ -1642,9 +1642,10 @@ if (true) {
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "UT": function() { return /* binding */ HashRouter; }
+/* harmony export */   "UT": function() { return /* binding */ HashRouter; },
+/* harmony export */   "lr": function() { return /* binding */ useSearchParams; }
 /* harmony export */ });
-/* unused harmony exports BrowserRouter, Link, NavLink, createSearchParams, unstable_HistoryRouter, useLinkClickHandler, useSearchParams */
+/* unused harmony exports BrowserRouter, Link, NavLink, createSearchParams, unstable_HistoryRouter, useLinkClickHandler */
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7294);
 /* harmony import */ var history__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5648);
 /* harmony import */ var react_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(6974);
@@ -1957,9 +1958,9 @@ function useLinkClickHandler(to, _temp) {
 
 function useSearchParams(defaultInit) {
    false ? 0 : void 0;
-  let defaultSearchParamsRef = useRef(createSearchParams(defaultInit));
-  let location = useLocation();
-  let searchParams = useMemo(() => {
+  let defaultSearchParamsRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(createSearchParams(defaultInit));
+  let location = (0,react_router__WEBPACK_IMPORTED_MODULE_2__/* .useLocation */ .TH)();
+  let searchParams = (0,react__WEBPACK_IMPORTED_MODULE_0__.useMemo)(() => {
     let searchParams = createSearchParams(location.search);
 
     for (let key of defaultSearchParamsRef.current.keys()) {
@@ -1972,8 +1973,8 @@ function useSearchParams(defaultInit) {
 
     return searchParams;
   }, [location.search]);
-  let navigate = useNavigate();
-  let setSearchParams = useCallback((nextInit, navigateOptions) => {
+  let navigate = (0,react_router__WEBPACK_IMPORTED_MODULE_2__/* .useNavigate */ .s0)();
+  let setSearchParams = (0,react__WEBPACK_IMPORTED_MODULE_0__.useCallback)((nextInit, navigateOptions) => {
     navigate("?" + createSearchParams(nextInit), navigateOptions);
   }, [navigate]);
   return [searchParams, setSearchParams];
@@ -2743,4 +2744,4 @@ if (false) {}
 /***/ })
 
 }]);
-//# sourceMappingURL=react.11aafeebb2a6032f9220.js.map
+//# sourceMappingURL=react.4abede9a77c1640792b2.js.map
