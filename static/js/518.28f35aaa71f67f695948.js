@@ -3320,7 +3320,7 @@ SyncOutlined_SyncOutlined.displayName = 'SyncOutlined';
 var home = __webpack_require__(8996);
 ;// CONCATENATED MODULE: ./src/pages/layout/proTabs/index.module.less
 // extracted by mini-css-extract-plugin
-/* harmony default export */ var proTabs_index_module = ({"container":"container","ant-tabs-editable-card":"ant-tabs-editable-card","ant-tabs-content":"ant-tabs-content","ant-tabs-tabpane":"ant-tabs-tabpane","ant-tabs-nav":"ant-tabs-nav","ant-tabs-nav-wrap":"ant-tabs-nav-wrap"});
+/* harmony default export */ var proTabs_index_module = ({"container":"container","ant-tabs-content":"ant-tabs-content","ant-tabs-tabpane":"ant-tabs-tabpane","pro-tabs":"pro-tabs","ant-tabs-nav-wrap":"ant-tabs-nav-wrap"});
 ;// CONCATENATED MODULE: ./src/pages/layout/proTabs/index.js
 
 
@@ -3386,6 +3386,7 @@ var renderTabBar = function renderTabBar(props, DefaultTabBar) {
   }, function (_ref) {
     var style = _ref.style;
     return /*#__PURE__*/react.createElement(DefaultTabBar, proTabs_extends({}, props, {
+      className: "pro-tabs",
       style: _objectSpread({}, style)
     }));
   });
@@ -3896,7 +3897,7 @@ var ProSecNav = function ProSecNav() {
   var _useState5 = (0,react.useState)(false),
       _useState6 = proSecNav_slicedToArray(_useState5, 2),
       isOpenChange = _useState6[0],
-      setIsOpenChange = _useState6[1]; // submenu keys of first level
+      setIsOpenChange = _useState6[1]; // TODO submenu keys of first level
 
 
   var _useState7 = (0,react.useState)(['/sub-act', '/sub-list']),
@@ -3907,18 +3908,11 @@ var ProSecNav = function ProSecNav() {
     var selectedPathKey = pathname;
     setSelectedKeys([selectedPathKey]);
     setOpenKeys(isOpenChange ? openKeys : pathSubmenu[pathname] ? pathSubmenu[pathname] : openKeys); // setOpenKeys(openKeys)
-  }, [pathname, openKeys, isOpenChange]);
-
-  var onItemClick = function onItemClick(_ref) {
-    var item = _ref.item,
-        key = _ref.key,
-        keyPath = _ref.keyPath;
-    setIsOpenChange(false);
-    redirectTo(key);
-  };
+  }, [pathname, openKeys, isOpenChange]); // const onItemClick = ({ key }) => {
+  //   redirectTo(key)
+  // }
 
   var onOpenChange = function onOpenChange(keys) {
-    // setOpenKeys(keys)
     var latestOpenKey = keys.find(function (key) {
       return openKeys.indexOf(key) === -1;
     });
@@ -3931,6 +3925,12 @@ var ProSecNav = function ProSecNav() {
     }
   };
 
+  var onSelect = function onSelect(_ref) {
+    var key = _ref.key;
+    redirectTo(key);
+    setIsOpenChange(false);
+  };
+
   return /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement(menu/* default */.Z, {
     mode: "inline",
     defaultSelectedKeys: selectedKeys,
@@ -3939,8 +3939,9 @@ var ProSecNav = function ProSecNav() {
     openKeys: openKeys // theme="dark"
     ,
     className: proSecNav_index_module.menu,
-    onOpenChange: onOpenChange,
-    onClick: onItemClick
+    onOpenChange: onOpenChange // onClick={onItemClick}
+    ,
+    onSelect: onSelect
   }, /*#__PURE__*/react.createElement(menu/* default.Item */.Z.Item, {
     key: "/",
     icon: /*#__PURE__*/react.createElement(icons_HomeOutlined, null)
@@ -4000,4 +4001,4 @@ var ProLayout = function ProLayout() {
 /***/ })
 
 }]);
-//# sourceMappingURL=518.fa25f038b88350a50150.js.map
+//# sourceMappingURL=518.28f35aaa71f67f695948.js.map
