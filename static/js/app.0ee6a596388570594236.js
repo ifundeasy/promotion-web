@@ -27767,8 +27767,8 @@ var zh_CN = __webpack_require__(2925);
 
 dayjs_min_default().locale('zh-cn');
 var themes = {
-  dark: "../dark-theme.css",
-  light: "../light-theme.css"
+  dark: "./dark-theme.css",
+  light: "./light-theme.css"
 };
 var defaultTheme = localStorage.getItem('antd-theme') ? localStorage.getItem('antd-theme') : 'light';
 react_dom.render( /*#__PURE__*/react.createElement(es/* Provider */.zt, {
@@ -29985,4 +29985,4 @@ function _unsupportedIterableToArray(o, minLen) {
 /******/ var __webpack_exports__ = __webpack_require__.O();
 /******/ }
 ]);
-//# sourceMappingURL=app.6e0fb866cbad7134cbdb.js.map
+//# sourceMappingURL=app.0ee6a596388570594236.js.map
