@@ -1642,9 +1642,9 @@ if (true) {
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "VK": function() { return /* binding */ BrowserRouter; }
+/* harmony export */   "UT": function() { return /* binding */ HashRouter; }
 /* harmony export */ });
-/* unused harmony exports HashRouter, Link, NavLink, createSearchParams, unstable_HistoryRouter, useLinkClickHandler, useSearchParams */
+/* unused harmony exports BrowserRouter, Link, NavLink, createSearchParams, unstable_HistoryRouter, useLinkClickHandler, useSearchParams */
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7294);
 /* harmony import */ var history__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5648);
 /* harmony import */ var react_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(6974);
@@ -1727,21 +1727,21 @@ function BrowserRouter(_ref) {
     children,
     window
   } = _ref;
-  let historyRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)();
+  let historyRef = useRef();
 
   if (historyRef.current == null) {
-    historyRef.current = (0,history__WEBPACK_IMPORTED_MODULE_1__/* .createBrowserHistory */ .lX)({
+    historyRef.current = createBrowserHistory({
       window
     });
   }
 
   let history = historyRef.current;
-  let [state, setState] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
+  let [state, setState] = useState({
     action: history.action,
     location: history.location
   });
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useLayoutEffect)(() => history.listen(setState), [history]);
-  return /*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(react_router__WEBPACK_IMPORTED_MODULE_2__/* .Router */ .F0, {
+  useLayoutEffect(() => history.listen(setState), [history]);
+  return /*#__PURE__*/createElement(Router, {
     basename: basename,
     children: children,
     location: state.location,
@@ -1760,21 +1760,21 @@ function HashRouter(_ref2) {
     children,
     window
   } = _ref2;
-  let historyRef = useRef();
+  let historyRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)();
 
   if (historyRef.current == null) {
-    historyRef.current = createHashHistory({
+    historyRef.current = (0,history__WEBPACK_IMPORTED_MODULE_1__/* .createHashHistory */ .q_)({
       window
     });
   }
 
   let history = historyRef.current;
-  let [state, setState] = useState({
+  let [state, setState] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
     action: history.action,
     location: history.location
   });
-  useLayoutEffect(() => history.listen(setState), [history]);
-  return /*#__PURE__*/createElement(Router, {
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useLayoutEffect)(() => history.listen(setState), [history]);
+  return /*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(react_router__WEBPACK_IMPORTED_MODULE_2__/* .Router */ .F0, {
     basename: basename,
     children: children,
     location: state.location,
@@ -2743,4 +2743,4 @@ if (false) {}
 /***/ })
 
 }]);
-//# sourceMappingURL=react.6b86e42ad1b53810df2a.js.map
+//# sourceMappingURL=react.11aafeebb2a6032f9220.js.map
