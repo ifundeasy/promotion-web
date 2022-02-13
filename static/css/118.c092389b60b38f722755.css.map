@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/118.c092389b60b38f722755.css","mappings":"AAAA,6CAEE,gBAAiB,CADjB,SAEF","sources":["webpack://promotion-web/./src/pages/signin/index.module.less"],"sourcesContent":[".container {\n  width: 30%;\n  margin: 80px auto;\n}\n"],"names":[],"sourceRoot":""}
