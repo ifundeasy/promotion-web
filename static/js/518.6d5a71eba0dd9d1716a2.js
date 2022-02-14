@@ -1447,7 +1447,8 @@ var PrimaryNav = function PrimaryNav() {
   };
 
   return /*#__PURE__*/react.createElement(menu/* default */.Z, {
-    mode: "horizontal"
+    mode: "horizontal",
+    width: 300
   }, /*#__PURE__*/react.createElement(menu/* default.Item */.Z.Item, {
     key: "mail",
     icon: /*#__PURE__*/react.createElement(icons_CodeOutlined, null),
@@ -1543,6 +1544,7 @@ var ProHeader = function ProHeader() {
     className: index_module.header
   }, /*#__PURE__*/react.createElement("div", {
     className: index_module.logo,
+    role: "logo",
     onClick: function onClick() {
       return redirectTo('/');
     }
@@ -1691,6 +1693,7 @@ var ProSider = function ProSider(props) {
     trigger: null,
     className: proSider_index_module.sider
   }, props.children, /*#__PURE__*/react.createElement("div", {
+    role: "collapsible",
     className: proSider_index_module.proLink,
     onClick: onCollapse
   }, collapsed ? /*#__PURE__*/react.createElement(icons_MenuUnfoldOutlined, {
@@ -3150,14 +3153,14 @@ var getRouteList = function getRouteList(result) {
           path: item.path,
           key: item.key,
           name: item.name,
-          isSubMenu: item === null || item === void 0 ? void 0 : item.isSubMenu
+          isSubMenu: item.isSubMenu
         });
       } else {
         result.push({
           path: item.path,
           key: item.key,
           name: item.name,
-          isSubMenu: item === null || item === void 0 ? void 0 : item.isSubMenu
+          isSubMenu: item.isSubMenu
         });
         getRouteList(result, getRouteItem(item.children, queryItem) ? [getRouteItem(item.children, queryItem)] : [], queryItem);
       }
@@ -3900,7 +3903,8 @@ var ProSecNav = function ProSecNav() {
   var _useState5 = (0,react.useState)(false),
       _useState6 = proSecNav_slicedToArray(_useState5, 2),
       isOpenChange = _useState6[0],
-      setIsOpenChange = _useState6[1]; // TODO submenu keys of first level
+      setIsOpenChange = _useState6[1]; // NOT READY FOR PRIME TIME
+  // submenu keys of first level
 
 
   var _useState7 = (0,react.useState)(['/sub-act', '/sub-list']),
@@ -3954,27 +3958,27 @@ var ProSecNav = function ProSecNav() {
   }, "Demo"), /*#__PURE__*/react.createElement(menu/* default.SubMenu */.Z.SubMenu, {
     key: "/sub-act",
     icon: /*#__PURE__*/react.createElement(icons_HeatMapOutlined, null),
-    title: "\u6D3B\u52A8\u5355"
+    title: "\u6280\u672F\u6808"
   }, /*#__PURE__*/react.createElement(menu/* default.SubMenu */.Z.SubMenu, {
     key: "/sub-coupons",
     icon: /*#__PURE__*/react.createElement(icons_DeploymentUnitOutlined, null),
-    title: "\u9001\u5238\u6D3B\u52A8\u5355"
+    title: "\u524D\u7AEF\u6280\u672F\u6808"
   }, /*#__PURE__*/react.createElement(menu/* default.Item */.Z.Item, {
     key: "/coupons/add"
-  }, "\u65B0\u5EFA"), /*#__PURE__*/react.createElement(menu/* default.Item */.Z.Item, {
+  }, "React"), /*#__PURE__*/react.createElement(menu/* default.Item */.Z.Item, {
     key: "/coupons/edit"
-  }, "\u7F16\u8F91")), /*#__PURE__*/react.createElement(menu/* default.Item */.Z.Item, {
+  }, "Vue")), /*#__PURE__*/react.createElement(menu/* default.Item */.Z.Item, {
     key: "/product",
     icon: /*#__PURE__*/react.createElement(icons_DeploymentUnitOutlined, null)
-  }, "\u5546\u54C1\u8C03\u4EF7\u5355")), /*#__PURE__*/react.createElement(menu/* default.SubMenu */.Z.SubMenu, {
+  }, "\u540E\u7AEF\u6280\u672F\u6808")), /*#__PURE__*/react.createElement(menu/* default.SubMenu */.Z.SubMenu, {
     key: "/sub-list",
     icon: /*#__PURE__*/react.createElement(icons_OrderedListOutlined, null),
-    title: "\u4FC3\u9500\u5217\u8868"
+    title: "\u6784\u5EFA\u5DE5\u5177"
   }, /*#__PURE__*/react.createElement(menu/* default.Item */.Z.Item, {
     key: "/coupons/list"
-  }, "\u5238\u5217\u8868"), /*#__PURE__*/react.createElement(menu/* default.Item */.Z.Item, {
+  }, "Webpack"), /*#__PURE__*/react.createElement(menu/* default.Item */.Z.Item, {
     key: "/order/list"
-  }, "\u8BA2\u5355\u5217\u8868"))));
+  }, "Vite"))));
 };
 
 /* harmony default export */ var proSecNav = (ProSecNav);
@@ -4004,4 +4008,4 @@ var ProLayout = function ProLayout() {
 /***/ })
 
 }]);
-//# sourceMappingURL=518.b941f6811b47215f92af.js.map
+//# sourceMappingURL=518.6d5a71eba0dd9d1716a2.js.map

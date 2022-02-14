@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkpromotion_web"] = self["webpackChunkpromotion_web"] || []).push([[374],{
+(self["webpackChunkpromotion_web"] = self["webpackChunkpromotion_web"] || []).push([[805],{
 
 /***/ 5467:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
@@ -333,29 +333,91 @@ var style_default = __webpack_require__(5608);
 
 /***/ }),
 
-/***/ 8374:
+/***/ 8805:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
+// ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var antd_es_alert_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9485);
-/* harmony import */ var antd_es_alert__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(6772);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(7294);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "default": function() { return /* binding */ edit; }
+});
+
+// EXTERNAL MODULE: ./node_modules/antd/es/alert/style/index.js + 1 modules
+var style = __webpack_require__(9485);
+// EXTERNAL MODULE: ./node_modules/antd/es/alert/index.js + 1 modules
+var es_alert = __webpack_require__(6772);
+// EXTERNAL MODULE: ./node_modules/react/index.js
+var react = __webpack_require__(7294);
+;// CONCATENATED MODULE: ./src/components/hooks/useLocalStorage/index.js
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+function getStorageValue(key, defaultValue) {
+  if (typeof window !== 'undefined') {
+    var saved = localStorage.getItem(key);
+    return saved !== null ? JSON.parse(saved) : defaultValue;
+  }
+}
+
+var useLocalStorage = function useLocalStorage(key, defaultValue) {
+  var _useState = useState(function () {
+    return getStorageValue(key, defaultValue);
+  }),
+      _useState2 = _slicedToArray(_useState, 2),
+      value = _useState2[0],
+      setValue = _useState2[1];
+
+  useEffect(function () {
+    localStorage.setItem(key, JSON.stringify(value));
+  }, [key, value]);
+  return [value, setValue];
+};
+// EXTERNAL MODULE: ./node_modules/react-router/index.js
+var react_router = __webpack_require__(6974);
+;// CONCATENATED MODULE: ./src/components/hooks/useUrlSearchParams/index.js
+
+var useUrlSearchParams = function useUrlSearchParams() {
+  // Use the URLSearchParams API to extract the query parameters
+  // useLocation().search will have the query parameters eg: ?foo=bar&a=b
+  return new URLSearchParams((0,react_router/* useLocation */.TH)().search);
+};
+;// CONCATENATED MODULE: ./src/components/hooks/index.js
+
+
+
+;// CONCATENATED MODULE: ./src/pages/coupons/edit/index.js
 
 
 
 
-var AddCoupons = function AddCoupons() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react__WEBPACK_IMPORTED_MODULE_1__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(antd_es_alert__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z, {
-    message: "\u9001\u5238\u6D3B\u52A8\u5355",
-    description: "--\u65B0\u5EFA--",
-    type: "info",
+
+var EditCoupons = function EditCoupons() {
+  var query = useUrlSearchParams();
+  var term = query.get('id');
+  return /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement(es_alert/* default */.Z, {
+    message: "Success Tips",
+    description: "Detailed description and advice about successful copywriting.",
+    type: "success",
     showIcon: true
-  }));
+  }), /*#__PURE__*/react.createElement("span", null, "Search Id: ", term));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (AddCoupons);
+/* harmony default export */ var edit = (EditCoupons);
 
 /***/ })
 
 }]);
-//# sourceMappingURL=374.341e9fff3780aa979896.js.map
+//# sourceMappingURL=805.738fc49ae144300c38c4.js.map

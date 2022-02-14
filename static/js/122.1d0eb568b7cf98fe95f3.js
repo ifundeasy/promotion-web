@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkpromotion_web"] = self["webpackChunkpromotion_web"] || []).push([[344],{
+(self["webpackChunkpromotion_web"] = self["webpackChunkpromotion_web"] || []).push([[122],{
 
-/***/ 1344:
+/***/ 9122:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
@@ -14,7 +14,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var Products = function Products() {
+var Coupons = function Coupons() {
   var navigate = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_2__/* .useNavigate */ .s0)();
 
   var redirectTo = function redirectTo(path) {
@@ -23,33 +23,41 @@ var Products = function Products() {
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react__WEBPACK_IMPORTED_MODULE_1__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(antd_es_button__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Z, {
     type: "primary",
+    style: {
+      margin: 10
+    },
+    onClick: function onClick() {
+      return redirectTo('/');
+    }
+  }, "Home Coupons"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(antd_es_button__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Z, {
+    type: "text",
+    style: {
+      margin: 10
+    },
     onClick: function onClick() {
       return redirectTo('coupons/add');
-    },
-    style: {
-      margin: 10
     }
   }, "Add Coupons"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(antd_es_button__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Z, {
-    onClick: function onClick() {
-      return redirectTo('coupons/edit?id=2');
-    },
     style: {
       margin: 10
+    },
+    onClick: function onClick() {
+      return redirectTo('coupons/edit?id=1');
     }
   }, "Edit Coupons"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(antd_es_button__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Z, {
-    onClick: function onClick() {
-      return redirectTo('coupons/detail?id=2');
-    },
     type: "dashed",
     style: {
       margin: 10
+    },
+    onClick: function onClick() {
+      return redirectTo('coupons/detail?id=2');
     }
   }, "Detail Coupons"));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Products);
+/* harmony default export */ __webpack_exports__["default"] = (Coupons);
 
 /***/ })
 
 }]);
-//# sourceMappingURL=344.a05e3a77253558a00853.js.map
+//# sourceMappingURL=122.1d0eb568b7cf98fe95f3.js.map

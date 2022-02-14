@@ -27530,14 +27530,6 @@ function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Sy
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
-/*
- * @Author: your name
- * @Date: 2021-12-26 14:01:57
- * @LastEditTime: 2022-02-11 18:42:17
- * @LastEditors: your name
- * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
- * @FilePath: \promotion-web\src\App.tsx
- */
  // import React, { useEffect, useState, useRef } from 'react'
 
 
@@ -27568,7 +27560,7 @@ var App = function App() {
 
     asyncCall().then(function () {
       return setLoading(false);
-    }); // return () => {
+    }, function () {}); // return () => {
     //   waterMark.current && waterMark.current.destroy()
     // }
   }, []);
@@ -28315,7 +28307,6 @@ var NoMatch = loadable_esm(function () {
 }); // import basicRouter from './basic'
 // import couponsRouter from './coupons'
 // import productRouter from './product'
-// import basicActRouter from './basicAct'
 
 var rootRouter = [{
   path: '/',
@@ -28337,7 +28328,7 @@ var rootRouter = [{
   }, {
     index: false,
     path: 'coupons',
-    name: '送券活动单',
+    name: '前端技术栈',
     isSubMenu: true,
     // 是否是子菜单 proSecNav
     key: '/coupons',
@@ -28345,32 +28336,32 @@ var rootRouter = [{
     children: [{
       index: false,
       path: 'home',
-      name: '首页',
+      name: 'React',
       key: '/coupons/home',
       element: /*#__PURE__*/react.createElement(CouponsHome, null)
     }, {
       index: false,
-      name: '新建',
+      name: 'Vue',
       path: 'add',
       key: '/coupons/add',
       element: /*#__PURE__*/react.createElement(CouponsAdd, null)
     }, {
       index: false,
       path: 'edit',
-      name: '编辑',
+      name: 'Angular',
       key: '/coupons/edit',
       element: /*#__PURE__*/react.createElement(CouponsEdit, null)
     }, {
       index: false,
       path: 'detail',
-      name: '详情',
+      name: 'Node',
       key: '/coupons/detail',
       element: /*#__PURE__*/react.createElement(CouponsDetail, null)
     }]
   }, {
     index: false,
     path: 'product',
-    name: '商品调价单',
+    name: '后端技术栈',
     key: '/product',
     element: /*#__PURE__*/react.createElement(Product, null)
   }, {
@@ -30417,4 +30408,4 @@ function _unsupportedIterableToArray(o, minLen) {
 /******/ var __webpack_exports__ = __webpack_require__.O();
 /******/ }
 ]);
-//# sourceMappingURL=app.5bbea94574044e913186.js.map
+//# sourceMappingURL=app.affa44eed7e40314bac1.js.map

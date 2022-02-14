@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkpromotion_web"] = self["webpackChunkpromotion_web"] || []).push([[580],{
+(self["webpackChunkpromotion_web"] = self["webpackChunkpromotion_web"] || []).push([[374],{
 
 /***/ 5467:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
@@ -333,51 +333,29 @@ var style_default = __webpack_require__(5608);
 
 /***/ }),
 
-/***/ 9580:
+/***/ 8374:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var antd_es_alert_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9485);
-/* harmony import */ var antd_es_alert__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(6772);
+/* harmony import */ var antd_es_alert__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(6772);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(7294);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(9711);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(6974);
-
-
-
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
 
-var DetailCoupons = function DetailCoupons() {
-  var _useSearchParams = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_2__/* .useSearchParams */ .lr)(),
-      _useSearchParams2 = _slicedToArray(_useSearchParams, 1),
-      searchParams = _useSearchParams2[0];
-
-  var id = searchParams.get('id');
-  var params = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_3__/* .useParams */ .UO)();
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react__WEBPACK_IMPORTED_MODULE_1__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(antd_es_alert__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Z, {
-    message: "\u9001\u5238\u6D3B\u52A8\u5355",
-    description: "--\u8BE6\u60C5--",
-    type: "info",
+var AddCoupons = function AddCoupons() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react__WEBPACK_IMPORTED_MODULE_1__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(antd_es_alert__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z, {
+    message: "Success Tips",
+    description: "Detailed description and advice about successful copywriting.",
+    type: "success",
     showIcon: true
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", null, "useParams: ", JSON.stringify(params, null, 2)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("span", null, "Search Id: ", id));
+  }));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (DetailCoupons);
+/* harmony default export */ __webpack_exports__["default"] = (AddCoupons);
 
 /***/ })
 
 }]);
-//# sourceMappingURL=580.b63e8caf67824bc441f0.js.map
+//# sourceMappingURL=374.ec68d0013aa03637218c.js.map
