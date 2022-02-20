@@ -1494,7 +1494,7 @@ var PrimaryNav = function PrimaryNav() {
     key: "mail",
     icon: /*#__PURE__*/react.createElement(icons_CodeOutlined, null),
     onClick: function onClick() {
-      return redirectTo('basis');
+      return redirectTo('dashboard');
     }
   }, "\u57FA\u7840\u7EC4\u4EF6\u5E93"));
 };
@@ -4109,4 +4109,4 @@ var ProLayout = function ProLayout() {
 /***/ })
 
 }]);
-//# sourceMappingURL=834.338f548e5020479938b7.js.map
+//# sourceMappingURL=834.b4aae5764dee78316f4b.js.map

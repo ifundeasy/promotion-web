@@ -20283,13 +20283,16 @@ if (true) {
 
 "use strict";
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "AW": function() { return /* binding */ Route; },
 /* harmony export */   "F0": function() { return /* binding */ Router; },
+/* harmony export */   "Z5": function() { return /* binding */ Routes; },
 /* harmony export */   "TH": function() { return /* binding */ useLocation; },
 /* harmony export */   "s0": function() { return /* binding */ useNavigate; },
+/* harmony export */   "ur": function() { return /* binding */ useNavigationType; },
 /* harmony export */   "UO": function() { return /* binding */ useParams; },
 /* harmony export */   "V$": function() { return /* binding */ useRoutes; }
 /* harmony export */ });
-/* unused harmony exports MemoryRouter, Navigate, Outlet, Route, Routes, UNSAFE_LocationContext, UNSAFE_NavigationContext, UNSAFE_RouteContext, createRoutesFromChildren, generatePath, matchPath, matchRoutes, renderMatches, resolvePath, useHref, useInRouterContext, useMatch, useNavigationType, useOutlet, useOutletContext, useResolvedPath */
+/* unused harmony exports MemoryRouter, Navigate, Outlet, UNSAFE_LocationContext, UNSAFE_NavigationContext, UNSAFE_RouteContext, createRoutesFromChildren, generatePath, matchPath, matchRoutes, renderMatches, resolvePath, useHref, useInRouterContext, useMatch, useOutlet, useOutletContext, useResolvedPath */
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7294);
 /* harmony import */ var history__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5648);
 /* provided dependency */ var console = __webpack_require__(5108);
@@ -20596,7 +20599,7 @@ function useLocation() {
  * @see https://reactrouter.com/docs/en/v6/api#usenavigationtype
  */
 function useNavigationType() {
-  return useContext(LocationContext).navigationType;
+  return (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(LocationContext).navigationType;
 }
 /**
  * Returns true if the URL for the given "to" value matches the current URL.
@@ -20783,14 +20786,14 @@ function useRoutes(routes, locationArg) {
 
 function createRoutesFromChildren(children) {
   let routes = [];
-  Children.forEach(children, element => {
-    if (! /*#__PURE__*/isValidElement(element)) {
+  react__WEBPACK_IMPORTED_MODULE_0__.Children.forEach(children, element => {
+    if (! /*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_0__.isValidElement)(element)) {
       // Ignore non-elements. This allows people to more easily inline
       // conditionals in their route config.
       return;
     }
 
-    if (element.type === Fragment) {
+    if (element.type === react__WEBPACK_IMPORTED_MODULE_0__.Fragment) {
       // Transparently support React.Fragment and its children.
       routes.push.apply(routes, createRoutesFromChildren(element.props.children));
       return;
@@ -28305,6 +28308,11 @@ var routers_Error = loadable_esm(function () {
 }, {
   fallback: /*#__PURE__*/react.createElement(stateless_Loading, null)
 });
+var Dashboard = loadable_esm(function () {
+  return Promise.all(/* import() */[__webpack_require__.e(769), __webpack_require__.e(152)]).then(__webpack_require__.bind(__webpack_require__, 4152));
+}, {
+  fallback: /*#__PURE__*/react.createElement(stateless_Loading, null)
+});
 var NoMatch = loadable_esm(function () {
   return Promise.all(/* import() */[__webpack_require__.e(769), __webpack_require__.e(776)]).then(__webpack_require__.bind(__webpack_require__, 9776));
 }, {
@@ -28393,6 +28401,12 @@ var rootRouter = [{
   name: '注册',
   key: '/signup',
   element: /*#__PURE__*/react.createElement(SignUp, null)
+}, {
+  index: false,
+  path: 'dashboard/*',
+  name: 'Dashboard',
+  key: '/dashboard',
+  element: /*#__PURE__*/react.createElement(Dashboard, null)
 } // {
 //   path: '*',
 //   name: 'No Match',
@@ -30419,4 +30433,4 @@ function _unsupportedIterableToArray(o, minLen) {
 /******/ var __webpack_exports__ = __webpack_require__.O();
 /******/ }
 ]);
-//# sourceMappingURL=app.c2b6c29c6a561f32465c.js.map
+//# sourceMappingURL=app.253c2c46c7a0856503fa.js.map
