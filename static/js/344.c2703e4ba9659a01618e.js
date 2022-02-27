@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkpromotion_web"] = self["webpackChunkpromotion_web"] || []).push([[122],{
+(self["webpackChunkpromotion_web"] = self["webpackChunkpromotion_web"] || []).push([[344],{
 
 /***/ 3994:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
@@ -12,7 +12,7 @@ var FixTabPanel = function FixTabPanel(_ref) {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     style: {
       width: '100%',
-      minHeight: 'calc(100vh - 242px)'
+      minHeight: 'calc(100vh - 252px)'
     }
   }, children);
 };
@@ -21,7 +21,7 @@ var FixTabPanel = function FixTabPanel(_ref) {
 
 /***/ }),
 
-/***/ 9122:
+/***/ 1344:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
@@ -36,7 +36,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var Coupons = function Coupons() {
+var Products = function Products() {
   var navigate = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_3__/* .useNavigate */ .s0)();
 
   var redirectTo = function redirectTo(path) {
@@ -45,41 +45,33 @@ var Coupons = function Coupons() {
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(_stateless_FixTabPanel__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(antd_es_button__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Z, {
     type: "primary",
-    style: {
-      margin: 10
-    },
-    onClick: function onClick() {
-      return redirectTo('/');
-    }
-  }, "Home Coupons"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(antd_es_button__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Z, {
-    type: "text",
-    style: {
-      margin: 10
-    },
     onClick: function onClick() {
       return redirectTo('coupons/add');
-    }
-  }, "Add Coupons"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(antd_es_button__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Z, {
+    },
     style: {
       margin: 10
-    },
+    }
+  }, "Add Coupons"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(antd_es_button__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Z, {
     onClick: function onClick() {
       return redirectTo('coupons/edit?id=1');
+    },
+    style: {
+      margin: 10
     }
   }, "Edit Coupons"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(antd_es_button__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Z, {
+    onClick: function onClick() {
+      return redirectTo('coupons/detail?id=2');
+    },
     type: "dashed",
     style: {
       margin: 10
-    },
-    onClick: function onClick() {
-      return redirectTo('coupons/detail?id=2');
     }
   }, "Detail Coupons"));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Coupons);
+/* harmony default export */ __webpack_exports__["default"] = (Products);
 
 /***/ })
 
 }]);
-//# sourceMappingURL=122.a3156637b84c5938973a.js.map
+//# sourceMappingURL=344.c2703e4ba9659a01618e.js.map

@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkpromotion_web"] = self["webpackChunkpromotion_web"] || []).push([[735],{
+(self["webpackChunkpromotion_web"] = self["webpackChunkpromotion_web"] || []).push([[996],{
 
 /***/ 3994:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
@@ -12,7 +12,7 @@ var FixTabPanel = function FixTabPanel(_ref) {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     style: {
       width: '100%',
-      minHeight: 'calc(100vh - 242px)'
+      minHeight: 'calc(100vh - 252px)'
     }
   }, children);
 };
@@ -21,7 +21,7 @@ var FixTabPanel = function FixTabPanel(_ref) {
 
 /***/ }),
 
-/***/ 5735:
+/***/ 8996:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
@@ -30,20 +30,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var Error = function Error() {
-  var error = {
-    error: 'error'
-  };
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_stateless_FixTabPanel__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Z, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", null, "Cool! Hi, React && Ant Design"), error.map(function (item) {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
-      key: item
-    }, item);
-  }));
+var Home = function Home() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_stateless_FixTabPanel__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Z, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", null, "Cool! Hi, React && Ant Design"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h4", null, "React version: ", react__WEBPACK_IMPORTED_MODULE_0__.version));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Error);
+/* harmony default export */ __webpack_exports__["default"] = (Home);
 
 /***/ })
 
 }]);
-//# sourceMappingURL=735.c4c7371c5721cd7b2855.js.map
+//# sourceMappingURL=996.5862010330d5d69d0d6e.js.map

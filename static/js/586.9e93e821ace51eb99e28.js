@@ -7301,7 +7301,7 @@ var FixTabPanel = function FixTabPanel(_ref) {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     style: {
       width: '100%',
-      minHeight: 'calc(100vh - 242px)'
+      minHeight: 'calc(100vh - 252px)'
     }
   }, children);
 };
@@ -7311,4 +7311,4 @@ var FixTabPanel = function FixTabPanel(_ref) {
 /***/ })
 
 }]);
-//# sourceMappingURL=586.ee12db509b26e085b048.js.map
+//# sourceMappingURL=586.9e93e821ace51eb99e28.js.map
