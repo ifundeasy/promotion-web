@@ -81,7 +81,9 @@ var SignIn = function SignIn() {
   }, /*#__PURE__*/react.createElement(es_form/* default */.Z, _extends({}, layout, {
     name: "basic",
     initialValues: {
-      remember: true
+      remember: true,
+      username: 'wkylin.w',
+      password: 'wkylin.w'
     },
     onFinish: onFinish,
     onFinishFailed: onFinishFailed
@@ -115,4 +117,4 @@ var SignIn = function SignIn() {
 /***/ })
 
 }]);
-//# sourceMappingURL=118.06427bda44112aea8d59.js.map
+//# sourceMappingURL=118.b185d5e3306a643e1692.js.map
