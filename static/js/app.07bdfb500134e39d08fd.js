@@ -23009,7 +23009,7 @@ var Loading = function Loading(_ref) {
 
 /***/ }),
 
-/***/ 7091:
+/***/ 9766:
 /***/ (function(__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -23023,10 +23023,6 @@ var Loading = function Loading(_ref) {
 var config_provider = __webpack_require__(540);
 // EXTERNAL MODULE: ./node_modules/react/index.js
 var react = __webpack_require__(7294);
-;// CONCATENATED MODULE: ./src/wdyr.ts
-
-
-if (false) { var whyDidYouRender; }
 // EXTERNAL MODULE: ./node_modules/react-dom/index.js
 var react_dom = __webpack_require__(3935);
 // EXTERNAL MODULE: ./node_modules/react-router-dom/index.js
@@ -28437,8 +28433,7 @@ var zh_CN = __webpack_require__(2925);
 ;// CONCATENATED MODULE: ./src/index.tsx
 
 
- // why-did-you-render
-
+// import './wdyr' // why-did-you-render
 
 
  // import { BrowserRouter as Router } from 'react-router-dom'
@@ -29117,7 +29112,7 @@ var CouponsHome = loadable_esm(function () {
   fallback: /*#__PURE__*/react.createElement(Loading/* default */.Z, null)
 });
 var CouponsAdd = loadable_esm(function () {
-  return __webpack_require__.e(/* import() */ 374).then(__webpack_require__.bind(__webpack_require__, 8374));
+  return Promise.all(/* import() */[__webpack_require__.e(769), __webpack_require__.e(374)]).then(__webpack_require__.bind(__webpack_require__, 8374));
 }, {
   fallback: /*#__PURE__*/react.createElement(Loading/* default */.Z, null)
 });
@@ -31262,8 +31257,8 @@ function _unsupportedIterableToArray(o, minLen) {
 },
 /******/ function(__webpack_require__) { // webpackRuntimeModules
 /******/ var __webpack_exec__ = function(moduleId) { return __webpack_require__(__webpack_require__.s = moduleId); }
-/******/ __webpack_require__.O(0, [736,514], function() { return __webpack_exec__(6395), __webpack_exec__(1008), __webpack_exec__(7091); });
+/******/ __webpack_require__.O(0, [736,514], function() { return __webpack_exec__(6395), __webpack_exec__(1008), __webpack_exec__(9766); });
 /******/ var __webpack_exports__ = __webpack_require__.O();
 /******/ }
 ]);
-//# sourceMappingURL=app.68bb5adff3a31fae2938.js.map
+//# sourceMappingURL=app.07bdfb500134e39d08fd.js.map

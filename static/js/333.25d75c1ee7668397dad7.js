@@ -19,172 +19,6 @@ function getDataOrAriaProps(props) {
 
 /***/ }),
 
-/***/ 8096:
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-module.exports =
-/******/ (function(modules) { // webpackBootstrap
-/******/ 	// The module cache
-/******/ 	var installedModules = {};
-/******/
-/******/ 	// The require function
-/******/ 	function __nested_webpack_require_187__(moduleId) {
-/******/
-/******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId])
-/******/ 			return installedModules[moduleId].exports;
-/******/
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = installedModules[moduleId] = {
-/******/ 			exports: {},
-/******/ 			id: moduleId,
-/******/ 			loaded: false
-/******/ 		};
-/******/
-/******/ 		// Execute the module function
-/******/ 		modules[moduleId].call(module.exports, module, module.exports, __nested_webpack_require_187__);
-/******/
-/******/ 		// Flag the module as loaded
-/******/ 		module.loaded = true;
-/******/
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
-/******/
-/******/
-/******/ 	// expose the modules object (__webpack_modules__)
-/******/ 	__nested_webpack_require_187__.m = modules;
-/******/
-/******/ 	// expose the module cache
-/******/ 	__nested_webpack_require_187__.c = installedModules;
-/******/
-/******/ 	// __webpack_public_path__
-/******/ 	__nested_webpack_require_187__.p = "";
-/******/
-/******/ 	// Load entry module and return exports
-/******/ 	return __nested_webpack_require_187__(0);
-/******/ })
-/************************************************************************/
-/******/ ([
-/* 0 */
-/***/ (function(module, exports, __nested_webpack_require_1468__) {
-
-	'use strict';
-	
-	var attach = __nested_webpack_require_1468__(1);
-	var ENVIRONMENT_IS_WORKER = typeof importScripts === 'function';
-	
-	module.exports = attach(ENVIRONMENT_IS_WORKER ? self : window);
-
-/***/ }),
-/* 1 */
-/***/ (function(module, exports, __nested_webpack_require_1732__) {
-
-	'use strict';
-	
-	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
-	
-	/*
-	* Configuration for React-Native's package system
-	* @providesModule whatwg-fetch
-	*/
-	
-	var interceptors = [];
-	
-	function interceptor(fetch) {
-	  for (var _len = arguments.length, args = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
-	    args[_key - 1] = arguments[_key];
-	  }
-	
-	  var reversedInterceptors = interceptors.reduce(function (array, interceptor) {
-	    return [interceptor].concat(array);
-	  }, []);
-	  var promise = Promise.resolve(args);
-	
-	  // Register request interceptors
-	  reversedInterceptors.forEach(function (_ref) {
-	    var request = _ref.request,
-	        requestError = _ref.requestError;
-	
-	    if (request || requestError) {
-	      promise = promise.then(function (args) {
-	        return request.apply(undefined, _toConsumableArray(args));
-	      }, requestError);
-	    }
-	  });
-	
-	  // Register fetch call
-	  promise = promise.then(function (args) {
-	    var request = new (Function.prototype.bind.apply(Request, [null].concat(_toConsumableArray(args))))();
-	    return fetch(request).then(function (response) {
-	      response.request = request;
-	      return response;
-	    }).catch(function (error) {
-	      error.request = request;
-	      return Promise.reject(error);
-	    });
-	  });
-	
-	  // Register response interceptors
-	  reversedInterceptors.forEach(function (_ref2) {
-	    var response = _ref2.response,
-	        responseError = _ref2.responseError;
-	
-	    if (response || responseError) {
-	      promise = promise.then(response, responseError);
-	    }
-	  });
-	
-	  return promise;
-	}
-	
-	module.exports = function attach(env) {
-	  // Make sure fetch is available in the given environment
-	  if (!env.fetch) {
-	    try {
-	      __nested_webpack_require_1732__(2);
-	    } catch (err) {
-	      throw Error('No fetch available. Unable to register fetch-intercept');
-	    }
-	  }
-	  env.fetch = function (fetch) {
-	    return function () {
-	      for (var _len2 = arguments.length, args = Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
-	        args[_key2] = arguments[_key2];
-	      }
-	
-	      return interceptor.apply(undefined, [fetch].concat(args));
-	    };
-	  }(env.fetch);
-	
-	  return {
-	    register: function register(interceptor) {
-	      interceptors.push(interceptor);
-	      return function () {
-	        var index = interceptors.indexOf(interceptor);
-	        if (index >= 0) {
-	          interceptors.splice(index, 1);
-	        }
-	      };
-	    },
-	    clear: function clear() {
-	      interceptors = [];
-	    }
-	  };
-	};
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports) {
-
-	module.exports = __webpack_require__(7147);
-
-/***/ })
-/******/ ]);
-//# sourceMappingURL=browser.js.map
-
-/***/ }),
-
 /***/ 4301:
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
@@ -17297,9 +17131,6 @@ function suffix(map) {
     sign: signStr
   });
 }
-// EXTERNAL MODULE: ./node_modules/fetch-intercept/lib/browser.js
-var browser = __webpack_require__(8096);
-var browser_default = /*#__PURE__*/__webpack_require__.n(browser);
 ;// CONCATENATED MODULE: ./src/service/fetch.js
 
 
@@ -17316,8 +17147,8 @@ function fetch_objectWithoutProperties(source, excluded) { if (source == null) r
 function fetch_objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
 
  // import { getToken } from '../utils/token'
-
- // import fetch from 'cross-fetch'
+// import fetchIntercept from 'fetch-intercept'
+// import fetch from 'cross-fetch'
 
 __webpack_require__(4301); // fetch polyfill
 // https://github.com/node-fetch/node-fetch
@@ -17421,26 +17252,21 @@ var initOptions = {
 
 };
 
-var handleFailedResult = function handleFailedResult(result, error, isShowError) {
-  if (result.code !== 0 && isShowError) {
-    var errMsg = result.message || result.error || error && error.message;
-    var errStatus = result.status ? result.status : error && error.name;
-    var errStr = "".concat(result.code ? result.code : errStatus, ": ").concat(errMsg);
+var handleFailedResult = function handleFailedResult(reject, response, error, isShowError) {
+  var status = response.status;
 
-    if (!error || error && error.name !== 'AbortError') {
-      message/* default.error */.ZP.error(errStr, 2);
-    }
+  if ((status && status !== 200 || error) && isShowError) {
+    message/* default.error */.ZP.error("".concat(status ? status + response.statusText : error.message), 2);
   }
 
-  return result;
+  reject(response);
 };
 
-var handleSuccessResult = function handleSuccessResult(result, isShowError) {
+var handleSuccessResult = function handleSuccessResult(reslove, result, isShowError) {
   // response.ok text/html text/plain result may be string
   if (result.code !== 0) {
     if (result.code === 41002) {
-      // window.location.href = '#/signin'
-      // hashRouter.history.push('/signin')
+      window.location.href = '/signin';
       return;
     }
 
@@ -17451,52 +17277,7 @@ var handleSuccessResult = function handleSuccessResult(result, isShowError) {
     }
   }
 
-  return result;
-};
-
-var handleErrorResponse = function handleErrorResponse(reject, response, error, isShowError) {
-  var msg = '';
-
-  switch (response.status) {
-    case 401:
-      msg = 'Unauthorized';
-      break;
-
-    case 403:
-      msg = 'Forbidden';
-      break;
-
-    case 404:
-      msg = 'Not Found';
-      break;
-
-    case 405:
-      msg = 'Method Not Allowed';
-      break;
-
-    case 504:
-      msg = 'Gateway Timeout';
-      break;
-
-    default:
-      msg = response.statusText;
-  }
-
-  reject(handleFailedResult({
-    status: response.status,
-    error: msg
-  }, error, isShowError));
-};
-
-var handleSuccessResponse = function handleSuccessResponse(resolve, reject, response, resBody, isShowError) {
-  if (response.ok) {
-    resolve(handleSuccessResult(resBody, isShowError));
-  } else {
-    handleErrorResponse(reject, response, Object.assign({}, resBody, {
-      status: response.status,
-      error: response.statusText
-    }), isShowError);
-  }
+  reslove(result);
 };
 
 var handleFetchData = function handleFetchData(url, options) {
@@ -17510,16 +17291,17 @@ var handleFetchData = function handleFetchData(url, options) {
   var signal = abortController.signal;
   return new Promise(function (resolve, reject) {
     var timer = setTimeout(function () {
-      reject(handleFailedResult({
-        error: 'Timeout for Promise'
-      }, new Error('TimeoutError: Timeout for Promise'), isShowError));
+      // handleFailedResult(
+      //   reject,
+      //   { status: 50000, statusText: 'Time out' },
+      //   new Error('TimeoutError: Timeout for Promise'),
+      //   isShowError
+      // )
       abortController.abort();
     }, timeout);
     fetch(url, fetch_objectSpread(fetch_objectSpread({}, otherOptions), {}, {
       signal: signal
-    })).finally(function () {
-      return clearTimeout(timer);
-    }).then(function (response) {
+    })).then(function (response) {
       // response.text() response.json() response.blob() response.formData() response.arrayBuffer() response.clone()
       // if(response.ok || (response.status >= 200 && response.status < 300)) { 成功 } else { 失败}
       // response.status
@@ -17532,81 +17314,50 @@ var handleFetchData = function handleFetchData(url, options) {
       // }
       var contentType = response.headers.get('Content-Type');
 
-      if (!response.ok && !contentType) {
-        handleErrorResponse(reject, response, null, isShowError);
-        return;
-      }
-
-      if (contentType.includes('application/json')) {
-        response.json().then(function (resBody) {
-          handleSuccessResponse(resolve, reject, response, resBody, isShowError);
-        }).catch(function (error) {
-          handleErrorResponse(reject, response, error, isShowError);
-        });
-      } else if (contentType.includes('application/vnd.ms-excel')) {
-        // application/octet-stream
-        response.arrayBuffer().then(function (resBuffer) {
-          var blob = new Blob([resBuffer], {
-            type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
+      if (response.status >= 200 && response.status < 300) {
+        if (contentType.includes('application/json')) {
+          response.json().then(function (resBody) {
+            handleSuccessResult(resolve, resBody, isShowError);
+          }).catch(function (error) {
+            handleFailedResult(reject, response, error, isShowError);
           });
-          var disposition = response.headers.get('content-disposition');
-          var fileName = decodeURI(disposition === null || disposition === void 0 ? void 0 : disposition.split('=')[1].replace(/'/g, '')).replace("utf-8''", '') || '';
-          var objectUrl = URL.createObjectURL(blob);
-          var downloadElement = document.createElement('a');
-          document.body.appendChild(downloadElement);
-          downloadElement.style = 'display: none';
-          downloadElement.href = objectUrl;
-          downloadElement.download = fileName;
-          downloadElement.click();
-          document.body.removeChild(downloadElement);
-        }).catch(function (error) {
-          handleErrorResponse(reject, response, error, isShowError);
-        });
-      } else if (contentType.includes('text/html') || contentType.includes('text/plain')) {
-        var resType = response.text();
-        resType.then(function (resBody) {
-          handleSuccessResponse(resolve, reject, response, resBody, isShowError);
-        }).catch(function (error) {
-          handleErrorResponse(reject, response, error, isShowError);
-        });
+        } else if (contentType.includes('application/vnd.ms-excel')) {
+          // application/octet-stream
+          response.arrayBuffer().then(function (resBuffer) {
+            var blob = new Blob([resBuffer], {
+              type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
+            });
+            var disposition = response.headers.get('content-disposition');
+            var fileName = decodeURI(disposition === null || disposition === void 0 ? void 0 : disposition.split('=')[1].replace(/'/g, '')).replace("utf-8''", '') || '';
+            var objectUrl = URL.createObjectURL(blob);
+            var downloadElement = document.createElement('a');
+            document.body.appendChild(downloadElement);
+            downloadElement.style = 'display: none';
+            downloadElement.href = objectUrl;
+            downloadElement.download = fileName;
+            downloadElement.click();
+            document.body.removeChild(downloadElement);
+          }).catch(function (error) {
+            handleFailedResult(reject, response, error, isShowError);
+          });
+        } else if (contentType.includes('text/html') || contentType.includes('text/plain')) {
+          response.text().then(function (resBody) {
+            handleSuccessResult(resolve, resBody, isShowError);
+          }).catch(function (error) {
+            handleFailedResult(reject, response, error, isShowError);
+          });
+        }
       } else {
-        // context-type */*
-        response.text().then(function (resBody) {
-          handleSuccessResponse(resolve, reject, response, resBody, isShowError);
-        }).catch(function (error) {
-          handleErrorResponse(reject, response, error, isShowError);
-        });
+        handleFailedResult(reject, response, response, isShowError);
       }
     }).catch(function (error) {
-      var errMsg = "".concat(error.name, " ").concat(error.message);
-      reject(handleFailedResult({
-        error: errMsg
-      }, error, isShowError));
+      handleFailedResult(reject, error, error, isShowError);
+    }).finally(function () {
+      return clearTimeout(timer);
     });
   });
 };
 
-browser_default().register({
-  request: function request(url, config) {
-    // Modify the url or config here
-    // console.log('url', url)
-    return [url, config];
-  },
-  requestError: function requestError(error) {
-    // Called when an error occured during another 'request' interceptor call
-    return Promise.reject(error);
-  },
-  response: function response(_response) {
-    // Modify the reponse object
-    // console.log('response', response)
-    return _response;
-  },
-  responseError: function responseError(error) {
-    // Handle an fetch error
-    // console.log('res error', error)
-    return Promise.reject(error);
-  }
-});
 var reqFetch = function reqFetch(url) {
   var params = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {
     method: 'GET',
@@ -17633,8 +17384,8 @@ var reqFetch = function reqFetch(url) {
     method: method,
     headers: fetch_objectSpread(fetch_objectSpread({}, initOptions.headers), headers),
     controller: controller,
-    isShowError: isShowError,
-    timeout: timeout
+    timeout: timeout,
+    isShowError: isShowError
   }); // POST, *GET,  PUT, DELETE, PATCH, [HEAD, CONNECT, OPTIONS, TRACE]
 
 
@@ -20776,8 +20527,7 @@ var light = __webpack_require__(5299);
 
 
 var UserDemo = function UserDemo(_ref) {
-  var children = _ref.children,
-      user = _ref.user;
+  var user = _ref.user;
   return /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement("div", null, user.name), /*#__PURE__*/react.createElement("div", null, user.age), /*#__PURE__*/react.createElement("div", null, user.address), /*#__PURE__*/react.createElement("div", null, user.dob.toDateString()), /*#__PURE__*/react.createElement(Icon/* default */.Z, {
     component: light/* default */.Z
   }));
@@ -20944,6 +20694,12 @@ var ProDemo = function ProDemo() {
   // }, [])
 
 
+  var onFetch = function onFetch() {
+    reqFetch('/faker/shops', {
+      method: 'GET'
+    }).then(function (res) {}).catch(function (error) {});
+  };
+
   return /*#__PURE__*/react.createElement(FixTabPanel/* default */.Z, null, /*#__PURE__*/react.createElement("h2", null, "\u9879\u76EE\u6587\u6863", /*#__PURE__*/react.createElement("span", {
     style: {
       fontSize: 12,
@@ -20959,7 +20715,9 @@ var ProDemo = function ProDemo() {
     onClick: function onClick() {
       return dispatch(actions/* default.deAction.decrement */.Z.deAction.decrement(2));
     }
-  }, "Decrement"), deReducer.deNumber)), /*#__PURE__*/react.createElement("h4", null, "ErrorBoundary"), /*#__PURE__*/react.createElement(ErrorBoundary/* default */.Z, null, /*#__PURE__*/react.createElement(shopsList, null)), /*#__PURE__*/react.createElement("h4", null, "File Upload"), /*#__PURE__*/react.createElement(demo_fileUpload, null), /*#__PURE__*/react.createElement(es_select, {
+  }, "Decrement"), deReducer.deNumber)), /*#__PURE__*/react.createElement("h4", {
+    onClick: onFetch
+  }, "ErrorBoundary"), /*#__PURE__*/react.createElement(ErrorBoundary/* default */.Z, null, /*#__PURE__*/react.createElement(shopsList, null)), /*#__PURE__*/react.createElement("h4", null, "File Upload"), /*#__PURE__*/react.createElement(demo_fileUpload, null), /*#__PURE__*/react.createElement(es_select, {
     placeholder: "Select a person",
     optionFilterProp: "children"
   }, /*#__PURE__*/react.createElement(es_select.Option, {
@@ -21625,4 +21383,4 @@ if (!global.fetch) {
 /***/ })
 
 }]);
-//# sourceMappingURL=333.547ca01bbf4cdb943587.js.map
+//# sourceMappingURL=333.25d75c1ee7668397dad7.js.map
