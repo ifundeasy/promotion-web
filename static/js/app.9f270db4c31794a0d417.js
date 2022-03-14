@@ -29092,7 +29092,7 @@ var Layout = loadable_esm(function () {
   fallback: /*#__PURE__*/react.createElement(Loading/* default */.Z, null)
 });
 var Home = loadable_esm(function () {
-  return __webpack_require__.e(/* import() */ 996).then(__webpack_require__.bind(__webpack_require__, 8996));
+  return __webpack_require__.e(/* import() */ 388).then(__webpack_require__.bind(__webpack_require__, 9388));
 }, {
   fallback: /*#__PURE__*/react.createElement(Loading/* default */.Z, null)
 });
@@ -31261,4 +31261,4 @@ function _unsupportedIterableToArray(o, minLen) {
 /******/ var __webpack_exports__ = __webpack_require__.O();
 /******/ }
 ]);
-//# sourceMappingURL=app.07bdfb500134e39d08fd.js.map
+//# sourceMappingURL=app.9f270db4c31794a0d417.js.map
