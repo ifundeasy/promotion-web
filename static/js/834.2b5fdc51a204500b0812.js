@@ -659,7 +659,13 @@ var initialPanes = [{
 var ProTabContext = /*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_0__.createContext)(defaultValue);
 
 var useProTabContext = function useProTabContext() {
-  return (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(ProTabContext);
+  var context = (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(ProTabContext);
+
+  if (context === undefined) {
+    throw new Error('useValue must be used within a ValueProvider');
+  }
+
+  return context;
 };
 
 var ProTabProvider = function ProTabProvider(_ref) {
@@ -676,8 +682,7 @@ var ProTabProvider = function ProTabProvider(_ref) {
       setPanes = _useState4[1];
 
   var navigate = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_2__/* .useNavigate */ .s0)();
-
-  var removeTab = function removeTab(targetKey) {
+  var removeTab = (0,react__WEBPACK_IMPORTED_MODULE_0__.useCallback)(function (targetKey) {
     var callbackFun = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : function () {};
     var delIndex = panes.findIndex(function (item) {
       return item.key === targetKey;
@@ -696,16 +701,18 @@ var ProTabProvider = function ProTabProvider(_ref) {
     }
 
     callbackFun();
-  };
-
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(ProTabContext.Provider, {
-    value: {
+  }, [activeKey, panes, navigate]);
+  var providerValue = (0,react__WEBPACK_IMPORTED_MODULE_0__.useMemo)(function () {
+    return {
       activeKey: activeKey,
       setActiveKey: setActiveKey,
       panes: panes,
       setPanes: setPanes,
       removeTab: removeTab
-    }
+    };
+  }, [activeKey, setActiveKey, panes, setPanes, removeTab]);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(ProTabContext.Provider, {
+    value: providerValue
   }, children));
 };
 
@@ -3922,4 +3929,4 @@ var ProLayout = function ProLayout() {
 /***/ })
 
 }]);
-//# sourceMappingURL=834.68924b8a515ff13279ad.js.map
+//# sourceMappingURL=834.2b5fdc51a204500b0812.js.map

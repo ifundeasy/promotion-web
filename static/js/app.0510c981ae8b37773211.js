@@ -23009,7 +23009,7 @@ var Loading = function Loading(_ref) {
 
 /***/ }),
 
-/***/ 9766:
+/***/ 2078:
 /***/ (function(__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -23132,6 +23132,73 @@ var store = (0,redux/* createStore */.MT)(src_reducers, (0,redux/* applyMiddlewa
 
 // EXTERNAL MODULE: ./node_modules/react-router/index.js
 var react_router = __webpack_require__(6974);
+;// CONCATENATED MODULE: ./src/components/stateless/Watermark/index.js
+var Watermark = function Watermark(props) {
+  var _props$container = props.container,
+      container = _props$container === void 0 ? document.body : _props$container,
+      _props$width = props.width,
+      width = _props$width === void 0 ? '300px' : _props$width,
+      _props$height = props.height,
+      height = _props$height === void 0 ? '240px' : _props$height,
+      _props$textAlign = props.textAlign,
+      textAlign = _props$textAlign === void 0 ? 'center' : _props$textAlign,
+      _props$verticalAlign = props.verticalAlign,
+      verticalAlign = _props$verticalAlign === void 0 ? 'middle' : _props$verticalAlign,
+      _props$font = props.font,
+      font = _props$font === void 0 ? '18px Microsoft Yahei' : _props$font,
+      _props$fillStyle = props.fillStyle,
+      fillStyle = _props$fillStyle === void 0 ? 'rgba(100, 100, 100, 0.2)' : _props$fillStyle,
+      _props$content = props.content,
+      content = _props$content === void 0 ? 'water mark' : _props$content,
+      _props$rotate = props.rotate,
+      rotate = _props$rotate === void 0 ? -20 : _props$rotate;
+  var canvas = document.createElement('canvas');
+  var ctx = canvas.getContext('2d');
+  canvas.setAttribute('width', width);
+  canvas.setAttribute('height', height);
+  ctx.textAlign = textAlign;
+  ctx.verticalAlign = verticalAlign;
+  ctx.font = font;
+  ctx.fillStyle = fillStyle;
+  ctx.rotate(Math.PI / 180 * rotate);
+  ctx.fillText(content, parseFloat(width) / 2, parseFloat(height) / 2);
+  var base64Url = canvas.toDataURL('image/png', 0.92);
+
+  var _wm = document.querySelector('._wm');
+
+  var watermarkDiv = _wm || document.createElement('div');
+
+  var styleStr = "\n      width: 100%;\n      height: 100%;\n      position: absolute;\n      top: 0;\n      left: 0;\n      background: url('".concat(base64Url, "');\n      pointer-events: none;");
+  watermarkDiv.setAttribute('style', styleStr);
+  watermarkDiv.classList.add('_wm');
+
+  if (!_wm) {
+    container.style.position = 'relative';
+    container.insertBefore(watermarkDiv, container.firstChild);
+  }
+
+  var MutationObserver = window.MutationObserver || window.WebKitMutationObserver;
+
+  if (MutationObserver) {
+    var observer = new MutationObserver(function () {
+      var _wm = document.querySelector('._wm');
+
+      if (_wm && _wm.getAttribute('style') !== styleStr || !_wm) {
+        observer.disconnect();
+        observer = null;
+        Watermark(props);
+      }
+    });
+    observer.observe(container, {
+      attributes: true,
+      childList: true,
+      characterData: true,
+      subtree: true
+    });
+  }
+};
+
+/* harmony default export */ var stateless_Watermark = (Watermark);
 // EXTERNAL MODULE: ./src/routers/index.js + 2 modules
 var routers = __webpack_require__(4342);
 ;// CONCATENATED MODULE: ./src/utils/tryCatch/index.js
@@ -28383,14 +28450,13 @@ function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Sy
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
- // import React, { useEffect, useState, useRef } from 'react'
 
 
 
- // import { Watermark } from '@pansy/watermark'
+
+
 
 var App = function App() {
-  // const waterMark = useRef<Watermark>()
   var _useState = (0,react.useState)(true),
       _useState2 = _slicedToArray(_useState, 2),
       loading = _useState2[0],
@@ -28406,16 +28472,16 @@ var App = function App() {
 
   (0,react.useEffect)(function () {
     // sentry init
-    sentry(); // water mark
-    // waterMark.current = new Watermark({
-    //   text: '测试测试',
-    // })
-
+    sentry();
     asyncCall().then(function () {
       return setLoading(false);
-    }, function () {}); // return () => {
-    //   waterMark.current && waterMark.current.destroy()
-    // }
+    }, function () {});
+    stateless_Watermark({
+      content: '上海麒麟有限公司',
+      // 水印文本
+      container: document.getElementById('root') // 水印容器区域
+
+    });
   }, []);
   var element = (0,react_router/* useRoutes */.V$)(routers/* default */.Z);
   if (loading) return null;
@@ -31257,8 +31323,8 @@ function _unsupportedIterableToArray(o, minLen) {
 },
 /******/ function(__webpack_require__) { // webpackRuntimeModules
 /******/ var __webpack_exec__ = function(moduleId) { return __webpack_require__(__webpack_require__.s = moduleId); }
-/******/ __webpack_require__.O(0, [736,514], function() { return __webpack_exec__(6395), __webpack_exec__(1008), __webpack_exec__(9766); });
+/******/ __webpack_require__.O(0, [736,514], function() { return __webpack_exec__(6395), __webpack_exec__(1008), __webpack_exec__(2078); });
 /******/ var __webpack_exports__ = __webpack_require__.O();
 /******/ }
 ]);
-//# sourceMappingURL=app.9f270db4c31794a0d417.js.map
+//# sourceMappingURL=app.0510c981ae8b37773211.js.map
