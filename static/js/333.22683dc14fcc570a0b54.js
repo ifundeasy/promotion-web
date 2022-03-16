@@ -20526,8 +20526,8 @@ var TsDemo = function TsDemo() {
 
 
  // import React, { useState, useEffect } from 'react'
-// import { reqFetch } from '@src/service'
 
+ // import { useReqFetch, useGetFetch, reqFetch } from '@src/service'
 
 
 
@@ -20580,19 +20580,14 @@ var ProDemo = function ProDemo() {
   });
   var dispatch = (0,react_redux_es/* useDispatch */.I0)();
 
-  var _useReqFetch = useReqFetch('/faker/app/api/user/list', {
+  var _useReqFetch = useReqFetch('https://my-json-server.typicode.com/wkylin/angular-json-server/react', {
     method: 'GET'
   }),
       _useReqFetch2 = (0,slicedToArray/* default */.Z)(_useReqFetch, 3),
       res = _useReqFetch2[0],
       loading = _useReqFetch2[1],
-      error = _useReqFetch2[2];
-
-  var _useGetFetch = useGetFetch('/faker/shops'),
-      _useGetFetch2 = (0,slicedToArray/* default */.Z)(_useGetFetch, 3),
-      booksRes = _useGetFetch2[0],
-      booksLoading = _useGetFetch2[1],
-      booksError = _useGetFetch2[2]; // const [loading, setLoading] = useState(false)
+      error = _useReqFetch2[2]; // const [booksRes, booksLoading, booksError] = useGetFetch('/faker/shops')
+  // const [loading, setLoading] = useState(false)
   // const [error, setError] = useState(false)
   // const [res, setRes] = useState([])
   // const useAsyncFetch = async (canceled, controller) => {
@@ -20636,7 +20631,7 @@ var ProDemo = function ProDemo() {
       color: '#999',
       margin: '0 10px'
     }
-  }, "\u5F85\u5B8C\u5584")), /*#__PURE__*/react.createElement("h4", null, "Mock API \u793A\u4F8B"), /*#__PURE__*/react.createElement("h4", null, "useFetch: ", loading ? 'Loading...' : error ? 'error' : JSON.stringify(res, null, 2)), /*#__PURE__*/react.createElement("h4", null, "useFetch: ", booksLoading ? 'Books Loading...' : booksError ? 'error' : JSON.stringify(booksRes, null, 2)), /*#__PURE__*/react.createElement("h4", null, "Redux \u793A\u4F8B:"), /*#__PURE__*/react.createElement(space/* default */.Z, null, /*#__PURE__*/react.createElement(space/* default */.Z, null, /*#__PURE__*/react.createElement(es_button/* default */.Z, {
+  }, "\u5F85\u5B8C\u5584")), /*#__PURE__*/react.createElement("h4", null, "Mock API \u793A\u4F8B"), /*#__PURE__*/react.createElement("h4", null, "useFetch: ", loading ? 'Loading...' : error ? 'error' : JSON.stringify(res, null, 2)), /*#__PURE__*/react.createElement("h4", null, "Redux \u793A\u4F8B:"), /*#__PURE__*/react.createElement(space/* default */.Z, null, /*#__PURE__*/react.createElement(space/* default */.Z, null, /*#__PURE__*/react.createElement(es_button/* default */.Z, {
     type: "primary",
     onClick: function onClick() {
       return dispatch(actions/* default.inAction.increment */.Z.inAction.increment(1));
@@ -21313,4 +21308,4 @@ if (!global.fetch) {
 /***/ })
 
 }]);
-//# sourceMappingURL=333.85ee1ff76eb747643af8.js.map
+//# sourceMappingURL=333.22683dc14fcc570a0b54.js.map
