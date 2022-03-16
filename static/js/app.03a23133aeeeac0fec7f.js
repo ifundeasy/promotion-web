@@ -29146,7 +29146,7 @@ var SignUp = loadable_esm(function () {
   fallback: /*#__PURE__*/react.createElement(Loading/* default */.Z, null)
 });
 var Layout = loadable_esm(function () {
-  return Promise.all(/* import() */[__webpack_require__.e(769), __webpack_require__.e(337), __webpack_require__.e(586), __webpack_require__.e(834)]).then(__webpack_require__.bind(__webpack_require__, 905));
+  return Promise.all(/* import() */[__webpack_require__.e(769), __webpack_require__.e(337), __webpack_require__.e(60), __webpack_require__.e(45)]).then(__webpack_require__.bind(__webpack_require__, 3093));
 }, {
   fallback: /*#__PURE__*/react.createElement(Loading/* default */.Z, null)
 });
@@ -29156,7 +29156,7 @@ var Home = loadable_esm(function () {
   fallback: /*#__PURE__*/react.createElement(Loading/* default */.Z, null)
 });
 var Demo = loadable_esm(function () {
-  return Promise.all(/* import() */[__webpack_require__.e(736), __webpack_require__.e(769), __webpack_require__.e(337), __webpack_require__.e(362), __webpack_require__.e(586), __webpack_require__.e(333)]).then(__webpack_require__.bind(__webpack_require__, 6333));
+  return Promise.all(/* import() */[__webpack_require__.e(736), __webpack_require__.e(769), __webpack_require__.e(337), __webpack_require__.e(362), __webpack_require__.e(60), __webpack_require__.e(15)]).then(__webpack_require__.bind(__webpack_require__, 5015));
 }, {
   fallback: /*#__PURE__*/react.createElement(Loading/* default */.Z, null)
 });
@@ -31320,4 +31320,4 @@ function _unsupportedIterableToArray(o, minLen) {
 /******/ var __webpack_exports__ = __webpack_require__.O();
 /******/ }
 ]);
-//# sourceMappingURL=app.53536f60636a56ab5ec9.js.map
+//# sourceMappingURL=app.03a23133aeeeac0fec7f.js.map

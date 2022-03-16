@@ -1,4 +1,4 @@
-(self["webpackChunkpromotion_web"] = self["webpackChunkpromotion_web"] || []).push([[333],{
+(self["webpackChunkpromotion_web"] = self["webpackChunkpromotion_web"] || []).push([[15],{
 
 /***/ 5467:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
@@ -32,7 +32,7 @@ module.exports = self.fetch.bind(self);
 
 /***/ }),
 
-/***/ 6333:
+/***/ 5015:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -16801,8 +16801,6 @@ Table_Table.Summary = FooterComponents;
 var space_style = __webpack_require__(1114);
 // EXTERNAL MODULE: ./node_modules/antd/es/space/index.js + 1 modules
 var space = __webpack_require__(9650);
-// EXTERNAL MODULE: ./src/components/stateful/ErrorBoundary/index.js + 1 modules
-var ErrorBoundary = __webpack_require__(6319);
 ;// CONCATENATED MODULE: ./node_modules/antd/es/message/style/index.less
 // extracted by mini-css-extract-plugin
 
@@ -17572,24 +17570,6 @@ var react_redux_es = __webpack_require__(3594);
 var FixTabPanel = __webpack_require__(3994);
 // EXTERNAL MODULE: ./src/actions/index.js + 2 modules
 var actions = __webpack_require__(9302);
-;// CONCATENATED MODULE: ./src/pages/demo/shopsList/index.js
-
-
-
-
-var ShopsList = function ShopsList() {
-  var _useGetFetch = useGetFetch('/faker/shops'),
-      _useGetFetch2 = (0,slicedToArray/* default */.Z)(_useGetFetch, 3),
-      booksRes = _useGetFetch2[0],
-      booksLoading = _useGetFetch2[1],
-      booksError = _useGetFetch2[2];
-
-  return /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement("h4", null, "ShopsList:"), /*#__PURE__*/react.createElement("h4", null, booksLoading && 'Books Loading...'), /*#__PURE__*/react.createElement("h4", null, booksError && 'error'), /*#__PURE__*/react.createElement("h4", null, booksRes === null || booksRes === void 0 ? void 0 : booksRes.map(function (item) {
-    return item.shopName;
-  })));
-};
-
-/* harmony default export */ var shopsList = (ShopsList);
 ;// CONCATENATED MODULE: ./node_modules/antd/es/progress/style/index.less
 // extracted by mini-css-extract-plugin
 
@@ -20524,14 +20504,14 @@ var TsDemo = function TsDemo() {
 
 
 
-
- // import React, { useState, useEffect } from 'react'
+ // import ErrorBoundary from '@stateful/ErrorBoundary'
+// import React, { useState, useEffect } from 'react'
 
  // import { useReqFetch, useGetFetch, reqFetch } from '@src/service'
 
 
 
-
+ // import ShopsList from './shopsList'
 
 
 
@@ -20642,7 +20622,7 @@ var ProDemo = function ProDemo() {
     }
   }, "Decrement"), deReducer.deNumber)), /*#__PURE__*/react.createElement("h4", {
     onClick: onFetch
-  }, "ErrorBoundary"), /*#__PURE__*/react.createElement(ErrorBoundary/* default */.Z, null, /*#__PURE__*/react.createElement(shopsList, null)), /*#__PURE__*/react.createElement("h4", null, "File Upload"), /*#__PURE__*/react.createElement(demo_fileUpload, null), /*#__PURE__*/react.createElement(es_select, {
+  }, "ErrorBoundary"), /*#__PURE__*/react.createElement("h4", null, "File Upload"), /*#__PURE__*/react.createElement(demo_fileUpload, null), /*#__PURE__*/react.createElement(es_select, {
     placeholder: "Select a person",
     optionFilterProp: "children"
   }, /*#__PURE__*/react.createElement(es_select.Option, {
@@ -21308,4 +21288,4 @@ if (!global.fetch) {
 /***/ })
 
 }]);
-//# sourceMappingURL=333.22683dc14fcc570a0b54.js.map
+//# sourceMappingURL=15.f8bd1fdc38a3de1ecffc.js.map

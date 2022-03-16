@@ -1,4 +1,4 @@
-(self["webpackChunkpromotion_web"] = self["webpackChunkpromotion_web"] || []).push([[834],{
+(self["webpackChunkpromotion_web"] = self["webpackChunkpromotion_web"] || []).push([[45],{
 
 /***/ 1870:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
@@ -275,6 +275,199 @@ module.exports.polyfill = function(object) {
   object.requestAnimationFrame = raf
   object.cancelAnimationFrame = caf
 }
+
+
+/***/ }),
+
+/***/ 5800:
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+(function (global, factory) {
+   true ? factory(exports, __webpack_require__(7294)) :
+  0;
+})(this, (function (exports, React) { 'use strict';
+
+  function _interopNamespace(e) {
+    if (e && e.__esModule) return e;
+    var n = Object.create(null);
+    if (e) {
+      Object.keys(e).forEach(function (k) {
+        if (k !== 'default') {
+          var d = Object.getOwnPropertyDescriptor(e, k);
+          Object.defineProperty(n, k, d.get ? d : {
+            enumerable: true,
+            get: function () { return e[k]; }
+          });
+        }
+      });
+    }
+    n["default"] = e;
+    return Object.freeze(n);
+  }
+
+  var React__namespace = /*#__PURE__*/_interopNamespace(React);
+
+  function _setPrototypeOf(o, p) {
+    _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
+      o.__proto__ = p;
+      return o;
+    };
+
+    return _setPrototypeOf(o, p);
+  }
+
+  function _inheritsLoose(subClass, superClass) {
+    subClass.prototype = Object.create(superClass.prototype);
+    subClass.prototype.constructor = subClass;
+    _setPrototypeOf(subClass, superClass);
+  }
+
+  var changedArray = function changedArray(a, b) {
+    if (a === void 0) {
+      a = [];
+    }
+
+    if (b === void 0) {
+      b = [];
+    }
+
+    return a.length !== b.length || a.some(function (item, index) {
+      return !Object.is(item, b[index]);
+    });
+  };
+
+  var initialState = {
+    error: null
+  };
+
+  var ErrorBoundary = /*#__PURE__*/function (_React$Component) {
+    _inheritsLoose(ErrorBoundary, _React$Component);
+
+    function ErrorBoundary() {
+      var _this;
+
+      for (var _len = arguments.length, _args = new Array(_len), _key = 0; _key < _len; _key++) {
+        _args[_key] = arguments[_key];
+      }
+
+      _this = _React$Component.call.apply(_React$Component, [this].concat(_args)) || this;
+      _this.state = initialState;
+
+      _this.resetErrorBoundary = function () {
+        var _this$props;
+
+        for (var _len2 = arguments.length, args = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
+          args[_key2] = arguments[_key2];
+        }
+
+        _this.props.onReset == null ? void 0 : (_this$props = _this.props).onReset.apply(_this$props, args);
+
+        _this.reset();
+      };
+
+      return _this;
+    }
+
+    ErrorBoundary.getDerivedStateFromError = function getDerivedStateFromError(error) {
+      return {
+        error: error
+      };
+    };
+
+    var _proto = ErrorBoundary.prototype;
+
+    _proto.reset = function reset() {
+      this.setState(initialState);
+    };
+
+    _proto.componentDidCatch = function componentDidCatch(error, info) {
+      var _this$props$onError, _this$props2;
+
+      (_this$props$onError = (_this$props2 = this.props).onError) == null ? void 0 : _this$props$onError.call(_this$props2, error, info);
+    };
+
+    _proto.componentDidUpdate = function componentDidUpdate(prevProps, prevState) {
+      var error = this.state.error;
+      var resetKeys = this.props.resetKeys; // There's an edge case where if the thing that triggered the error
+      // happens to *also* be in the resetKeys array, we'd end up resetting
+      // the error boundary immediately. This would likely trigger a second
+      // error to be thrown.
+      // So we make sure that we don't check the resetKeys on the first call
+      // of cDU after the error is set
+
+      if (error !== null && prevState.error !== null && changedArray(prevProps.resetKeys, resetKeys)) {
+        var _this$props$onResetKe, _this$props3;
+
+        (_this$props$onResetKe = (_this$props3 = this.props).onResetKeysChange) == null ? void 0 : _this$props$onResetKe.call(_this$props3, prevProps.resetKeys, resetKeys);
+        this.reset();
+      }
+    };
+
+    _proto.render = function render() {
+      var error = this.state.error;
+      var _this$props4 = this.props,
+          fallbackRender = _this$props4.fallbackRender,
+          FallbackComponent = _this$props4.FallbackComponent,
+          fallback = _this$props4.fallback;
+
+      if (error !== null) {
+        var _props = {
+          error: error,
+          resetErrorBoundary: this.resetErrorBoundary
+        };
+
+        if ( /*#__PURE__*/React__namespace.isValidElement(fallback)) {
+          return fallback;
+        } else if (typeof fallbackRender === 'function') {
+          return fallbackRender(_props);
+        } else if (FallbackComponent) {
+          return /*#__PURE__*/React__namespace.createElement(FallbackComponent, _props);
+        } else {
+          throw new Error('react-error-boundary requires either a fallback, fallbackRender, or FallbackComponent prop');
+        }
+      }
+
+      return this.props.children;
+    };
+
+    return ErrorBoundary;
+  }(React__namespace.Component);
+
+  function withErrorBoundary(Component, errorBoundaryProps) {
+    var Wrapped = function Wrapped(props) {
+      return /*#__PURE__*/React__namespace.createElement(ErrorBoundary, errorBoundaryProps, /*#__PURE__*/React__namespace.createElement(Component, props));
+    }; // Format for display in DevTools
+
+
+    var name = Component.displayName || Component.name || 'Unknown';
+    Wrapped.displayName = "withErrorBoundary(" + name + ")";
+    return Wrapped;
+  }
+
+  function useErrorHandler(givenError) {
+    var _React$useState = React__namespace.useState(null),
+        error = _React$useState[0],
+        setError = _React$useState[1];
+
+    if (givenError != null) throw givenError;
+    if (error != null) throw error;
+    return setError;
+  }
+  /*
+  eslint
+    @typescript-eslint/sort-type-union-intersection-members: "off",
+    @typescript-eslint/no-throw-literal: "off",
+    @typescript-eslint/prefer-nullish-coalescing: "off"
+  */
+
+  exports.ErrorBoundary = ErrorBoundary;
+  exports.useErrorHandler = useErrorHandler;
+  exports.withErrorBoundary = withErrorBoundary;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+//# sourceMappingURL=react-error-boundary.umd.js.map
 
 
 /***/ }),
@@ -772,7 +965,7 @@ var Home = function Home() {
 
 /***/ }),
 
-/***/ 905:
+/***/ 3093:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3158,8 +3351,41 @@ var SyncOutlined_SyncOutlined = function SyncOutlined(props, ref) {
 
 SyncOutlined_SyncOutlined.displayName = 'SyncOutlined';
 /* harmony default export */ var icons_SyncOutlined = (/*#__PURE__*/react.forwardRef(SyncOutlined_SyncOutlined));
-// EXTERNAL MODULE: ./src/components/stateful/ErrorBoundary/index.js + 1 modules
-var ErrorBoundary = __webpack_require__(6319);
+// EXTERNAL MODULE: ./node_modules/react-error-boundary/dist/react-error-boundary.umd.js
+var react_error_boundary_umd = __webpack_require__(5800);
+;// CONCATENATED MODULE: ./src/components/stateful/ErrorBoundary/index.module.less
+// extracted by mini-css-extract-plugin
+/* harmony default export */ var ErrorBoundary_index_module = ({"pre":"components-stateful-ErrorBoundary-index-module__pre--hklCp"});
+;// CONCATENATED MODULE: ./src/components/stateful/ErrorBoundary/index.js
+
+
+
+
+
+
+var ErrorFallback = function ErrorFallback(_ref) {
+  var error = _ref.error,
+      resetErrorBoundary = _ref.resetErrorBoundary;
+  return /*#__PURE__*/react.createElement("div", {
+    role: "alert"
+  }, /*#__PURE__*/react.createElement("h3", null, "Something went wrong:"), /*#__PURE__*/react.createElement("pre", {
+    className: ErrorBoundary_index_module.pre
+  }, error.message), /*#__PURE__*/react.createElement(es_button/* default */.Z, {
+    type: "primary",
+    onClick: resetErrorBoundary
+  }, "Try again"));
+};
+
+var MyErrorBoundary = function MyErrorBoundary(props) {
+  return /*#__PURE__*/react.createElement(react_error_boundary_umd.ErrorBoundary, {
+    FallbackComponent: ErrorFallback,
+    onReset: function onReset() {
+      props.fixError && props.fixError();
+    }
+  }, props.children);
+};
+
+/* harmony default export */ var ErrorBoundary = (MyErrorBoundary);
 ;// CONCATENATED MODULE: ./src/components/stateful/index.js
 
 
@@ -3440,7 +3666,7 @@ var ProTabs = function ProTabs(props) {
         title: "\u5237\u65B0",
         spin: isReload
       }), pane.title))
-    }, /*#__PURE__*/react.createElement(ErrorBoundary/* default */.Z, {
+    }, /*#__PURE__*/react.createElement(ErrorBoundary, {
       fixError: fixError
     }, /*#__PURE__*/react.createElement("div", {
       className: proTabs_index_module.tabpanel
@@ -3837,4 +4063,4 @@ var ProLayout = function ProLayout() {
 /***/ })
 
 }]);
-//# sourceMappingURL=834.9d274f38eb36e8788479.js.map
+//# sourceMappingURL=45.41f4945a82147db68b45.js.map
