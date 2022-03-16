@@ -17082,11 +17082,11 @@ function md5(string, key, raw) {
   return raw_hmac_md5(key, string);
 }
 ;// CONCATENATED MODULE: ./src/utils/suffix/index.js
+
+
 function suffix_ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 
-function suffix_objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? suffix_ownKeys(Object(source), !0).forEach(function (key) { suffix_defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : suffix_ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
-
-function suffix_defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function suffix_objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? suffix_ownKeys(Object(source), !0).forEach(function (key) { (0,defineProperty/* default */.Z)(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : suffix_ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 
 /* eslint-disable prefer-const */
 
@@ -17134,17 +17134,13 @@ function suffix(map) {
 ;// CONCATENATED MODULE: ./src/service/fetch.js
 
 
+
+
 var fetch_excluded = ["isShowError", "timeout", "controller"];
 
 function fetch_ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 
-function fetch_objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? fetch_ownKeys(Object(source), !0).forEach(function (key) { fetch_defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : fetch_ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
-
-function fetch_defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-function fetch_objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = fetch_objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
-
-function fetch_objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+function fetch_objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? fetch_ownKeys(Object(source), !0).forEach(function (key) { (0,defineProperty/* default */.Z)(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : fetch_ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 
  // import { getToken } from '../utils/token'
 // import fetchIntercept from 'fetch-intercept'
@@ -17284,7 +17280,7 @@ var handleFetchData = function handleFetchData(url, options) {
   var isShowError = options.isShowError,
       timeout = options.timeout,
       controller = options.controller,
-      otherOptions = fetch_objectWithoutProperties(options, fetch_excluded);
+      otherOptions = (0,objectWithoutProperties/* default */.Z)(options, fetch_excluded);
 
   if (otherOptions.signal) throw new Error('Signal not supported in timeoutable fetch');
   var abortController = controller || new AbortController();
@@ -17425,28 +17421,20 @@ var patchFetch = function patchFetch(url, params) {
     method: 'PATCH'
   }, params));
 };
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js
+var asyncToGenerator = __webpack_require__(5861);
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/regenerator/index.js
+var regenerator = __webpack_require__(7757);
+var regenerator_default = /*#__PURE__*/__webpack_require__.n(regenerator);
 ;// CONCATENATED MODULE: ./src/service/useFetch.js
+
+
+
+
+
 function useFetch_ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 
-function useFetch_objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? useFetch_ownKeys(Object(source), !0).forEach(function (key) { useFetch_defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : useFetch_ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
-
-function useFetch_defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
-
-function useFetch_slicedToArray(arr, i) { return useFetch_arrayWithHoles(arr) || useFetch_iterableToArrayLimit(arr, i) || useFetch_unsupportedIterableToArray(arr, i) || useFetch_nonIterableRest(); }
-
-function useFetch_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function useFetch_unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return useFetch_arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return useFetch_arrayLikeToArray(o, minLen); }
-
-function useFetch_arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function useFetch_iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function useFetch_arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+function useFetch_objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? useFetch_ownKeys(Object(source), !0).forEach(function (key) { (0,defineProperty/* default */.Z)(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : useFetch_ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 
 /**
  * Fetch Hooks
@@ -17457,24 +17445,24 @@ function useFetch_arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 var useReqFetch = function useReqFetch(url, opts) {
   var _useState = (0,react.useState)(null),
-      _useState2 = useFetch_slicedToArray(_useState, 2),
+      _useState2 = (0,slicedToArray/* default */.Z)(_useState, 2),
       res = _useState2[0],
       setRes = _useState2[1];
 
   var _useState3 = (0,react.useState)(false),
-      _useState4 = useFetch_slicedToArray(_useState3, 2),
+      _useState4 = (0,slicedToArray/* default */.Z)(_useState3, 2),
       loading = _useState4[0],
       setLoading = _useState4[1];
 
   var _useState5 = (0,react.useState)(false),
-      _useState6 = useFetch_slicedToArray(_useState5, 2),
+      _useState6 = (0,slicedToArray/* default */.Z)(_useState5, 2),
       error = _useState6[0],
       setError = _useState6[1];
 
   var asyncFetch = /*#__PURE__*/function () {
-    var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(canceled, controller) {
+    var _ref = (0,asyncToGenerator/* default */.Z)( /*#__PURE__*/regenerator_default().mark(function _callee(canceled, controller) {
       var resData;
-      return regeneratorRuntime.wrap(function _callee$(_context) {
+      return regenerator_default().wrap(function _callee$(_context) {
         while (1) {
           switch (_context.prev = _context.next) {
             case 0:
@@ -17585,24 +17573,13 @@ var FixTabPanel = __webpack_require__(3994);
 // EXTERNAL MODULE: ./src/actions/index.js + 2 modules
 var actions = __webpack_require__(9302);
 ;// CONCATENATED MODULE: ./src/pages/demo/shopsList/index.js
-function shopsList_slicedToArray(arr, i) { return shopsList_arrayWithHoles(arr) || shopsList_iterableToArrayLimit(arr, i) || shopsList_unsupportedIterableToArray(arr, i) || shopsList_nonIterableRest(); }
-
-function shopsList_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function shopsList_unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return shopsList_arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return shopsList_arrayLikeToArray(o, minLen); }
-
-function shopsList_arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function shopsList_iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function shopsList_arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
 
 var ShopsList = function ShopsList() {
   var _useGetFetch = useGetFetch('/faker/shops'),
-      _useGetFetch2 = shopsList_slicedToArray(_useGetFetch, 3),
+      _useGetFetch2 = (0,slicedToArray/* default */.Z)(_useGetFetch, 3),
       booksRes = _useGetFetch2[0],
       booksLoading = _useGetFetch2[1],
       booksError = _useGetFetch2[2];
@@ -18433,11 +18410,6 @@ Progress.defaultProps = {
 
 
 
-// EXTERNAL MODULE: ./node_modules/@babel/runtime/regenerator/index.js
-var regenerator = __webpack_require__(7757);
-var regenerator_default = /*#__PURE__*/__webpack_require__.n(regenerator);
-// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js
-var asyncToGenerator = __webpack_require__(5861);
 ;// CONCATENATED MODULE: ./node_modules/rc-upload/es/request.js
 function getError(option, xhr) {
   var msg = "cannot ".concat(option.method, " ").concat(option.action, " ").concat(xhr.status, "'");
@@ -20415,25 +20387,6 @@ var axios_default = /*#__PURE__*/__webpack_require__.n(axios);
 
 
 
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || fileUpload_unsupportedIterableToArray(arr) || _nonIterableSpread(); }
-
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
-
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return fileUpload_arrayLikeToArray(arr); }
-
-function fileUpload_slicedToArray(arr, i) { return fileUpload_arrayWithHoles(arr) || fileUpload_iterableToArrayLimit(arr, i) || fileUpload_unsupportedIterableToArray(arr, i) || fileUpload_nonIterableRest(); }
-
-function fileUpload_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function fileUpload_unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return fileUpload_arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return fileUpload_arrayLikeToArray(o, minLen); }
-
-function fileUpload_arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function fileUpload_iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function fileUpload_arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
@@ -20441,17 +20394,17 @@ function fileUpload_arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 var FileUpload = function FileUpload() {
   var _useState = (0,react.useState)([]),
-      _useState2 = fileUpload_slicedToArray(_useState, 2),
+      _useState2 = (0,slicedToArray/* default */.Z)(_useState, 2),
       fileList = _useState2[0],
       setFileList = _useState2[1];
 
   var _useState3 = (0,react.useState)(false),
-      _useState4 = fileUpload_slicedToArray(_useState3, 2),
+      _useState4 = (0,slicedToArray/* default */.Z)(_useState3, 2),
       uploading = _useState4[0],
       setUploading = _useState4[1];
 
   var _useState5 = (0,react.useState)(0),
-      _useState6 = fileUpload_slicedToArray(_useState5, 2),
+      _useState6 = (0,slicedToArray/* default */.Z)(_useState5, 2),
       percent = _useState6[0],
       setPercent = _useState6[1];
 
@@ -20494,7 +20447,7 @@ var FileUpload = function FileUpload() {
     },
     beforeUpload: function beforeUpload(file) {
       setFileList(function (preFileList) {
-        return [].concat(_toConsumableArray(preFileList), [file]);
+        return [].concat((0,toConsumableArray/* default */.Z)(preFileList), [file]);
       });
       return false;
     },
@@ -20535,17 +20488,6 @@ var UserDemo = function UserDemo(_ref) {
 
 /* harmony default export */ var User = (UserDemo);
 ;// CONCATENATED MODULE: ./src/pages/demo/tsDemo/index.tsx
-function tsDemo_slicedToArray(arr, i) { return tsDemo_arrayWithHoles(arr) || tsDemo_iterableToArrayLimit(arr, i) || tsDemo_unsupportedIterableToArray(arr, i) || tsDemo_nonIterableRest(); }
-
-function tsDemo_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function tsDemo_unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return tsDemo_arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return tsDemo_arrayLikeToArray(o, minLen); }
-
-function tsDemo_arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function tsDemo_iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function tsDemo_arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
@@ -20553,7 +20495,7 @@ function tsDemo_arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 var TsDemo = function TsDemo() {
   var _useGetFetch = useGetFetch('/faker/shops'),
-      _useGetFetch2 = tsDemo_slicedToArray(_useGetFetch, 2),
+      _useGetFetch2 = (0,slicedToArray/* default */.Z)(_useGetFetch, 2),
       booksLoading = _useGetFetch2[0],
       booksError = _useGetFetch2[1];
 
@@ -20581,18 +20523,6 @@ var TsDemo = function TsDemo() {
 
 
 
-
-function demo_slicedToArray(arr, i) { return demo_arrayWithHoles(arr) || demo_iterableToArrayLimit(arr, i) || demo_unsupportedIterableToArray(arr, i) || demo_nonIterableRest(); }
-
-function demo_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function demo_unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return demo_arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return demo_arrayLikeToArray(o, minLen); }
-
-function demo_arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function demo_iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function demo_arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
  // import React, { useState, useEffect } from 'react'
@@ -20653,13 +20583,13 @@ var ProDemo = function ProDemo() {
   var _useReqFetch = useReqFetch('/faker/app/api/user/list', {
     method: 'GET'
   }),
-      _useReqFetch2 = demo_slicedToArray(_useReqFetch, 3),
+      _useReqFetch2 = (0,slicedToArray/* default */.Z)(_useReqFetch, 3),
       res = _useReqFetch2[0],
       loading = _useReqFetch2[1],
       error = _useReqFetch2[2];
 
   var _useGetFetch = useGetFetch('/faker/shops'),
-      _useGetFetch2 = demo_slicedToArray(_useGetFetch, 3),
+      _useGetFetch2 = (0,slicedToArray/* default */.Z)(_useGetFetch, 3),
       booksRes = _useGetFetch2[0],
       booksLoading = _useGetFetch2[1],
       booksError = _useGetFetch2[2]; // const [loading, setLoading] = useState(false)
@@ -21383,4 +21313,4 @@ if (!global.fetch) {
 /***/ })
 
 }]);
-//# sourceMappingURL=333.25d75c1ee7668397dad7.js.map
+//# sourceMappingURL=333.85ee1ff76eb747643af8.js.map

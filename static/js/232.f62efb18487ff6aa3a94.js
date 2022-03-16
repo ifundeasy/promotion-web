@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkpromotion_web"] = self["webpackChunkpromotion_web"] || []).push([[374,388],{
+(self["webpackChunkpromotion_web"] = self["webpackChunkpromotion_web"] || []).push([[232],{
 
 /***/ 5467:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
@@ -333,109 +333,6 @@ var style_default = __webpack_require__(5608);
 
 /***/ }),
 
-/***/ 8163:
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "A": function() { return /* binding */ useProTabContext; },
-/* harmony export */   "n": function() { return /* binding */ ProTabProvider; }
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7294);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(6974);
-/* harmony import */ var _pages_home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9388);
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-
-
-
-var defaultValue = {
-  activeKey: '',
-  setActiveKey: function setActiveKey() {},
-  panes: [],
-  setPanes: function setPanes() {},
-  removeTab: function removeTab() {}
-};
-var initialPanes = [{
-  title: '首页',
-  key: '/',
-  content: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_pages_home__WEBPACK_IMPORTED_MODULE_1__["default"], null),
-  closable: false,
-  path: '/'
-}];
-var ProTabContext = /*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_0__.createContext)(defaultValue);
-
-var useProTabContext = function useProTabContext() {
-  var context = (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(ProTabContext);
-
-  if (context === undefined) {
-    throw new Error('useValue must be used within a ValueProvider');
-  }
-
-  return context;
-};
-
-var ProTabProvider = function ProTabProvider(_ref) {
-  var children = _ref.children;
-
-  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(''),
-      _useState2 = _slicedToArray(_useState, 2),
-      activeKey = _useState2[0],
-      setActiveKey = _useState2[1];
-
-  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(initialPanes),
-      _useState4 = _slicedToArray(_useState3, 2),
-      panes = _useState4[0],
-      setPanes = _useState4[1];
-
-  var navigate = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_2__/* .useNavigate */ .s0)();
-  var removeTab = (0,react__WEBPACK_IMPORTED_MODULE_0__.useCallback)(function (targetKey) {
-    var callbackFun = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : function () {};
-    var delIndex = panes.findIndex(function (item) {
-      return item.key === targetKey;
-    });
-    var filterPanes = panes.filter(function (pane) {
-      return pane.key !== targetKey;
-    }); // 删除非当前/当前tab
-
-    if (targetKey !== activeKey) {
-      setPanes(filterPanes);
-    } else {
-      var nextPath = filterPanes[delIndex - 1].key;
-      navigate(nextPath);
-      setActiveKey(nextPath);
-      setPanes(filterPanes);
-    }
-
-    callbackFun();
-  }, [activeKey, panes, navigate]);
-  var providerValue = (0,react__WEBPACK_IMPORTED_MODULE_0__.useMemo)(function () {
-    return {
-      activeKey: activeKey,
-      setActiveKey: setActiveKey,
-      panes: panes,
-      setPanes: setPanes,
-      removeTab: removeTab
-    };
-  }, [activeKey, setActiveKey, panes, setPanes, removeTab]);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(ProTabContext.Provider, {
-    value: providerValue
-  }, children));
-};
-
-
-
-/***/ }),
-
 /***/ 3994:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
@@ -456,58 +353,7 @@ var FixTabPanel = function FixTabPanel(_ref) {
 
 /***/ }),
 
-/***/ 8374:
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var antd_es_alert_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9485);
-/* harmony import */ var antd_es_alert__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(6772);
-/* harmony import */ var antd_es_button_style__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(8385);
-/* harmony import */ var antd_es_button__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(404);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(7294);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(6974);
-/* harmony import */ var _stateless_FixTabPanel__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3994);
-/* harmony import */ var _hooks_proTabsContext__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(8163);
-
-
-
-
-
-
-
-
-
-var AddCoupons = function AddCoupons() {
-  var _useProTabContext = (0,_hooks_proTabsContext__WEBPACK_IMPORTED_MODULE_4__/* .useProTabContext */ .A)(),
-      activeKey = _useProTabContext.activeKey,
-      removeTab = _useProTabContext.removeTab;
-
-  var navigate = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_5__/* .useNavigate */ .s0)();
-
-  var closeActiveOpenAngular = function closeActiveOpenAngular() {
-    removeTab(activeKey, function () {
-      navigate('coupons/edit', {
-        replace: true
-      });
-    });
-  };
-
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement(_stateless_FixTabPanel__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Z, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement(antd_es_button__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Z, {
-    type: "link",
-    onClick: closeActiveOpenAngular
-  }, "\u5173\u95ED\u5F53\u524D\u6807\u7B7E \u5E76\u6253\u5F00 Angular\u6807\u7B7E"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement(antd_es_alert__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .Z, {
-    message: "Success Tips",
-    description: "Detailed description and advice about successful copywriting.",
-    type: "success",
-    showIcon: true
-  }));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (AddCoupons);
-
-/***/ }),
-
-/***/ 9388:
+/***/ 3232:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 // ESM COMPAT FLAG
@@ -515,67 +361,110 @@ __webpack_require__.r(__webpack_exports__);
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
-  "default": function() { return /* binding */ home; }
+  "default": function() { return /* binding */ edit; }
 });
 
+// EXTERNAL MODULE: ./node_modules/antd/es/alert/style/index.js + 1 modules
+var style = __webpack_require__(9485);
+// EXTERNAL MODULE: ./node_modules/antd/es/alert/index.js + 1 modules
+var es_alert = __webpack_require__(6772);
 // EXTERNAL MODULE: ./node_modules/react/index.js
 var react = __webpack_require__(7294);
+;// CONCATENATED MODULE: ./src/components/hooks/useLocalStorage/index.js
+
+
+
+function getStorageValue(key, defaultValue) {
+  if (typeof window !== 'undefined') {
+    var saved = localStorage.getItem(key);
+    return saved !== null ? JSON.parse(saved) : defaultValue;
+  }
+}
+
+var useLocalStorage = function useLocalStorage(key, defaultValue) {
+  var _useState = useState(function () {
+    return getStorageValue(key, defaultValue);
+  }),
+      _useState2 = _slicedToArray(_useState, 2),
+      value = _useState2[0],
+      setValue = _useState2[1];
+
+  useEffect(function () {
+    localStorage.setItem(key, JSON.stringify(value));
+  }, [key, value]);
+  return [value, setValue];
+};
+// EXTERNAL MODULE: ./node_modules/react-router/index.js
+var react_router = __webpack_require__(6974);
+;// CONCATENATED MODULE: ./src/components/hooks/useUrlSearchParams/index.js
+
+var useUrlSearchParams = function useUrlSearchParams() {
+  // Use the URLSearchParams API to extract the query parameters
+  // useLocation().search will have the query parameters eg: ?foo=bar&a=b
+  return new URLSearchParams((0,react_router/* useLocation */.TH)().search);
+};
+;// CONCATENATED MODULE: ./src/components/hooks/useInterval/index.js
+
+
+var useInterval = function useInterval(callback, delay) {
+  var savedCallback = useRef(); // Remember the latest function.
+
+  useEffect(function () {
+    savedCallback.current = callback;
+  }, [callback]); // Set up the interval.
+
+  useEffect(function () {
+    function tick() {
+      savedCallback.current();
+    }
+
+    if (delay !== null) {
+      var id = setInterval(tick, delay);
+      return function () {
+        return clearInterval(id);
+      };
+    }
+  }, [delay]);
+};
+
+/* harmony default export */ var hooks_useInterval = ((/* unused pure expression or super */ null && (useInterval))); // const [isRunning, setIsRunning] = useState(true)
+// useInterval(
+//   () => {
+//     // Your custom logic here
+//   },
+//   isRunning ? delay : null
+// )
+// function handleIsRunningChange(e) {
+//   setIsRunning(true)
+// }
+;// CONCATENATED MODULE: ./src/components/hooks/index.js
+
+
+
+
 // EXTERNAL MODULE: ./src/components/stateless/FixTabPanel/index.js
 var FixTabPanel = __webpack_require__(3994);
-;// CONCATENATED MODULE: ./src/components/stateless/TypedText/index.js
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+;// CONCATENATED MODULE: ./src/pages/coupons/edit/index.js
 
 
 
-var TypedText = function TypedText(_ref) {
-  var children = _ref.children,
-      _ref$delay = _ref.delay,
-      delay = _ref$delay === void 0 ? 110 : _ref$delay;
 
-  var _useState = (0,react.useState)(0),
-      _useState2 = _slicedToArray(_useState, 2),
-      revealedLetters = _useState2[0],
-      setRevealedLetters = _useState2[1];
 
-  var interval = setInterval(function () {
-    return setRevealedLetters(function (l) {
-      return l + 1;
-    });
-  }, delay);
-  (0,react.useEffect)(function () {
-    if (revealedLetters === children.length) clearInterval(interval);
-  }, [children, interval, revealedLetters]);
-  (0,react.useEffect)(function () {
-    return function () {
-      return clearInterval(interval);
-    };
-  }, [interval]);
-  return /*#__PURE__*/react.createElement(react.Fragment, null, children.substring(0, revealedLetters));
+
+var EditCoupons = function EditCoupons() {
+  var query = useUrlSearchParams();
+  var term = query.get('id');
+  return /*#__PURE__*/react.createElement(FixTabPanel/* default */.Z, null, /*#__PURE__*/react.createElement(es_alert/* default */.Z, {
+    message: "Success Tips",
+    description: "Detailed description and advice about successful copywriting.",
+    type: "success",
+    showIcon: true
+  }), /*#__PURE__*/react.createElement("span", null, "Search Id: ", term));
 };
 
-/* harmony default export */ var stateless_TypedText = (/*#__PURE__*/(0,react.memo)(TypedText));
-;// CONCATENATED MODULE: ./src/pages/home/index.js
-
-
-
-
-var Home = function Home() {
-  return /*#__PURE__*/react.createElement(FixTabPanel/* default */.Z, null, /*#__PURE__*/react.createElement("h2", null, /*#__PURE__*/react.createElement(stateless_TypedText, null, "Cool! Hi, React & Ant Design!")), /*#__PURE__*/react.createElement("h3", null, "React version: ", react.version));
-};
-
-/* harmony default export */ var home = (Home);
+/* harmony default export */ var edit = (EditCoupons);
 
 /***/ })
 
 }]);
-//# sourceMappingURL=374.73f165aa7dcaa3b3e05d.js.map
+//# sourceMappingURL=232.f62efb18487ff6aa3a94.js.map

@@ -624,20 +624,10 @@ __webpack_unused_export__ = _Sticky2.default;
 /* harmony export */   "A": function() { return /* binding */ useProTabContext; },
 /* harmony export */   "n": function() { return /* binding */ ProTabProvider; }
 /* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(9439);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7294);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(6974);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(6974);
 /* harmony import */ var _pages_home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9388);
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
@@ -672,16 +662,16 @@ var ProTabProvider = function ProTabProvider(_ref) {
   var children = _ref.children;
 
   var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(''),
-      _useState2 = _slicedToArray(_useState, 2),
+      _useState2 = (0,_babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z)(_useState, 2),
       activeKey = _useState2[0],
       setActiveKey = _useState2[1];
 
   var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(initialPanes),
-      _useState4 = _slicedToArray(_useState3, 2),
+      _useState4 = (0,_babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z)(_useState3, 2),
       panes = _useState4[0],
       setPanes = _useState4[1];
 
-  var navigate = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_2__/* .useNavigate */ .s0)();
+  var navigate = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_3__/* .useNavigate */ .s0)();
   var removeTab = (0,react__WEBPACK_IMPORTED_MODULE_0__.useCallback)(function (targetKey) {
     var callbackFun = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : function () {};
     var delIndex = panes.findIndex(function (item) {
@@ -736,18 +726,9 @@ __webpack_require__.d(__webpack_exports__, {
 var react = __webpack_require__(7294);
 // EXTERNAL MODULE: ./src/components/stateless/FixTabPanel/index.js
 var FixTabPanel = __webpack_require__(3994);
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/slicedToArray.js + 1 modules
+var slicedToArray = __webpack_require__(9439);
 ;// CONCATENATED MODULE: ./src/components/stateless/TypedText/index.js
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
@@ -757,7 +738,7 @@ var TypedText = function TypedText(_ref) {
       delay = _ref$delay === void 0 ? 110 : _ref$delay;
 
   var _useState = (0,react.useState)(0),
-      _useState2 = _slicedToArray(_useState, 2),
+      _useState2 = (0,slicedToArray/* default */.Z)(_useState, 2),
       revealedLetters = _useState2[0],
       setRevealedLetters = _useState2[1];
 
@@ -1346,12 +1327,11 @@ var PrimaryNav = function PrimaryNav() {
 // EXTERNAL MODULE: ./src/assets/svg/light.svg
 var light = __webpack_require__(5299);
 ;// CONCATENATED MODULE: ./src/assets/svg/dark.svg
-function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 
 
 var SvgDark = function SvgDark(props) {
-  return /*#__PURE__*/react.createElement("svg", _extends({
+  return /*#__PURE__*/react.createElement("svg", (0,esm_extends/* default */.Z)({
     stroke: "currentColor",
     fill: "currentColor",
     strokeWidth: 0,
@@ -1542,25 +1522,13 @@ MenuFoldOutlined_MenuFoldOutlined.displayName = 'MenuFoldOutlined';
 
 
 
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
 
 
 
 
 var ProSider = function ProSider(props) {
   var _useState = (0,react.useState)(false),
-      _useState2 = _slicedToArray(_useState, 2),
+      _useState2 = (0,slicedToArray/* default */.Z)(_useState, 2),
       collapsed = _useState2[0],
       setCollapsed = _useState2[1];
 
@@ -3064,25 +3032,6 @@ var getRouteList = function getRouteList(result) {
 
 
 
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || breadcrumb_unsupportedIterableToArray(arr) || _nonIterableSpread(); }
-
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
-
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return breadcrumb_arrayLikeToArray(arr); }
-
-function breadcrumb_slicedToArray(arr, i) { return breadcrumb_arrayWithHoles(arr) || breadcrumb_iterableToArrayLimit(arr, i) || breadcrumb_unsupportedIterableToArray(arr, i) || breadcrumb_nonIterableRest(); }
-
-function breadcrumb_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function breadcrumb_unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return breadcrumb_arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return breadcrumb_arrayLikeToArray(o, minLen); }
-
-function breadcrumb_arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function breadcrumb_iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function breadcrumb_arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
  // import useBreadcrumbs from 'use-react-router-breadcrumbs'
@@ -3098,7 +3047,7 @@ var ProBreadcrumb = function ProBreadcrumb() {
   var navigate = (0,react_router/* useNavigate */.s0)(); // const breadcrumbs = useBreadcrumbs()
 
   var _useState = (0,react.useState)([]),
-      _useState2 = breadcrumb_slicedToArray(_useState, 2),
+      _useState2 = (0,slicedToArray/* default */.Z)(_useState, 2),
       breadcrumbList = _useState2[0],
       setBreadcrumbList = _useState2[1];
 
@@ -3118,7 +3067,7 @@ var ProBreadcrumb = function ProBreadcrumb() {
         isSubMenu: false
       }]);
     } else {
-      setBreadcrumbList(_toConsumableArray(routeList));
+      setBreadcrumbList((0,toConsumableArray/* default */.Z)(routeList));
     }
   }, [pathname]);
 
@@ -3158,6 +3107,11 @@ var ProBreadcrumb = function ProBreadcrumb() {
 var tabs_style = __webpack_require__(2293);
 // EXTERNAL MODULE: ./node_modules/antd/es/tabs/index.js + 17 modules
 var tabs = __webpack_require__(7428);
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js
+var asyncToGenerator = __webpack_require__(5861);
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/regenerator/index.js
+var regenerator = __webpack_require__(7757);
+var regenerator_default = /*#__PURE__*/__webpack_require__.n(regenerator);
 // EXTERNAL MODULE: ./node_modules/react-sticky/lib/index.js
 var lib = __webpack_require__(8439);
 ;// CONCATENATED MODULE: ./node_modules/@ant-design/icons-svg/es/asn/HeartTwoTone.js
@@ -3226,37 +3180,15 @@ var home = __webpack_require__(9388);
 
 
 
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
 
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
-function proTabs_toConsumableArray(arr) { return proTabs_arrayWithoutHoles(arr) || proTabs_iterableToArray(arr) || proTabs_unsupportedIterableToArray(arr) || proTabs_nonIterableSpread(); }
 
-function proTabs_nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 
-function proTabs_iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
 
-function proTabs_arrayWithoutHoles(arr) { if (Array.isArray(arr)) return proTabs_arrayLikeToArray(arr); }
-
-function proTabs_slicedToArray(arr, i) { return proTabs_arrayWithHoles(arr) || proTabs_iterableToArrayLimit(arr, i) || proTabs_unsupportedIterableToArray(arr, i) || proTabs_nonIterableRest(); }
-
-function proTabs_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function proTabs_unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return proTabs_arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return proTabs_arrayLikeToArray(o, minLen); }
-
-function proTabs_arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function proTabs_iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function proTabs_arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-function proTabs_extends() { proTabs_extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return proTabs_extends.apply(this, arguments); }
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { (0,defineProperty/* default */.Z)(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 
 
 
@@ -3274,7 +3206,7 @@ var renderTabBar = function renderTabBar(props, DefaultTabBar) {
     relative: true
   }, function (_ref) {
     var style = _ref.style;
-    return /*#__PURE__*/react.createElement(DefaultTabBar, proTabs_extends({}, props, {
+    return /*#__PURE__*/react.createElement(DefaultTabBar, (0,esm_extends/* default */.Z)({}, props, {
       className: "pro-tabs",
       style: _objectSpread({}, style)
     }));
@@ -3290,12 +3222,12 @@ var ProTabs = function ProTabs(props) {
       removeTab = _useProTabContext.removeTab;
 
   var _useState = (0,react.useState)(false),
-      _useState2 = proTabs_slicedToArray(_useState, 2),
+      _useState2 = (0,slicedToArray/* default */.Z)(_useState, 2),
       isReload = _useState2[0],
       setIsReload = _useState2[1];
 
   var _useState3 = (0,react.useState)({}),
-      _useState4 = proTabs_slicedToArray(_useState3, 2),
+      _useState4 = (0,slicedToArray/* default */.Z)(_useState3, 2),
       selectedPanel = _useState4[0],
       setSelectedPanel = _useState4[1];
 
@@ -3348,7 +3280,7 @@ var ProTabs = function ProTabs(props) {
       return;
     }
 
-    setPanes([].concat(proTabs_toConsumableArray(panes), [panesItem]));
+    setPanes([].concat((0,toConsumableArray/* default */.Z)(panes), [panesItem]));
     setActiveKey(tabActiveKey); // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [panes, panesItem, pathname, search, tabActiveKey]);
 
@@ -3392,9 +3324,9 @@ var ProTabs = function ProTabs(props) {
 
 
   var removeAll = /*#__PURE__*/function () {
-    var _ref3 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(isRemoveAll) {
+    var _ref3 = (0,asyncToGenerator/* default */.Z)( /*#__PURE__*/regenerator_default().mark(function _callee(isRemoveAll) {
       var key, homePanel, nowPanes;
-      return regeneratorRuntime.wrap(function _callee$(_context) {
+      return regenerator_default().wrap(function _callee$(_context) {
         while (1) {
           switch (_context.prev = _context.next) {
             case 0:
@@ -3528,18 +3460,6 @@ var ProTabs = function ProTabs(props) {
 
 
 
-function proContent_slicedToArray(arr, i) { return proContent_arrayWithHoles(arr) || proContent_iterableToArrayLimit(arr, i) || proContent_unsupportedIterableToArray(arr, i) || proContent_nonIterableRest(); }
-
-function proContent_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function proContent_unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return proContent_arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return proContent_arrayLikeToArray(o, minLen); }
-
-function proContent_arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function proContent_iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function proContent_arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
 
 
 
@@ -3556,7 +3476,7 @@ var noNewTab = ['/signin', '/signup'];
 
 var ProContent = function ProContent() {
   var _useState = (0,react.useState)('home'),
-      _useState2 = proContent_slicedToArray(_useState, 2),
+      _useState2 = (0,slicedToArray/* default */.Z)(_useState, 2),
       tabActiveKey = _useState2[0],
       setTabActiveKey = _useState2[1];
 
@@ -3567,7 +3487,7 @@ var ProContent = function ProContent() {
     closable: false,
     path: ''
   }),
-      _useState4 = proContent_slicedToArray(_useState3, 2),
+      _useState4 = (0,slicedToArray/* default */.Z)(_useState3, 2),
       panesItem = _useState4[0],
       setPanesItem = _useState4[1];
 
@@ -3769,18 +3689,6 @@ var QuestionCircleOutlined = __webpack_require__(1870);
 
 
 
-function proSecNav_slicedToArray(arr, i) { return proSecNav_arrayWithHoles(arr) || proSecNav_iterableToArrayLimit(arr, i) || proSecNav_unsupportedIterableToArray(arr, i) || proSecNav_nonIterableRest(); }
-
-function proSecNav_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function proSecNav_unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return proSecNav_arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return proSecNav_arrayLikeToArray(o, minLen); }
-
-function proSecNav_arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function proSecNav_iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function proSecNav_arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
 
  // import { useNavigate } from 'react-router-dom'
 
@@ -3804,26 +3712,26 @@ var ProSecNav = function ProSecNav() {
   };
 
   var _useState = (0,react.useState)(['home']),
-      _useState2 = proSecNav_slicedToArray(_useState, 2),
+      _useState2 = (0,slicedToArray/* default */.Z)(_useState, 2),
       selectedKeys = _useState2[0],
       setSelectedKeys = _useState2[1]; // 当前路由对应的 sub menu key
 
 
   var _useState3 = (0,react.useState)(['home']),
-      _useState4 = proSecNav_slicedToArray(_useState3, 2),
+      _useState4 = (0,slicedToArray/* default */.Z)(_useState3, 2),
       openKeys = _useState4[0],
       setOpenKeys = _useState4[1]; // 提取放在redux中, tab 切换时改成 false
 
 
   var _useState5 = (0,react.useState)(false),
-      _useState6 = proSecNav_slicedToArray(_useState5, 2),
+      _useState6 = (0,slicedToArray/* default */.Z)(_useState5, 2),
       isOpenChange = _useState6[0],
       setIsOpenChange = _useState6[1]; // NOT READY FOR PRIME TIME
   // submenu keys of first level
 
 
   var _useState7 = (0,react.useState)(['/sub-act', '/sub-list', '/sub-error']),
-      _useState8 = proSecNav_slicedToArray(_useState7, 1),
+      _useState8 = (0,slicedToArray/* default */.Z)(_useState7, 1),
       rootSubmenuKeys = _useState8[0];
 
   (0,react.useEffect)(function () {
@@ -3929,4 +3837,4 @@ var ProLayout = function ProLayout() {
 /***/ })
 
 }]);
-//# sourceMappingURL=834.2b5fdc51a204500b0812.js.map
+//# sourceMappingURL=834.9d274f38eb36e8788479.js.map

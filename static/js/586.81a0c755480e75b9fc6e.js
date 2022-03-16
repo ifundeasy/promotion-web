@@ -3496,13 +3496,13 @@ var style_default = __webpack_require__(5608);
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony import */ var _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(7462);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7294);
-function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 
 
 var SvgLight = function SvgLight(props) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", _extends({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", (0,_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Z)({
     stroke: "currentColor",
     fill: "currentColor",
     strokeWidth: 0,
@@ -7298,4 +7298,4 @@ var FixTabPanel = function FixTabPanel(_ref) {
 /***/ })
 
 }]);
-//# sourceMappingURL=586.699dab020ad69f69f7aa.js.map
+//# sourceMappingURL=586.81a0c755480e75b9fc6e.js.map
