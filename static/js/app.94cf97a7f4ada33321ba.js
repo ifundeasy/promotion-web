@@ -23172,7 +23172,7 @@ var Watermark = function Watermark(props) {
 
   var watermarkDiv = _wm || document.createElement('div');
 
-  var styleStr = "\n      width: 100%;\n      height: 100%;\n      position: absolute;\n      top: 0;\n      left: 0;\n      background: url('".concat(base64Url, "');\n      pointer-events: none;");
+  var styleStr = "\n      width: 100%;\n      height: 100%;\n      position: absolute;\n      top: 0;\n      left: 0;\n      z-index: 99999;\n      background: url('".concat(base64Url, "');\n      pointer-events: none;");
   watermarkDiv.setAttribute('style', styleStr);
   watermarkDiv.classList.add('_wm');
 
@@ -31320,4 +31320,4 @@ function _unsupportedIterableToArray(o, minLen) {
 /******/ var __webpack_exports__ = __webpack_require__.O();
 /******/ }
 ]);
-//# sourceMappingURL=app.03a23133aeeeac0fec7f.js.map
+//# sourceMappingURL=app.94cf97a7f4ada33321ba.js.map
