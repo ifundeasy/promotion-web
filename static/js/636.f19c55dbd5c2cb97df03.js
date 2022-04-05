@@ -820,7 +820,7 @@ __webpack_unused_export__ = _Sticky2.default;
 /* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(9439);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7294);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(6974);
-/* harmony import */ var _pages_home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9388);
+/* harmony import */ var _pages_home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3584);
 
 
 
@@ -903,7 +903,7 @@ var ProTabProvider = function ProTabProvider(_ref) {
 
 /***/ }),
 
-/***/ 9388:
+/***/ 3584:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -952,13 +952,22 @@ var TypedText = function TypedText(_ref) {
 };
 
 /* harmony default export */ var stateless_TypedText = (/*#__PURE__*/(0,react.memo)(TypedText));
+;// CONCATENATED MODULE: ./src/pages/home/index.module.less
+// extracted by mini-css-extract-plugin
+/* harmony default export */ var index_module = ({"button":"pages-home-index-module__button--GgsIa","typedText":"pages-home-index-module__typedText--od9oV","spotLight":"pages-home-index-module__spotLight--ghGu1","move":"pages-home-index-module__move--SWK09"});
 ;// CONCATENATED MODULE: ./src/pages/home/index.js
 
 
 
 
+
 var Home = function Home() {
-  return /*#__PURE__*/react.createElement(FixTabPanel/* default */.Z, null, /*#__PURE__*/react.createElement("h2", null, /*#__PURE__*/react.createElement(stateless_TypedText, null, "Cool! Hi, React & Ant Design!")), /*#__PURE__*/react.createElement("h3", null, "React version: ", react.version));
+  return /*#__PURE__*/react.createElement(FixTabPanel/* default */.Z, null, /*#__PURE__*/react.createElement("h2", {
+    className: index_module.TypedText
+  }, /*#__PURE__*/react.createElement(stateless_TypedText, null, "Cool! Hi, React & Ant Design!")), /*#__PURE__*/react.createElement("h3", {
+    className: index_module.spotLight,
+    "data-spotlight": "React version: ".concat(react.version)
+  }, "React version: ", react.version));
 };
 
 /* harmony default export */ var home = (Home);
@@ -3423,8 +3432,8 @@ var MyErrorBoundary = function MyErrorBoundary(props) {
 
 // EXTERNAL MODULE: ./src/components/stateless/Loading/index.js
 var Loading = __webpack_require__(3173);
-// EXTERNAL MODULE: ./src/pages/home/index.js + 1 modules
-var home = __webpack_require__(9388);
+// EXTERNAL MODULE: ./src/pages/home/index.js + 2 modules
+var home = __webpack_require__(3584);
 ;// CONCATENATED MODULE: ./src/pages/layout/proTabs/index.module.less
 // extracted by mini-css-extract-plugin
 /* harmony default export */ var proTabs_index_module = ({"container":"container","ant-tabs-content":"ant-tabs-content","ant-tabs-tabpane":"ant-tabs-tabpane","pro-tabs":"pro-tabs","ant-tabs-nav-wrap":"ant-tabs-nav-wrap","tabpanel":"tabpanel"});
@@ -4076,4 +4085,4 @@ var ProLayout = function ProLayout() {
 /***/ })
 
 }]);
-//# sourceMappingURL=636.c7c22b95ffc94dfe52ec.js.map
+//# sourceMappingURL=636.f19c55dbd5c2cb97df03.js.map

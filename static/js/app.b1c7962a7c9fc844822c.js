@@ -29143,7 +29143,7 @@ var Layout = loadable_esm(function () {
   fallback: /*#__PURE__*/react.createElement(Loading/* default */.Z, null)
 });
 var Home = loadable_esm(function () {
-  return __webpack_require__.e(/* import() */ 388).then(__webpack_require__.bind(__webpack_require__, 9388));
+  return __webpack_require__.e(/* import() */ 584).then(__webpack_require__.bind(__webpack_require__, 3584));
 }, {
   fallback: /*#__PURE__*/react.createElement(Loading/* default */.Z, null)
 });
@@ -31323,4 +31323,4 @@ function _unsupportedIterableToArray(o, minLen) {
 /******/ var __webpack_exports__ = __webpack_require__.O();
 /******/ }
 ]);
-//# sourceMappingURL=app.a6a9746247f5a80d2b50.js.map
+//# sourceMappingURL=app.b1c7962a7c9fc844822c.js.map

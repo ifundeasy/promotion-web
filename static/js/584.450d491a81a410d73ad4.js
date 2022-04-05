@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkpromotion_web"] = self["webpackChunkpromotion_web"] || []).push([[388],{
+(self["webpackChunkpromotion_web"] = self["webpackChunkpromotion_web"] || []).push([[584],{
 
 /***/ 3994:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
@@ -21,7 +21,7 @@ var FixTabPanel = function FixTabPanel(_ref) {
 
 /***/ }),
 
-/***/ 9388:
+/***/ 3584:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 // ESM COMPAT FLAG
@@ -69,13 +69,22 @@ var TypedText = function TypedText(_ref) {
 };
 
 /* harmony default export */ var stateless_TypedText = (/*#__PURE__*/(0,react.memo)(TypedText));
+;// CONCATENATED MODULE: ./src/pages/home/index.module.less
+// extracted by mini-css-extract-plugin
+/* harmony default export */ var index_module = ({"button":"pages-home-index-module__button--GgsIa","typedText":"pages-home-index-module__typedText--od9oV","spotLight":"pages-home-index-module__spotLight--ghGu1","move":"pages-home-index-module__move--SWK09"});
 ;// CONCATENATED MODULE: ./src/pages/home/index.js
 
 
 
 
+
 var Home = function Home() {
-  return /*#__PURE__*/react.createElement(FixTabPanel/* default */.Z, null, /*#__PURE__*/react.createElement("h2", null, /*#__PURE__*/react.createElement(stateless_TypedText, null, "Cool! Hi, React & Ant Design!")), /*#__PURE__*/react.createElement("h3", null, "React version: ", react.version));
+  return /*#__PURE__*/react.createElement(FixTabPanel/* default */.Z, null, /*#__PURE__*/react.createElement("h2", {
+    className: index_module.TypedText
+  }, /*#__PURE__*/react.createElement(stateless_TypedText, null, "Cool! Hi, React & Ant Design!")), /*#__PURE__*/react.createElement("h3", {
+    className: index_module.spotLight,
+    "data-spotlight": "React version: ".concat(react.version)
+  }, "React version: ", react.version));
 };
 
 /* harmony default export */ var home = (Home);
@@ -83,4 +92,4 @@ var Home = function Home() {
 /***/ })
 
 }]);
-//# sourceMappingURL=388.fd4872550bb166b607af.js.map
+//# sourceMappingURL=584.450d491a81a410d73ad4.js.map
