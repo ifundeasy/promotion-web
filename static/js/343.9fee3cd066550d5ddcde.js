@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkpromotion_web=self.webpackChunkpromotion_web||[]).push([[343],{6327:function(n,r,e){e(7294);var i=e(5893);r.Z=function(n){var r=n.children;return(0,i.jsx)("div",{style:{width:"100%",minHeight:"calc(100vh - 252px)"},children:r})}},9343:function(n,r,e){e.r(r);e(7294);var i=e(6327),t=e(5893);r.default=function(){return(0,t.jsxs)(i.Z,{children:[(0,t.jsx)("h3",{children:"Cool! Hi, React && Ant Design"}),{error:"error"}.map((function(n){return(0,t.jsx)("span",{children:n},n)}))]})}}}]);
-//# sourceMappingURL=343.9fee3cd066550d5ddcde.js.map
