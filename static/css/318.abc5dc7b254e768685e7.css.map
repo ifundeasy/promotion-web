@@ -1,1 +1,0 @@
-{"version":3,"file":"static/css/318.abc5dc7b254e768685e7.css","mappings":"AAAA,kBACE,aACF","sources":["webpack://promotion-web/./src/pages/dashboard/index.module.less"],"sourcesContent":[".dashboard {\n  display: block;\n}\n"],"names":[],"sourceRoot":""}

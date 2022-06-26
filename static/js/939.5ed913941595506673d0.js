@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkpromotion_web=self.webpackChunkpromotion_web||[]).push([[939],{3939:function(e,s,t){t.r(s);t(6643);var c=t(76772),n=t(67294);s.default=function(){return n.createElement(n.Fragment,null,n.createElement(c.Z,{message:"Success Tips",description:"Detailed description and advice about successful copywriting.",type:"success",showIcon:!0}))}}}]);
+//# sourceMappingURL=939.5ed913941595506673d0.js.map
