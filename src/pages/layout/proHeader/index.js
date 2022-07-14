@@ -53,14 +53,14 @@ const ProHeader = () => {
             overlay={
               <Menu>
                 <Menu.Item key="1" icon={<UserOutlined />} onClick={() => redirectTo('/profile')}>
-                  个人中心
+                  personal center
                 </Menu.Item>
                 <Menu.Item key="2" icon={<SettingOutlined />} onClick={() => redirectTo('/setting')}>
-                  个人设置
+                  Personal settings
                 </Menu.Item>
                 <Menu.Divider />
                 <Menu.Item key="3" icon={<LogoutOutlined />} onClick={() => redirectTo('/signin')}>
-                  退出登录
+                  sign out
                 </Menu.Item>
               </Menu>
             }

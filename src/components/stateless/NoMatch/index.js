@@ -15,7 +15,7 @@ const NoMatch = () => {
       </h3>
 
       <Button size="small" type="primary" ghost onClick={() => navigate(-1)}>
-        返回
+        return
       </Button>
     </div>
   )

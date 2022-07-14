@@ -24,7 +24,7 @@ module.exports = {
     '@babel/typescript',
   ],
   compact: true,
-  // 这个不设置的话，webpack 魔法注释会被删除，魔法注释用于分包
+  // If this is not set, the webpack magic comment will be deleted, and the magic comment will be used for subpackage
   comments: true,
   plugins:
     process.env.NODE_ENV === 'production'

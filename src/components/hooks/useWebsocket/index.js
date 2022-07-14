@@ -8,14 +8,14 @@ import { useState, useRef, useEffect } from 'react'
 const useWebsocket = ({ url, verify }) => {
   const ws = useRef(null)
   const [wsData, setMessage] = useState('')
-  const [readyState, setReadyState] = useState({ key: 0, value: '正在链接中' })
+  const [readyState, setReadyState] = useState({ key: 0, value: 'linking' })
 
   const creatWebSocket = () => {
     const stateArr = [
-      { key: 0, value: '正在链接中' },
-      { key: 1, value: '已经链接并且可以通讯' },
-      { key: 2, value: '连接正在关闭' },
-      { key: 3, value: '连接已关闭或者没有链接成功' },
+      { key: 0, value: 'connecting' },
+      { key: 1, value: 'Linked and available for communication' },
+      { key: 2, value: 'Connection is closing' },
+      { key: 3, value: 'The connection is closed or no link succeeds' },
     ]
     try {
       ws.current = new WebSocket(url)
@@ -44,7 +44,7 @@ const useWebsocket = ({ url, verify }) => {
     }
   }
 
-  //  关闭 WebSocket
+  // close WebSocket
   const closeWebSocket = () => {
     ws.current?.close()
   }

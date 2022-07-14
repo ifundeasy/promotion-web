@@ -5,7 +5,7 @@ import axios from 'axios'
 
 import { useEffect, useState } from 'react'
 
-// Get 方式
+// Get method
 const useFetcher = ({ url }) => {
   const [state, setState] = useState({
     data: null,

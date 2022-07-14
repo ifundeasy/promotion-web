@@ -15,7 +15,7 @@ const AddCoupons = () => {
   return (
     <FixTabPanel>
       <Button type="link" onClick={closeActiveOpenAngular}>
-        关闭当前标签 并打开 Angular标签
+        Close the current tab and open the Angular tab
       </Button>
       <Alert
         message="Success Tips"

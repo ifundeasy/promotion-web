@@ -58,7 +58,7 @@ const config = {
     // libraryTarget: 'umd',
     // chunkLoadingGlobal: '',
     clean: true,
-    // contentBase: path.join(__dirname, "public"), // 配置额外的静态文件内容的访问路径
+    // contentBase: path.join(__dirname, "public"), // Configure additional static file content access paths
   },
   resolve: {
     // plugins: [new TsconfigPathsPlugin()],
@@ -151,7 +151,7 @@ const config = {
     // }),
   ],
   module: {
-    // 将缺失的导出提示成错误而不是警告
+    // Prompt missing exports as errors instead of warnings
     strictExportPresence: true,
     rules: [
       {

@@ -1,28 +1,28 @@
 # Promotion Web
 
-## 项目特性
+## Project features
 
-1. 基于 Antd 实现亮白及暗黑两套主题
-2. 基于 React 最新版本，拥抱 Hooks
-3. 基于 React Router V6, 实现嵌套路由更方便
-4. 基于 Webpack 最新版本，实现多环境打包部署，代码分割优化，结合官方分析工具，实时优化代码
-5. 基于 Faker 实现 Mock Server,不依赖后端实现模拟数据更加方便
-6. 封装 Fetch, 实现 useFetch, 请求更加方便，取消请求，实现请求及响应拦截，方便数据处理及统一报错提示
-7. 支持 TypeScript, 一切变得可控，扼杀错误于摇篮之中
-8. 支持多页签，提升效率
-9. 代码风格统一，项目统一配置 ESLint/Prettier/Husky/EditorConfig
-10. 配置 Commit message， 使用标准 commit 生成 changelog 标准化
-11. 配置 Sentry，方便日志追踪，及时发现问题
-12. 基于 React Redux Hooks, 状态管理更加方便
-13. 实现 ErrorBoundary,方便定位问题，避免不可预知的问题导致系统崩溃
-14. 代码分割，组件懒加载，Loading 垂直水平居中
-15. 更多特性请 fork 项目，相信我，你会有意想不到的收获
+1. Based on Antd to achieve two sets of themes of bright white and dark
+2. Based on the latest version of React, embrace Hooks
+3. Based on React Router V6, it is more convenient to implement nested routing
+4. Based on the latest version of Webpack, realize multi-environment packaging and deployment, code segmentation optimization, combined with official analysis tools, real-time code optimization
+5. Implementing Mock Server based on Faker, it is more convenient to implement mock data without relying on the backend
+6. Encapsulate Fetch, implement useFetch, make requests more convenient, cancel requests, implement request and response interception, facilitate data processing and unified error prompts
+7. Support TypeScript, everything becomes controllable, stifling errors in the cradle
+8. Support multiple tabs to improve efficiency
+9. Unified code style, unified project configuration ESLint/Prettier/Husky/EditorConfig
+10. Configure Commit message, use standard commit to generate changelog standardization
+11. Configure Sentry to facilitate log tracking and timely discovery of problems
+12. Based on React Redux Hooks, state management is more convenient
+13. Implement ErrorBoundary to facilitate locating problems and avoid unpredictable problems that cause system crashes
+14. Code splitting, component lazy loading, Loading vertical and horizontal centering
+15. For more features, please fork the project, trust me, you will have unexpected gains
 
 ## Technology Stack
 
 1. React: v18.x.x [React](https://reactjs.org/)
 2. React Router: v6.x.x [React Router](https://reactrouter.com/)
-3. Webpack:v5.x.x [Webpack](https://webpack.js.org/)
+3. Webpack: v5.x.x [Webpack](https://webpack.js.org/)
 4. Babel: v7.x.x [Babel](https://babeljs.io/), [Versions](https://babel.docschina.org/versions/)
 5. Antd: v4.x.x [Ant Design](https://ant.design/index-cn)
 6. React Redux: v8.x.x [Redux Hooks](https://react-redux.js.org/api/hooks)
@@ -33,12 +33,12 @@
 ```bash
   1. git clone https://github.com/wkylin/promotion-web.git
   2. cd promotion-web
-  3. 可以选择以下两种方式的任一方式启动项目, 其他 cli 参考 package.json 中的 scripts
+  3. You can choose either of the following two ways to start the project, other cli refer to the scripts in package.json
     - npm start
     - npm run dev:faker
 ```
 
-## VSCode extension: 别名路径跳转
+## VSCode extension: alias path jump
 
 ```bash
     "alias-skip.mappings": {
@@ -54,11 +54,11 @@
     }
 ```
 
-## WebStorm 别名跳转设置
+## WebStorm alias jump settings
 
-1. Settings >> Languages & Frameworks >> Javascript >> Webpack: 指定 Configuration file: webpack\webpack.common.js
+1. Settings >> Languages ​​& Frameworks >> Javascript >> Webpack: Specify Configuration file: webpack\webpack.common.js
 
-## 使用标准 commit 生成 changelog 标准化
+## Generate changelog normalization using standard commits
 
 - [conventional-changelog](https://github.com/conventional-changelog)
 - [standard-version](https://github.com/conventional-changelog/standard-version)
@@ -88,7 +88,7 @@
   "release": "standard-version --tag-prefix \"publish/\""
   ```
 
-## 约定式提交
+## Conventional commit
 
 1. [Conventional Commits](https://www.conventionalcommits.org/zh-hans/v1.0.0/)
 
@@ -105,34 +105,34 @@
    ```
 
 2. "type-enum": ["build", "chore", "ci", "docs", "feat", "fix", "perf", "refactor", "revert", "style", "test"]
-3. type-enum 说明文档：
+3. Type-enum documentation:
 
-   - build: 依赖调整
-     影响构建系统或外部依赖的更改 (示例作用域：gulp, broccoli, npm）
-   - chore: 杂务处理
-     其他不会修改源文件或者测试文件的更改
-   - ci: 脚本变更
-     对 CI 配置文件和脚本的更改（示例作用域： Travis, Circle, BrowserStack, SauceLabs)
-   - docs: 文档变更
-     添加或者更新文档
-   - feat: 添加功能
-     引入新的特性
-   - fix 错误修复
-     修复 bug
-   - perf: 性能优化
-     更改代码以提高性能
-   - refactor: 代码重构
-     即不是修复 Bug，也不是添加特性的代码更改
-   - revert: 恢复版本
-     恢复到上一个版本
-   - style: 格式调整
-     不会影响代码含义的更改（空格，格式缺少分号等）
-   - test: 更新测试
-     添加或者更新测试
+   - build: dependency adjustment
+     Changes affecting the build system or external dependencies (example scopes: gulp, broccoli, npm)
+   - chore: chores
+     Other changes that do not modify source or test files
+   - ci: script changes
+     Changes to CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs)
+   - docs: Documentation changes
+     Add or update documents
+   - feat: add function
+     Introduce new features
+   - fix bug fixes
+     fix bugs
+   - perf: performance optimization
+     Change the code to improve performance
+   - refactor: code refactoring
+     Neither bug fixes nor code changes that add features
+   - revert: revert version
+     revert to previous version
+   - style: format adjustment
+     Changes that don't affect the meaning of the code (whitespace, missing semicolons in formatting, etc.)
+   - test: update test
+     Add or update tests
 
 4. [https://www.npmjs.com/package/devmoji](https://www.npmjs.com/package/devmoji)
 5. [https://gitmoji.dev/](https://gitmoji.dev/)
-6. [git commit 工具链](https://juejin.cn/post/7067166468797890591)
+6. [git commit toolchain](https://juejin.cn/post/7067166468797890591)
 7. [https://theodorusclarence.com/library/conventional-commit-readme](https://theodorusclarence.com/library/conventional-commit-readme)
 
 ## React Code Splitting Library
@@ -151,11 +151,11 @@ npm run dev:faker
 1. Deployment: [Deployment] (<https://create-react-app.dev/docs/deployment>)
 2. "build:production": "npm run dev:theme && cross-env SENTRY\*SOURCE_MAP=map BUILD_GOAL=production NODE_ENV=production webpack --config ./webpack/webpack.prod.js --stats-error-details && rimraf dist/\*\*/\_.map",
 
-## 待解决
+## To be solved
 
-1. 配备比较完善的脚手架：
+1. Equipped with relatively complete scaffolding:
    - [https://blog.kiradev.co/build-a-cli-using-nodejs](https://blog.kiradev.co/build-a-cli-using-nodejs)
-2. 完善文档：
+2. Improve the documentation:
    - [https://docusaurus.io/](https://docusaurus.io/)
    - [https://d.umijs.org/zh-CN](https://d.umijs.org/zh-CN)
    - [Bit](https://bit.dev/)
@@ -166,7 +166,7 @@ npm run dev:faker
 1. Github:
 2. Demo:
 
-## 已支持特性
+## Supported features
 
 1. TypeScript: [TypeScript](https://www.typescriptlang.org/)
    - [https://react-typescript-cheatsheet.netlify.app/](https://react-typescript-cheatsheet.netlify.app/)
@@ -177,14 +177,14 @@ npm run dev:faker
 2. Mock Server
    - [Faker](https://fakerjs.dev/)
    - [msw](https://github.com/mswjs/msw)
-3. 单页面多页签参考
+3. Single-page multi-tab reference
    - [react-antd-multi-tabs-admin](https://github.com/hsl947/react-antd-multi-tabs-admin.git)
 4. Axios
-   - [axios 拦截器之重复请求取消](https://juejin.cn/post/7004721390767046686)
-5. React SVGR
+   - [Repeated Request Cancellation of Axios Interceptor](https://juejin.cn/post/7004721390767046686)
+5. React-SVGR
    - [https://react-svgr.com/docs/webpack/](https://react-svgr.com/docs/webpack/)
 
-## 代码规范：ESLint Prettier Husky EditorConfig
+## Code Specification: ESLint Prettier Husky EditorConfig
 
 1. ESLint: [ESLint](https://eslint.org/)
 
@@ -241,17 +241,17 @@ npm run dev:faker
     "prettier:fix": "prettier --write \"src/**/*\" --end-of-line auto --ignore-unknown",
    ```
 
-## 自动化持续代码审查工具
+## Automated continuous code review tool
 
 1. [DeepSource/](https://deepsource.io/)
 2. [DeepScan](https://deepscan.io/)
 
-## Sentry 接入
+## Sentry access
 
 1. [Sentry](https://sentry.io/)
-2. 遇到的问题：
+2. Problems encountered:
    - ERROR in Sentry CLI Plugin: spawn /Users/sheldon/Desktop/promotion-manage-web/node_modules/@sentry/cli/sentry-cli ENOENT
-   - 解决方案参考：[https://juejin.cn/post/6961012856636571655](https://juejin.cn/post/6961012856636571655)
+   - Solution reference: [https://juejin.cn/post/6961012856636571655](https://juejin.cn/post/6961012856636571655)
    - "sentry:check": "node check-sentry.js"
 
 ## VSCode Extensions
@@ -274,7 +274,7 @@ A CSS Module is a CSS file in which all class names and animation names are scop
 
 2. TailWind CSS: [TailWind CSS](https://tailwindcss.com/)
 
-## CI/CD 自动化构建
+## CI/CD automated builds
 
 1. GitHub Actions
 
@@ -287,7 +287,7 @@ A CSS Module is a CSS file in which all class names and animation names are scop
 
 ```bash
     1. npm install jest babel-jest @babel/preset-env @babel/preset-react react-test-renderer --save-dev
-    2. npm install  --save-dev @testing-library/react
+    2. npm install --save-dev @testing-library/react
     3. npm install cypress --save-dev
     4. npm install --save-dev @testing-library/react-hook
 ```
@@ -346,30 +346,30 @@ npm version [| major | minor | patch | premajor | preminor | prepatch | prerelea
 
    ```bash
    server {
-    listen       8081;
-    #server_name  localhost;
-    server_name  www.promotion-web.com;
+    listen 8081;
+    # server_name localhost;
+    server_name www.promotion-web.com;
 
     location / {
-        root   /usr/local/var/www/promotion-web;
-        index  index.html index.htm;
-        try_files  $uri $uri/ /index.html @rewrites;
+        root /usr/local/var/www/promotion-web;
+        index index.html index.htm;
+        try_files $uri $uri/ /index.html @rewrites;
         expires -1;
         add_header Cache-Control no-cache;
         # proxy_pass http://localhost:3000;
     }
-    # 接口转发，如果需要的话
-    #location ~ ^/api {
-    #  proxy_pass http://www.wklin.com;
-    #}
+    # Interface forwarding, if needed
+    # location ~ ^/api {
+    #   proxy_pass http://www.wklin.com;
+    # }
     location @rewrites {
       rewrite ^(.+)$ /index.html break;
     }
-    # 或者全部重定向
+    # or redirect all
     # return 301 https://$server_name$request_uri;
    }
 
-    # SwitchHosts!
+    # Add as new host
     192.168.1.101 www.promotion-web.com
    ```
 
@@ -439,17 +439,17 @@ npm version [| major | minor | patch | premajor | preminor | prepatch | prerelea
 
 ## Webpack Analyse
 
-1. [Webpack 官方分析工具](https://webpack.github.io/analyse/)
+1. [Webpack official analysis tool](https://webpack.github.io/analyse/)
 
    ```bash
       npm run analyze:build
    ```
 
-## CRACO:Create React App Configuration Override
+## CRACO: Create React App Configuration Override
 
 1. [https://github.com/gsoft-inc/craco](https://github.com/gsoft-inc/craco)
 
-## 与 ESLint 风格不一致
+## inconsistent with ESLint style
 
 1. "lint:json": "jsonlint --quiet src/\*_/_.json",
 2. "standard": "standard src/\*_/_",
@@ -466,13 +466,13 @@ npm version [| major | minor | patch | premajor | preminor | prepatch | prerelea
 
 ## GitHub Proxy
 
-1. 首先确认自己 git 拉取代码的方式
+1. First confirm the way you pull code from git
 
    ```bash
      git remote -v
    ```
 
-2. 设置代理
+2. Set up the proxy
 
    ```bash
      git config --global https.proxy 127.0.0.1:10808
@@ -481,19 +481,19 @@ npm version [| major | minor | patch | premajor | preminor | prepatch | prerelea
      git config --global https.proxy 'socks5://127.0.0.1:10808'
    ```
 
-3. 查看代理是否成功
+3. Check whether the proxy is successful
 
    ```bash
      git config --get --global http.proxy
    ```
 
-4. 查看 git 配置
+4. View git configuration
 
    ```bash
      git config --global --list
    ```
 
-5. 取消代理
+5. Cancel proxy
 
    ```bash
      git config --global --unset http.proxy
@@ -508,25 +508,25 @@ npm version [| major | minor | patch | premajor | preminor | prepatch | prerelea
 
 1. [npm ci vs. npm install](https://betterprogramming.pub/npm-ci-vs-npm-install-which-should-you-use-in-your-node-js-projects-51e07cb71e26)
 
-## Husky 不起作用解决方案
+## Husky doesn't work solution
 
-参考官网：[https://typicode.github.io/husky/#/](https://typicode.github.io/husky/#/)
-按以下步骤进行设置：
+Reference official website: [https://typicode.github.io/husky/#/](https://typicode.github.io/husky/#/)
+Follow the steps below to set it up:
 
-1. 删除 .git 目录下的 hooks 及 .husky
-2. 查看 git config 配置是否存在 core.hookspath=.husky
+1. Delete hooks and .husky in the .git directory
+2. Check whether the git config configuration exists core.hookspath=.husky
 
    ```base
      git config --list
    ```
 
-3. 删除配置及卸载 Huksy:
+3. Remove configuration and uninstall Huksy:
 
    ```base
      npm uninstall husky && git config --unset core.hookspath
    ```
 
-4. 再次安装 Husky:
+4. Install Husky again:
 
    ```base
      npm install husky --save-dev
@@ -534,7 +534,7 @@ npm version [| major | minor | patch | premajor | preminor | prepatch | prerelea
      npx husky-init
    ```
 
-5. 新增 Hooks：
+5. Add Hooks:
 
    ```base
      npx husky add .husky/pre-commit "npx lint-staged"

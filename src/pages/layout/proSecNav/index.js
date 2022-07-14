@@ -33,10 +33,10 @@ const ProSecNav = () => {
 
   const [selectedKeys, setSelectedKeys] = useState(['home'])
 
-  // 当前路由对应的 sub menu key
+  // sub menu key corresponding to the current route
   const [openKeys, setOpenKeys] = useState(['home'])
 
-  // 提取放在redux中, tab 切换时改成 false
+  // The extraction is placed in redux, and it is changed to false when the tab is switched
   const [isOpenChange, setIsOpenChange] = useState(false)
 
   // NOT READY FOR PRIME TIME
@@ -72,12 +72,12 @@ const ProSecNav = () => {
     { label: 'ReactPlayer', key: '/player', icon: <PlayCircleOutlined /> },
     { label: 'AntV', key: '/choropleth', icon: <EnvironmentOutlined /> },
     {
-      label: '技术栈',
+      label: 'Technology Stack',
       key: '/sub-act',
       icon: <HeatMapOutlined />,
       children: [
         {
-          label: '前端技术栈',
+          label: 'Front-end technology stack',
           key: '/sub-coupons',
           icon: <FireOutlined />,
           children: [
@@ -85,11 +85,11 @@ const ProSecNav = () => {
             { label: 'Angular', key: '/coupons/edit' },
           ],
         },
-        { label: '后端技术栈', key: '/product', icon: <DeploymentUnitOutlined /> },
+        { label: 'Backend Technology Stack', key: '/product', icon: <DeploymentUnitOutlined /> },
       ],
     },
     {
-      label: '构建工具',
+      label: 'build tools',
       key: '/sub-list',
       icon: <ApartmentOutlined />,
       children: [

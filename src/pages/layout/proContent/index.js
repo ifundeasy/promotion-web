@@ -27,7 +27,7 @@ const ProContent = () => {
   const { pathname, search } = useLocation()
 
   useEffect(() => {
-    // 未登录
+    // not logged in
     // if (!token && pathname !== '/signin') {
     //   navigate('signin', { replace: true })
     //   return
@@ -63,7 +63,7 @@ const ProContent = () => {
         <BackTop target={() => document.querySelector('#container')}>
           <VerticalAlignTopOutlined style={{ fontSize: 20 }} />
         </BackTop>
-        <div>&copy; 2020-{new Date().getFullYear()} 上海麒麟科技有限公司</div>
+        <div>&copy; 2020-{new Date().getFullYear()} Shanghai Kylin Technology Co., Ltd.</div>
       </Footer>
     </Layout>
   )

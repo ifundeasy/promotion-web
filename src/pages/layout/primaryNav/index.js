@@ -16,7 +16,7 @@ const PrimaryNav = () => {
     <>
       <Space>
         <Button type="link" icon={<CodeOutlined />} onClick={() => redirectTo('dashboard')}>
-          多路由设置
+          Multi-routing setup
         </Button>
         <Button type="link" icon={<AppstoreOutlined />} onClick={() => redirectTo('landing')}>
           Landing Page For Media

@@ -112,7 +112,7 @@ export const isDecimal = (value) => {
 export const limitDecimal = (val) => val.replace(/^(-)*(\d+)\.(\d\d).*$/, '$1$2.$3')
 
 /*
- ** 判断用户是否离开当前页面
+ ** Determine if the user has left the current page
  */
 export const checkIsLocalPage = () => {
   document.addEventListener('visibilitychange', () => {
@@ -169,7 +169,7 @@ export const fetchSomething = () =>
 
 export const toFixed = (number, m) => {
   if (typeof number !== 'number') {
-    throw new Error('number不是数字')
+    throw new Error('parameter is not a number')
   }
   let result = Math.round(10 ** m * number) / 10 ** m
   result = String(result)

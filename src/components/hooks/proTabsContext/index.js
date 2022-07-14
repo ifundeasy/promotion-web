@@ -12,7 +12,7 @@ const defaultValue = {
 
 const initialPanes = [
   {
-    title: '首页',
+    title: 'Home',
     key: '/',
     content: <Home />,
     closable: false,
@@ -38,7 +38,7 @@ const ProTabProvider = ({ children }) => {
     (targetKey, callbackFun = () => {}) => {
       const delIndex = panes.findIndex((item) => item.key === targetKey)
       const filterPanes = panes.filter((pane) => pane.key !== targetKey)
-      // 删除非当前/当前tab
+      // delete non-current/current tab
       if (targetKey !== activeKey) {
         setPanes(filterPanes)
       } else {

@@ -28,14 +28,14 @@ const ProTabs = (props) => {
   const { pathname, search } = useLocation()
   const fullPath = pathname + search
 
-  // 从本地存储中恢复已打开的tab列表
+  // restore the open tab list from local storage
   // const resetTabs = useCallback(() => {
   //   const { tabKey } = getKeyName(pathname)
   //   setPanes(initialPanes)
   //   setActiveKey(tabKey)
   // }, [pathname])
 
-  // 初始化页面
+  // initialize the page
   // useEffect(() => {
   //   resetTabs()
   // }, [resetTabs])
@@ -79,7 +79,7 @@ const ProTabs = (props) => {
     setActiveKey(key)
   }
 
-  // tab点击
+  // tab click
   const onTabClick = (targetKey) => {
     const { path } = panes.filter((item) => item.key === targetKey)[0]
     navigate(path)
@@ -94,13 +94,13 @@ const ProTabs = (props) => {
   }
 
   const isDisabled = () => selectedPanel.key === '/'
-  // 阻止右键默认事件
+  // Prevent right click default event
   const preventDefault = (event, panel) => {
     event.preventDefault()
     setSelectedPanel(panel)
   }
 
-  // 刷新当前 tab
+  // refresh the current tab
   const refreshTab = () => {
     setIsReload(true)
     setTimeout(() => {
@@ -108,14 +108,14 @@ const ProTabs = (props) => {
     }, 1000)
   }
 
-  // 关闭其他或关闭所有
+  // close other or close all
   const removeAll = (isRemoveAll) => {
     const { key } = selectedPanel
     navigate(isRemoveAll ? '/' : key)
 
     const homePanel = [
       {
-        title: '首页',
+        title: 'Home',
         key: '/',
         content: <Home />,
         closable: false,
@@ -129,11 +129,11 @@ const ProTabs = (props) => {
     setActiveKey(isRemoveAll ? '/' : key)
   }
 
-  // tab 右键菜单
+  // tab right-click menu
   const tabRightMenu = (
     <Menu>
       <Menu.Item key="1" onClick={refreshTab} disabled={selectedPanel.key !== fullPath || selectedPanel.key === '/404'}>
-        刷新
+        refresh
       </Menu.Item>
       <Menu.Item
         key="2"
@@ -143,7 +143,7 @@ const ProTabs = (props) => {
         }}
         disabled={isDisabled()}
       >
-        关闭
+        closure
       </Menu.Item>
       <Menu.Item
         key="3"
@@ -152,7 +152,7 @@ const ProTabs = (props) => {
           removeAll()
         }}
       >
-        关闭其他
+        close other
       </Menu.Item>
       <Menu.Item
         key="4"
@@ -162,7 +162,7 @@ const ProTabs = (props) => {
         }}
         disabled={isDisabled()}
       >
-        全部关闭
+        close all
       </Menu.Item>
     </Menu>
   )
@@ -201,7 +201,7 @@ const ProTabs = (props) => {
       >
         {panes.map((pane) => (
           <Tabs.TabPane
-            forceRender // 被隐藏时是否渲染 DOM 结构
+            forceRender // Whether to render the DOM structure when hidden
             key={pane.key}
             closable={pane.closable}
             tab={
@@ -213,7 +213,7 @@ const ProTabs = (props) => {
               >
                 <span onContextMenu={(e) => preventDefault(e, pane)}>
                   {pane.key === fullPath && pane.key !== '/404' && (
-                    <SyncOutlined onClick={refreshTab} title="刷新" spin={isReload} />
+                    <SyncOutlined onClick={refreshTab} title="Refresh" spin={isReload} />
                   )}
                   {pane.title}
                 </span>
@@ -224,7 +224,7 @@ const ProTabs = (props) => {
             <MyErrorBoundary fixError={fixError}>
               <div className={styles.tabpanel}>
                 {isReload && pane.key === fullPath && pane.key !== '/404' ? (
-                  <Loading tip="刷新中..." />
+                  <Loading tip="Refreshing..." />
                 ) : (
                   <>{pane.content}</>
                 )}

@@ -14,7 +14,7 @@ const devWebpackConfig = merge(common, {
   mode: 'development',
   // devtool: 'source-map',
   devtool: 'eval-cheap-module-source-map',
-  // 开发环境使用内存缓存
+  // The development environment uses the memory cache
   cache: { type: 'memory' },
   devServer: {
     // disableHostCheck: true,
@@ -81,7 +81,7 @@ module.exports = new Promise((resolve, reject) => {
   // detect-port
   portfinder.getPort(
     {
-      port: 8080, // 默认8080端口，若被占用，重复+1，直到找到可用端口或到stopPort才停止
+      port: 8080, // Default port 8080, if it is occupied, repeat +1 until an available port is found or stopPort is reached
       stopPort: 65535, // maximum port
     },
     (err, port) => {

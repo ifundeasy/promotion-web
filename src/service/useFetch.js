@@ -1,7 +1,7 @@
 /**
  * Fetch Hooks
  * url： api endpoint
- * opts: 参见 fetch.js
+ * opts: see fetch.js
  */
 import { useEffect, useState, useCallback } from 'react'
 import { reqFetch } from './fetch'

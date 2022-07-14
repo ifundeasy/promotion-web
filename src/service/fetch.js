@@ -1,15 +1,15 @@
 /**
- * Fetch Api
+ * Fetch API
  * 1. reqFetch(url, params)
  *    params: {
- *      method: 'GET', // 请求方式
- *      payload: null, // 入参
- *      headers: null, // 自定义 Headers
- *      isShowError: true, // 是否显示total tips
- *      timeout: 20000 // 超时
+ *       method: 'GET', // request method
+ *       payload: null, // input parameter
+ *       headers: null, // custom headers
+ *       isShowError: true, // whether to show total tips
+ *       timeout: 20000 // timeout
  *    }
- * 2. postFetch --- method==='POST' 其他入参同 reqFetch
- * 3. getFetch --- method==='POST'  其他入参同 reqFetch
+ * 2. postFetch --- method==='POST' Other input parameters are the same as reqFetch
+ * 3. getFetch --- method==='POST' Other input parameters are the same as reqFetch
  * 4. putFethch
  * 5. deleteFetch
  * 6. patchFetch
@@ -167,7 +167,7 @@ const handleFetchData = (url, options) => {
     fetch(url, { ...otherOptions, signal })
       .then((response) => {
         // response.text() response.json() response.blob() response.formData() response.arrayBuffer() response.clone()
-        // if(response.ok || (response.status >= 200 && response.status < 300)) { 成功 } else { 失败}
+        // if(response.ok || (response.status >= 200 && response.status < 300)) { success } else { failure }
         // response.status
         // response.statusText
         // response.type >> *basic cors opaque error opaqueredirect(manual)

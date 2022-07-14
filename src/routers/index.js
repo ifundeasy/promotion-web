@@ -28,13 +28,13 @@ const NoMatch = loadable(() => import('../components/stateless/NoMatch'), { fall
 const rootRouter = [
   {
     path: '/',
-    name: '首页',
+    name: 'Home',
     key: '/',
     element: <Layout />,
     children: [
       {
         index: true,
-        name: '首页',
+        name: 'Home',
         key: '/',
         element: <Home />,
       },
@@ -76,8 +76,8 @@ const rootRouter = [
       {
         index: false,
         path: 'coupons',
-        name: '前端技术栈',
-        isSubMenu: true, // 是否是子菜单 proSecNav
+        name: 'Front-end technology stack',
+        isSubMenu: true, // Is it a submenu proSecNav
         key: '/coupons',
         element: <Coupons />,
         children: [
@@ -114,7 +114,7 @@ const rootRouter = [
       {
         index: false,
         path: 'product',
-        name: '后端技术栈',
+        name: 'Backend technology stack',
         key: '/product',
         element: <Product />,
       },
@@ -136,14 +136,14 @@ const rootRouter = [
   {
     index: false,
     path: 'signin',
-    name: '登录',
+    name: 'login',
     key: '/signin',
     element: <SignIn />,
   },
   {
     index: false,
     path: 'signup',
-    name: '注册',
+    name: 'register',
     key: '/signup',
     element: <SignUp />,
   },
@@ -162,9 +162,9 @@ const rootRouter = [
     element: <Landing />,
   },
   // {
-  //   path: '*',
-  //   name: 'No Match',
-  //   element: <NoMatch />,
+  // path: '*',
+  // name: 'No Match',
+  // element: <NoMatch />,
   // },
 ]
 

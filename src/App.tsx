@@ -10,7 +10,7 @@ const App = () => {
   const [loading, setLoading] = useState(true)
   const asyncCall = () => new Promise<void>((resolve) => setTimeout(() => resolve(), 500))
   // const tracker = new Tracker({
-  //   projectKey: 'HYHVjM3lbPjVFcPxsfh8',
+  // projectKey: 'HYHVjM3lbPjVFcPxsfh8',
   // })
   useEffect(() => {
     // sentry init
@@ -22,8 +22,8 @@ const App = () => {
       .then(() => setLoading(false))
       .catch(() => setLoading(false))
     Watermark({
-      content: '上海麒麟科技有限公司', // 水印文本
-      container: document.getElementById('root'), // 水印容器区域
+      content: 'Shanghai Kylin Technology Co., Ltd.', // watermark text
+      container: document.getElementById('root'), // watermark container area
     })
   }, [])
 
